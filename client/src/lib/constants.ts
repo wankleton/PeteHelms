@@ -34,60 +34,60 @@ export const services = [
     id: "ai-transformation",
     icon: NetworkIcon,
     title: "AI Transformation",
-    description: "Restructure processes and teams to effectively integrate AI into your organization. Build internal capabilities and establish governance frameworks.",
+    description: "Restructure processes and teams to integrate AI effectively. Build capabilities and governance frameworks.",
     features: [
-      "Organizational readiness assessment",
-      "Change management and adoption planning",
-      "Data strategy and infrastructure guidance",
-      "Talent and capability development"
+      "Readiness assessment",
+      "Change management",
+      "Data strategy",
+      "Capability development"
     ]
   },
   {
     id: "product-strategy",
     icon: PieChartIcon,
     title: "Product Strategy",
-    description: "Develop AI-powered products that solve real customer problems. From ideation to market validation, create a roadmap for successful product development.",
+    description: "Develop AI products that solve real customer problems. Create roadmaps from ideation to market validation.",
     features: [
-      "Market and competitive analysis",
-      "User-centered design and validation",
-      "MVP definition and development roadmap",
-      "Pricing and go-to-market strategy"
+      "Market analysis",
+      "User-centered design",
+      "MVP definition",
+      "Go-to-market strategy"
     ]
   },
   {
     id: "executive-advisory",
     icon: UsersIcon,
     title: "Executive Advisory",
-    description: "Ongoing guidance for leadership teams navigating AI implementation. Get expert perspective on technology trends, risks, and competitive landscape.",
+    description: "Expert guidance for leadership teams implementing AI. Get insights on tech trends, risks, and competitive landscape.",
     features: [
-      "Regular technology trend briefings",
-      "Competitive intelligence and market analysis",
-      "Strategic planning and decision support",
-      "Board and investor communication preparation"
+      "Technology trend briefings",
+      "Competitive intelligence",
+      "Strategic planning",
+      "Board communication prep"
     ]
   },
   {
     id: "ai-workshops",
     icon: GraduationCapIcon,
     title: "AI Workshops & Training",
-    description: "Customized training programs to build AI literacy across your organization. Equip your teams with the knowledge to participate in AI initiatives.",
+    description: "Build AI literacy across your organization. Equip teams with knowledge for successful AI initiatives.",
     features: [
-      "Executive-level AI literacy sessions",
-      "Technical team upskilling programs",
-      "Business team AI applications training",
-      "Interactive workshops with real-world cases"
+      "Executive AI literacy",
+      "Technical team upskilling",
+      "Business team training",
+      "Interactive workshops"
     ]
   },
   {
     id: "ai-ethics",
     icon: FileTextIcon,
     title: "AI Ethics & Governance",
-    description: "Develop frameworks for responsible AI deployment. Ensure your AI initiatives align with ethical principles and regulatory requirements.",
+    description: "Develop responsible AI frameworks. Align initiatives with ethical principles and regulatory requirements.",
     features: [
-      "Ethical framework development",
-      "Bias detection and mitigation strategies",
-      "Regulatory compliance guidance",
-      "Transparency and explainability approaches"
+      "Ethical frameworks",
+      "Bias detection",
+      "Compliance guidance",
+      "Transparency solutions"
     ]
   }
 ];
