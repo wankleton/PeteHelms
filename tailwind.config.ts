@@ -120,8 +120,8 @@ export default {
           "100%": { backgroundPosition: "200% 0" },
         },
         pulse: {
-          "0%, 100%": { opacity: 1, transform: "scale(1)" },
-          "50%": { opacity: 0.5, transform: "scale(0.9)" },
+          "0%, 100%": { opacity: "1", transform: "scale(1)" },
+          "50%": { opacity: "0.5", transform: "scale(0.9)" },
         },
       },
       animation: {

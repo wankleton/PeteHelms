@@ -9,9 +9,21 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, Phone, MapPin, Loader2, Layers, Linkedin, Twitter, Github, MessageSquare } from "lucide-react";
+import { 
+  Mail, 
+  Phone, 
+  MapPin, 
+  Loader2, 
+  Send, 
+  Linkedin, 
+  Twitter, 
+  Github, 
+  MessageSquare,
+  ArrowUpRight
+} from "lucide-react";
 import { fadeIn, fadeInUp } from "@/lib/animations";
 import { contactInfo } from "@/lib/constants";
+import SectionHeading from "@/components/ui/section-heading";
 
 // Form validation schema
 const contactSchema = z.object({
@@ -64,134 +76,206 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-16 md:py-24 bg-white">
+    <section id="contact" className="py-16 md:py-24 bg-white relative overflow-hidden">
+      {/* Background elements */}
+      <div className="absolute top-0 -right-1/4 w-1/2 h-1/2 bg-accent-highlight/10 blur-3xl rounded-full -z-10"></div>
+      <div className="absolute bottom-0 -left-1/4 w-1/2 h-1/2 bg-accent-gradient-start/10 blur-3xl rounded-full -z-10"></div>
+      
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-          <motion.div
-            variants={fadeInUp}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-          >
-            <h2 className="text-3xl md:text-4xl font-bold text-secondary-900 mb-6">Get in Touch</h2>
-            <p className="text-lg text-secondary-600 mb-10">Have questions or want to discuss potential collaboration? Reach out directly.</p>
-            
-            <div className="space-y-6 mb-10">
-              <motion.div 
-                className="flex items-start"
-                variants={fadeIn}
-                custom={0.1}
-              >
-                <div className="flex-shrink-0 h-10 w-10 rounded-full bg-primary-100 flex items-center justify-center mr-4">
-                  <Mail className="text-primary" size={18} />
-                </div>
-                <div>
-                  <p className="font-medium mb-1">Email</p>
-                  <a 
-                    href={`mailto:${contactInfo.email}`} 
-                    className="text-primary hover:text-primary/80 transition-colors"
-                  >
-                    {contactInfo.email}
-                  </a>
-                </div>
-              </motion.div>
-              
-              <motion.div 
-                className="flex items-start"
-                variants={fadeIn}
-                custom={0.2}
-              >
-                <div className="flex-shrink-0 h-10 w-10 rounded-full bg-primary-100 flex items-center justify-center mr-4">
-                  <Phone className="text-primary" size={18} />
-                </div>
-                <div>
-                  <p className="font-medium mb-1">Phone</p>
-                  <a 
-                    href={`tel:${contactInfo.phone.replace(/[^0-9+]/g, '')}`} 
-                    className="text-primary hover:text-primary/80 transition-colors"
-                  >
-                    {contactInfo.phone}
-                  </a>
-                </div>
-              </motion.div>
-              
-              <motion.div 
-                className="flex items-start"
-                variants={fadeIn}
-                custom={0.3}
-              >
-                <div className="flex-shrink-0 h-10 w-10 rounded-full bg-primary-100 flex items-center justify-center mr-4">
-                  <MapPin className="text-primary" size={18} />
-                </div>
-                <div>
-                  <p className="font-medium mb-1">Location</p>
-                  <p className="text-secondary-600">{contactInfo.location}</p>
-                </div>
-              </motion.div>
-            </div>
-            
-            <div>
-              <p className="font-medium mb-4">Connect with me</p>
-              <div className="flex space-x-4">
-                <a 
-                  href="https://linkedin.com" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="h-10 w-10 rounded-full bg-secondary-100 flex items-center justify-center text-secondary-600 hover:bg-primary hover:text-white transition-colors"
-                  aria-label="LinkedIn"
-                >
-                  <Linkedin size={18} />
-                </a>
-                <a 
-                  href="https://twitter.com" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="h-10 w-10 rounded-full bg-secondary-100 flex items-center justify-center text-secondary-600 hover:bg-primary hover:text-white transition-colors"
-                  aria-label="Twitter"
-                >
-                  <Twitter size={18} />
-                </a>
-                <a 
-                  href="https://medium.com" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="h-10 w-10 rounded-full bg-secondary-100 flex items-center justify-center text-secondary-600 hover:bg-primary hover:text-white transition-colors"
-                  aria-label="Medium"
-                >
-                  <MessageSquare size={18} />
-                </a>
-                <a 
-                  href="https://github.com" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="h-10 w-10 rounded-full bg-secondary-100 flex items-center justify-center text-secondary-600 hover:bg-primary hover:text-white transition-colors"
-                  aria-label="GitHub"
-                >
-                  <Github size={18} />
-                </a>
-              </div>
-            </div>
-          </motion.div>
-          
-          <motion.div
-            variants={fadeInUp}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-          >
-            <Form {...form}>
-              <form onSubmit={form.handleSubmit(onSubmit)} className="bg-secondary-50 rounded-xl p-8">
-                <h3 className="text-2xl font-bold mb-6">Send a Message</h3>
+        <SectionHeading 
+          title={<>Get in <span className="gradient-text">Touch</span></>}
+          description="Have questions or want to discuss potential collaboration? Reach out directly."
+        />
+        
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+            <motion.div
+              className="lg:col-span-5 lg:sticky lg:top-32"
+              variants={fadeInUp}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-100px" }}
+            >
+              <div className="bg-midnight text-white p-8 rounded-xl shadow-xl relative overflow-hidden">
+                {/* Background pattern for card */}
+                <div className="absolute inset-0 bg-data-grid opacity-20"></div>
+                <div className="absolute top-0 -right-20 w-40 h-40 bg-accent-gradient-start/20 blur-3xl rounded-full"></div>
+                <div className="absolute bottom-0 -left-20 w-40 h-40 bg-accent-gradient-end/20 blur-3xl rounded-full"></div>
                 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <div className="relative">
+                  <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
+                  <p className="text-secondary-300 mb-8">Ready to elevate your AI strategy? Reach out through any of these channels.</p>
+                  
+                  <div className="space-y-6 mb-8">
+                    <motion.div 
+                      className="flex items-start group"
+                      variants={fadeIn}
+                      custom={0.1}
+                    >
+                      <div className="flex-shrink-0 h-12 w-12 rounded-full bg-white/10 group-hover:bg-accent-gradient-start/20 flex items-center justify-center mr-4 transition-colors">
+                        <Mail className="text-white" size={20} />
+                      </div>
+                      <div>
+                        <p className="font-medium text-secondary-200 mb-1">Email</p>
+                        <a 
+                          href={`mailto:${contactInfo.email}`} 
+                          className="text-white hover:text-accent-highlight transition-colors group-hover:underline"
+                        >
+                          {contactInfo.email}
+                        </a>
+                      </div>
+                    </motion.div>
+                    
+                    <motion.div 
+                      className="flex items-start group"
+                      variants={fadeIn}
+                      custom={0.2}
+                    >
+                      <div className="flex-shrink-0 h-12 w-12 rounded-full bg-white/10 group-hover:bg-accent-gradient-start/20 flex items-center justify-center mr-4 transition-colors">
+                        <Phone className="text-white" size={20} />
+                      </div>
+                      <div>
+                        <p className="font-medium text-secondary-200 mb-1">Phone</p>
+                        <a 
+                          href={`tel:${contactInfo.phone.replace(/[^0-9+]/g, '')}`} 
+                          className="text-white hover:text-accent-highlight transition-colors group-hover:underline"
+                        >
+                          {contactInfo.phone}
+                        </a>
+                      </div>
+                    </motion.div>
+                    
+                    <motion.div 
+                      className="flex items-start group"
+                      variants={fadeIn}
+                      custom={0.3}
+                    >
+                      <div className="flex-shrink-0 h-12 w-12 rounded-full bg-white/10 group-hover:bg-accent-gradient-start/20 flex items-center justify-center mr-4 transition-colors">
+                        <MapPin className="text-white" size={20} />
+                      </div>
+                      <div>
+                        <p className="font-medium text-secondary-200 mb-1">Location</p>
+                        <p className="text-white">{contactInfo.location}</p>
+                      </div>
+                    </motion.div>
+                  </div>
+                  
+                  <div className="pt-6 border-t border-white/20">
+                    <p className="font-medium text-white mb-4">Connect with me</p>
+                    <div className="flex space-x-4">
+                      <a 
+                        href="https://linkedin.com" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="h-10 w-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-accent-gradient-start hover:text-white transition-colors"
+                        aria-label="LinkedIn"
+                      >
+                        <Linkedin size={18} />
+                      </a>
+                      <a 
+                        href="https://twitter.com" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="h-10 w-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-accent-gradient-end hover:text-white transition-colors"
+                        aria-label="Twitter"
+                      >
+                        <Twitter size={18} />
+                      </a>
+                      <a 
+                        href="https://medium.com" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="h-10 w-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-accent-highlight hover:text-midnight transition-colors"
+                        aria-label="Medium"
+                      >
+                        <MessageSquare size={18} />
+                      </a>
+                      <a 
+                        href="https://github.com" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="h-10 w-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-white hover:text-midnight transition-colors"
+                        aria-label="GitHub"
+                      >
+                        <Github size={18} />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="mt-8 bg-secondary-50 p-6 rounded-lg border border-secondary-200 hidden lg:block">
+                <h4 className="text-lg font-bold mb-3 flex items-center">
+                  <ArrowUpRight className="h-4 w-4 mr-2" />
+                  Quick Response Guarantee
+                </h4>
+                <p className="text-secondary-600">
+                  I respond to all inquiries within 24 hours during business days. Your message is important to me.
+                </p>
+              </div>
+            </motion.div>
+            
+            <motion.div
+              className="lg:col-span-7"
+              variants={fadeInUp}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-100px" }}
+            >
+              <Form {...form}>
+                <form onSubmit={form.handleSubmit(onSubmit)} className="bg-white rounded-xl p-8 shadow-lg border border-secondary-100">
+                  <h3 className="text-2xl font-bold text-midnight mb-6">Send a Message</h3>
+                  
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <FormField
+                      control={form.control}
+                      name="name"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel className="text-midnight font-medium">Name</FormLabel>
+                          <FormControl>
+                            <Input 
+                              placeholder="Your name" 
+                              {...field} 
+                              className="border-secondary-200 focus:border-accent-gradient-start" 
+                            />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+                    
+                    <FormField
+                      control={form.control}
+                      name="email"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel className="text-midnight font-medium">Email</FormLabel>
+                          <FormControl>
+                            <Input 
+                              placeholder="Your email" 
+                              {...field} 
+                              className="border-secondary-200 focus:border-accent-gradient-start" 
+                            />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+                  </div>
+                  
                   <FormField
                     control={form.control}
-                    name="name"
+                    name="subject"
                     render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Name</FormLabel>
+                      <FormItem className="mb-6">
+                        <FormLabel className="text-midnight font-medium">Subject</FormLabel>
                         <FormControl>
-                          <Input placeholder="Your name" {...field} />
+                          <Input 
+                            placeholder="Message subject" 
+                            {...field} 
+                            className="border-secondary-200 focus:border-accent-gradient-start" 
+                          />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -200,71 +284,42 @@ export default function ContactSection() {
                   
                   <FormField
                     control={form.control}
-                    name="email"
+                    name="message"
                     render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Email</FormLabel>
+                      <FormItem className="mb-6">
+                        <FormLabel className="text-midnight font-medium">Message</FormLabel>
                         <FormControl>
-                          <Input placeholder="Your email" {...field} />
+                          <Textarea 
+                            placeholder="Your message"
+                            className="resize-none min-h-[150px] border-secondary-200 focus:border-accent-gradient-start"
+                            {...field}
+                          />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
                     )}
                   />
-                </div>
-                
-                <FormField
-                  control={form.control}
-                  name="subject"
-                  render={({ field }) => (
-                    <FormItem className="mb-6">
-                      <FormLabel>Subject</FormLabel>
-                      <FormControl>
-                        <Input placeholder="Message subject" {...field} />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                
-                <FormField
-                  control={form.control}
-                  name="message"
-                  render={({ field }) => (
-                    <FormItem className="mb-6">
-                      <FormLabel>Message</FormLabel>
-                      <FormControl>
-                        <Textarea 
-                          placeholder="Your message"
-                          className="resize-none"
-                          rows={5}
-                          {...field}
-                        />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                
-                <Button 
-                  type="submit" 
-                  className="w-full"
-                  disabled={contactMutation.isPending}
-                >
-                  {contactMutation.isPending ? (
-                    <>
-                      <Loader2 className="mr-2 h-4 w-4 animate-spin" /> 
-                      Sending...
-                    </>
-                  ) : (
-                    <>
-                      Send Message <Layers className="ml-2 h-4 w-4" />
-                    </>
-                  )}
-                </Button>
-              </form>
-            </Form>
-          </motion.div>
+                  
+                  <Button 
+                    type="submit" 
+                    className="w-full bg-midnight hover:bg-midnight-800 text-white transition-colors group"
+                    disabled={contactMutation.isPending}
+                  >
+                    {contactMutation.isPending ? (
+                      <>
+                        <Loader2 className="mr-2 h-4 w-4 animate-spin" /> 
+                        Sending...
+                      </>
+                    ) : (
+                      <>
+                        Send Message <Send className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                      </>
+                    )}
+                  </Button>
+                </form>
+              </Form>
+            </motion.div>
+          </div>
         </div>
       </div>
     </section>
