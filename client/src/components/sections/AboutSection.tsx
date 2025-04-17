@@ -49,7 +49,7 @@ export default function AboutSection() {
               variants={fadeIn}
             >
               <img 
-                src="/attached_assets/FD1_6369.jpg" 
+                src={peteProfile} 
                 alt="Pete Helms - AI Expert" 
                 className="w-full h-full object-cover"
               />
