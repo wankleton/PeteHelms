@@ -254,7 +254,7 @@ export default function TestimonialsSection() {
               Client <span className="gradient-text font-bold">Success Stories</span>
             </motion.div>
           } 
-          description="Hear how business leaders are achieving transformative results through strategic AI adoption."
+          description="Real results from industry leaders using AI strategies."
           className="max-w-3xl"
         />
         

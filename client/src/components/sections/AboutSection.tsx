@@ -9,17 +9,17 @@ export default function AboutSection() {
     {
       icon: <BrainCircuit className="h-6 w-6 text-midnight" />,
       title: "AI Expertise",
-      description: "With over a decade in artificial intelligence, I've helped countless organizations implement AI solutions that deliver tangible business results."
+      description: "10+ years implementing AI solutions with measurable ROI across industries."
     },
     {
       icon: <ChartLine className="h-6 w-6 text-midnight" />,
       title: "Business Strategy",
-      description: "I combine deep technical knowledge with business acumen to craft strategies that position companies for sustainable growth and market leadership."
+      description: "Technical knowledge paired with business acumen to position companies for market leadership."
     },
     {
       icon: <Rocket className="h-6 w-6 text-midnight" />,
       title: "Tech Founder",
-      description: "Having founded and scaled technology companies, I understand the challenges of building products and teams that can compete in rapidly evolving markets."
+      description: "Founder experience building products and teams that succeed in competitive markets."
     }
   ];
 
@@ -32,7 +32,7 @@ export default function AboutSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading 
           title={<>About <span className="gradient-text">Pete Helms</span></>}
-          description="AI expert, business strategist, and tech founder with a passion for transformational technology."
+          description="AI expert, strategist, and founder driving business transformation."
         />
         
         <motion.div 
@@ -93,12 +93,9 @@ export default function AboutSection() {
             <div className="inline-flex items-center rounded-full bg-accent-highlight/20 px-3 py-1 text-sm font-medium text-midnight mb-6">
               <LightbulbIcon className="h-4 w-4 mr-1" /> My Philosophy
             </div>
-            <h3 className="text-2xl md:text-3xl font-bold mb-6">Strategic AI Implementation for Business Growth</h3>
-            <p className="text-secondary-600 mb-6 leading-relaxed">
-              I believe that the most effective AI strategies are built on a foundation of business understanding, technical expertise, and human-centered design. My process combines these elements to create solutions that are not only technically sound but also ethically responsible and commercially viable.
-            </p>
+            <h3 className="text-2xl md:text-3xl font-bold mb-6">AI That Delivers Real Results</h3>
             <p className="text-secondary-600 mb-8 leading-relaxed">
-              By focusing on the intersection of what's possible with what's practical, I help organizations navigate the complexity of AI adoption and emerge with a competitive advantage.
+              I create AI strategies that blend business insight, technical expertise, and human-centered design. My approach focuses on what's both possible and practical, helping companies gain competitive advantage while ensuring ethical implementation.
             </p>
             
             <div className="p-6 bg-midnight-50 rounded-xl border border-accent-highlight/30">
