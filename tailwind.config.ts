@@ -123,6 +123,34 @@ export default {
           "0%, 100%": { opacity: "1", transform: "scale(1)" },
           "50%": { opacity: "0.5", transform: "scale(0.9)" },
         },
+        blink: {
+          "0%, 100%": { opacity: "1" },
+          "50%": { opacity: "0" },
+        },
+        "float-subtle": {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-10px)" },
+        },
+        "spin-slow": {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
+        "slide-in-right": {
+          "0%": { transform: "translateX(100%)", opacity: "0" },
+          "100%": { transform: "translateX(0)", opacity: "1" },
+        },
+        "slide-in-left": {
+          "0%": { transform: "translateX(-100%)", opacity: "0" },
+          "100%": { transform: "translateX(0)", opacity: "1" },
+        },
+        "slide-in-bottom": {
+          "0%": { transform: "translateY(20px)", opacity: "0" },
+          "100%": { transform: "translateY(0)", opacity: "1" },
+        },
+        "text-reveal": {
+          "0%": { clipPath: "inset(0 100% 0 0)" },
+          "100%": { clipPath: "inset(0 0 0 0)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -131,14 +159,31 @@ export default {
         "gradient-y": "gradient-y 15s ease infinite",
         shimmer: "shimmer 8s ease-in-out infinite",
         pulse: "pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+        blink: "blink 1s step-end infinite",
+        "float-subtle": "float-subtle 4s ease-in-out infinite",
+        "spin-slow": "spin-slow 8s linear infinite",
+        "slide-in-right": "slide-in-right 0.5s ease-out",
+        "slide-in-left": "slide-in-left 0.5s ease-out",
+        "slide-in-bottom": "slide-in-bottom 0.5s ease-out",
+        "text-reveal": "text-reveal 1s cubic-bezier(0.77, 0, 0.175, 1)",
       },
       boxShadow: {
         glow: "0 0 15px 2px rgba(201, 214, 255, 0.5)",
+        "glow-accent": "0 0 20px 5px rgba(253, 185, 155, 0.4)",
+        "inner-glow": "inset 0 0 15px 0px rgba(201, 214, 255, 0.3)",
+        "card-hover": "0 10px 40px -15px rgba(0, 0, 0, 0.1)",
+        "3d": "0 10px 30px -10px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.05)",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "accent-gradient": "linear-gradient(to right, #FDB99B, #CF8BF3)",
         "data-grid": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cpath d='M100 0H0V100' fill='none' stroke='%23C9D6FF' stroke-opacity='0.1' stroke-width='1'/%3E%3C/svg%3E\")",
+        "noise-subtle": "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.1'/%3E%3C/svg%3E\")",
+        "circuit-pattern": "url(\"data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='none' stroke='%23C9D6FF' stroke-opacity='0.1' stroke-width='1' d='M10,90 L90,90 M10,10 L90,10 M10,50 L90,50 M50,10 L50,90 M30,10 L30,30 M70,10 L70,30 M30,70 L30,90 M70,70 L70,90'/%3E%3C/svg%3E\")",
+      },
+      screens: {
+        xs: "480px",
+        "3xl": "1920px",
       },
     },
   },
