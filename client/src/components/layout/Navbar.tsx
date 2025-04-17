@@ -5,6 +5,7 @@ import { Menu, X, ArrowRight, ChevronRight, Home, Users, Award, Calendar, Messag
 import { motion, AnimatePresence } from 'framer-motion';
 import { navigationItems } from '@/lib/constants';
 import { useIsMobile } from '@/hooks/use-mobile';
+import peteProfile from '@/assets/pete-profile.jpg';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -77,8 +78,12 @@ export default function Navbar() {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 z-20 relative">
-            <div className="w-8 h-8 rounded-full bg-gradient-to-r from-accent-gradient-start to-accent-gradient-end flex items-center justify-center text-white font-bold">
-              P
+            <div className="w-8 h-8 rounded-full overflow-hidden bg-gradient-to-r from-accent-gradient-start to-accent-gradient-end border-2 border-white dark:border-midnight-700">
+              <img 
+                src={peteProfile} 
+                alt="Pete Helms" 
+                className="w-full h-full object-cover"
+              />
             </div>
             <span className="text-xl font-display font-bold text-midnight dark:text-white tracking-tight">
               Pete Helms
