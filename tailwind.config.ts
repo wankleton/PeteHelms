@@ -7,9 +7,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Inter", ...fontFamily.sans],
+        sans: ["Poppins", ...fontFamily.sans],
         heading: ["Poppins", ...fontFamily.sans],
-        display: ["Playfair Display", ...fontFamily.serif],
+        display: ["Poppins", ...fontFamily.sans],
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -119,6 +119,10 @@ export default {
           "0%": { backgroundPosition: "-200% 0" },
           "100%": { backgroundPosition: "200% 0" },
         },
+        pulse: {
+          "0%, 100%": { opacity: 1, transform: "scale(1)" },
+          "50%": { opacity: 0.5, transform: "scale(0.9)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -126,6 +130,10 @@ export default {
         "gradient-x": "gradient-x 15s ease infinite",
         "gradient-y": "gradient-y 15s ease infinite",
         shimmer: "shimmer 8s ease-in-out infinite",
+        pulse: "pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+      },
+      boxShadow: {
+        glow: "0 0 15px 2px rgba(201, 214, 255, 0.5)",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
