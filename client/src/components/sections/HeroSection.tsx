@@ -201,101 +201,109 @@ export default function HeroSection() {
       name: "Microsoft",
       logo: (
         <svg className="h-6" viewBox="0 0 23 23" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0 0h10.931v10.931H0zM12.069 0H23v10.931H12.069zM0 12.069h10.931V23H0zM12.069 12.069H23V23H12.069z"/>
+          <path d="M0 0H10.9524V10.9524H0V0Z"/>
+          <path d="M12.0476 0H23V10.9524H12.0476V0Z"/>
+          <path d="M0 12.0476H10.9524V23H0V12.0476Z"/>
+          <path d="M12.0476 12.0476H23V23H12.0476V12.0476Z"/>
+        </svg>
+      ),
+    },
+    {
+      name: "IBM",
+      logo: (
+        <svg className="h-6" viewBox="0 0 34 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0.604 12.723H33.368V13.927H0.604V12.723ZM0.604 0H33.368V1.204H0.604V0ZM8.013 6.361V6.365H16.626V7.565H8.013V7.569C7.616 7.569 7.293 7.241 7.293 6.837C7.293 6.434 7.616 6.106 8.013 6.106V6.11H8.013V6.361ZM25.379 7.569H16.626V6.365H25.379C25.776 6.365 26.099 6.694 26.099 7.097C26.099 7.501 25.776 7.569 25.379 7.569ZM8.013 9.979V9.983H16.626V11.183H8.013V11.187C7.616 11.187 7.293 10.859 7.293 10.456C7.293 10.052 7.616 9.724 8.013 9.724V9.728H8.013V9.979ZM25.379 11.187H16.626V9.983H25.379C25.776 9.983 26.099 10.312 26.099 10.715C26.099 11.119 25.776 11.187 25.379 11.187ZM8.013 2.74V2.744H16.626V3.944H8.013V3.948C7.616 3.948 7.293 3.62 7.293 3.217C7.293 2.813 7.616 2.485 8.013 2.485V2.489H8.013V2.74ZM25.379 3.948H16.626V2.744H25.379C25.776 2.744 26.099 3.072 26.099 3.476C26.099 3.88 25.776 3.948 25.379 3.948ZM30.39 7.569V6.365H31.829C32.226 6.365 32.548 6.694 32.548 7.097C32.548 7.501 32.226 7.569 31.829 7.569H30.39ZM30.39 11.187V9.983H31.829C32.226 9.983 32.548 10.312 32.548 10.715C32.548 11.119 32.226 11.187 31.829 11.187H30.39ZM30.39 3.948V2.744H31.829C32.226 2.744 32.548 3.072 32.548 3.476C32.548 3.88 32.226 3.948 31.829 3.948H30.39ZM3.58 7.569V6.365H2.142C1.744 6.365 1.422 6.694 1.422 7.097C1.422 7.501 1.744 7.569 2.142 7.569H3.58ZM3.58 11.187V9.983H2.142C1.744 9.983 1.422 10.312 1.422 10.715C1.422 11.119 1.744 11.187 2.142 11.187H3.58ZM3.58 3.948V2.744H2.142C1.744 2.744 1.422 3.072 1.422 3.476C1.422 3.88 1.744 3.948 2.142 3.948H3.58ZM22.36 7.569V6.365H27.818C28.215 6.365 28.538 6.694 28.538 7.097C28.538 7.501 28.215 7.569 27.818 7.569H22.36ZM22.36 11.187V9.983H27.818C28.215 9.983 28.538 10.312 28.538 10.715C28.538 11.119 28.215 11.187 27.818 11.187H22.36ZM22.36 3.948V2.744H27.818C28.215 2.744 28.538 3.072 28.538 3.476C28.538 3.88 28.215 3.948 27.818 3.948H22.36ZM5.553 7.569V6.365H10.872C11.27 6.365 11.592 6.694 11.592 7.097C11.592 7.501 11.27 7.569 10.872 7.569H5.553ZM5.553 11.187V9.983H10.872C11.27 9.983 11.592 10.312 11.592 10.715C11.592 11.119 11.27 11.187 10.872 11.187H5.553ZM5.553 3.948V2.744H10.872C11.27 2.744 11.592 3.072 11.592 3.476C11.592 3.88 11.27 3.948 10.872 3.948H5.553Z"/>
         </svg>
       ),
     },
     {
       name: "Google",
       logo: (
-        <svg className="h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M23.766 12.2764C23.766 11.4607 23.6999 10.6406 23.5588 9.83807H12.24V14.4591H18.7217C18.4528 15.9494 17.5885 17.2678 16.323 18.1056V21.1039H20.19C22.4608 19.0139 23.766 15.9274 23.766 12.2764Z" fill="#4285F4"/>
-          <path d="M12.2401 24.0008C15.4766 24.0008 18.2059 22.9382 20.1945 21.1039L16.3276 18.1055C15.2517 18.8375 13.8627 19.252 12.2445 19.252C9.11388 19.252 6.45946 17.1399 5.50705 14.3003H1.5166V17.3912C3.55371 21.4434 7.7029 24.0008 12.2401 24.0008Z" fill="#34A853"/>
-          <path d="M5.50253 14.3003C4.99987 12.8099 4.99987 11.1975 5.50253 9.70716V6.61621H1.51649C-0.18551 10.0056 -0.18551 14.0017 1.51649 17.3912L5.50253 14.3003Z" fill="#FBBC04"/>
-          <path d="M12.2401 4.74966C13.9509 4.7232 15.6044 5.36697 16.8434 6.54867L20.2695 3.12262C18.1001 1.0855 15.2208 -0.034466 12.2401 0.000808666C7.7029 0.000808666 3.55371 2.55822 1.5166 6.61621L5.50264 9.70716C6.45064 6.86173 9.10947 4.74966 12.2401 4.74966Z" fill="#EA4335"/>
-        </svg>
-      ),
-    },
-    {
-      name: "Roam",
-      logo: (
         <svg className="h-6" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12.5 2.5a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1zm-7 2a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1zm14 0a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1zm-3 3a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1zm-8 0a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1zm4 0a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1zm0 2c-2.5 0-4 3-4 3h8s-1.5-3-4-3zm-7 3a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1zm14 0a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1zm-7 1a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1zm-3 3a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1zm6 0a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1z"/>
+          <path d="M22.5 12.2331C22.5 11.3698 22.4295 10.7399 22.2804 10.0851H12.2027V13.983H18.127C18.0096 14.9514 17.3522 16.4097 15.9668 17.3893L15.9496 17.4997L19.0704 19.8724L19.2882 19.894C21.2435 17.9366 22.5 15.3059 22.5 12.2331Z"/>
+          <path d="M12.2027 22.5C15.1872 22.5 17.7076 21.5826 19.2882 19.8943L15.9668 17.3893C15.0386 18.0501 13.8003 18.4932 12.2027 18.4932C9.27093 18.4932 6.7802 16.578 5.90406 13.9003L5.79819 13.9099L2.5344 16.3696L2.5 16.4585C4.0707 20.1144 7.8582 22.5 12.2027 22.5Z"/>
+          <path d="M5.90391 13.9003C5.67063 13.2455 5.51588 12.5376 5.51588 11.8C5.51588 11.0627 5.67063 10.3548 5.90391 9.69971L5.90391 9.58189L2.61379 7.07995L2.50071 7.14124C1.8767 8.58301 1.50156 10.1549 1.50156 11.8C1.50156 13.4451 1.8767 15.0173 2.50071 16.4585L5.90391 13.9003Z"/>
+          <path d="M12.2027 5.10682C14.1269 5.10682 15.4673 6.04027 16.2236 6.75182L19.1841 3.86491C17.6996 2.50697 15.1872 1.5 12.2027 1.5C7.8582 1.5 4.0707 3.88531 2.5 7.54125L5.90427 9.9997C6.7802 7.32202 9.27093 5.10682 12.2027 5.10682Z"/>
         </svg>
       ),
     },
   ];
 
+  useEffect(() => {
+    // Scroll down animation for chevron
+    animate(
+      scope.current, 
+      { y: [0, 15, 0] }, 
+      { duration: 2, repeat: Infinity, ease: "easeInOut" }
+    );
+  }, []);
+
   return (
     <section 
       id="home" 
-      className="min-h-screen pt-24 md:pt-32 pb-16 md:pb-24 overflow-hidden relative flex items-center"
+      className="relative pt-24 md:pt-32 pb-16 overflow-hidden"
       onMouseMove={handleMouseMove}
-      ref={scope}
     >
-      {/* Background patterns and effects */}
-      <div className="absolute inset-0 pointer-events-none">
-        {/* Background pattern */}
-        <div className="absolute top-0 right-0 w-full h-full -z-10 bg-data-grid opacity-5"></div>
+      <div className="container mx-auto px-4">
+        {/* 3D Floating brand logos - desktop only */}
+        {!isMobile && (
+          <>
+            {companyLogos.map((company, index) => (
+              <motion.div
+                key={company.name}
+                className="absolute text-secondary-400 dark:text-secondary-600 hidden xl:block"
+                initial={{ y: 0 }}
+                animate={{ 
+                  y: [0, -10, 0],
+                  opacity: [0.5, 0.7, 0.5],
+                }}
+                transition={{ 
+                  repeat: Infinity, 
+                  duration: 3 + index, 
+                  delay: index * 0.5,
+                  ease: "easeInOut"
+                }}
+                style={{
+                  left: `${10 + index * 20}%`,
+                  top: `${20 + (index % 3) * 15}%`,
+                  filter: "blur(1px)",
+                  transform: "scale(0.9)",
+                  zIndex: 0,
+                }}
+              >
+                {company.logo}
+              </motion.div>
+            ))}
+          </>
+        )}
         
-        {/* Gradient blobs */}
-        <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-accent-gradient-start/10 blur-3xl rounded-full"></div>
-        <div className="absolute bottom-0 left-0 w-1/3 h-1/3 bg-accent-gradient-end/10 blur-3xl rounded-full"></div>
-        
-        {/* Particles effect - animated dots */}
-        <div className="hidden md:block">
-          {Array.from({ length: 10 }).map((_, i) => (
-            <motion.div
-              key={i}
-              className="absolute w-1.5 h-1.5 bg-accent-highlight/50 rounded-full"
-              initial={{ 
-                x: Math.random() * 100 + 10, 
-                y: Math.random() * 100 + 10,
-                opacity: Math.random() * 0.5 + 0.3
-              }}
-              animate={{ 
-                y: [null, Math.random() * 100 + 200, Math.random() * 100 + 10], 
-                opacity: [null, Math.random() * 0.5 + 0.3, Math.random() * 0.5 + 0.3]
-              }}
-              transition={{ 
-                repeat: Infinity, 
-                duration: Math.random() * 10 + 20,
-                ease: "linear"
-              }}
-            />
-          ))}
-        </div>
-      </div>
-      
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
-          {/* Left content */}
-          <motion.div 
-            className="lg:w-1/2 space-y-6 md:space-y-8 order-2 lg:order-1 mt-8 lg:mt-0 z-10"
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          {/* Left Column - Text Content */}
+          <motion.div
             variants={container}
             initial="hidden"
             animate="show"
+            className="z-10"
           >
             {/* Badge */}
-            <motion.div
-              className="inline-flex items-center rounded-full bg-accent-highlight/10 px-3 py-1.5 gap-1.5 backdrop-blur-sm border border-accent-highlight/20"
+            <motion.div 
+              className="inline-flex items-center rounded-full bg-accent-highlight/20 px-3 py-1 text-sm font-medium text-accent-highlight dark:text-white mb-6"
               variants={item}
             >
-              <Star className="h-3.5 w-3.5 text-accent-highlight fill-accent-highlight" />
-              <span className="text-xs font-semibold tracking-wide text-midnight dark:text-white">AI STRATEGIST</span>
+              <Star size={14} className="mr-1" />
+              Top-Rated AI Strategy Expert
             </motion.div>
             
-            {/* Heading */}
+            {/* Headline with animated underline */}
             <motion.h1 
-              className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.1] font-display"
+              className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 relative"
               variants={item}
             >
-              Dominate Markets <span className="md:hidden">With</span>
-              <span className="hidden md:inline">Through</span><br className="hidden md:block" /> 
-              <span className="relative">
-                <span className="relative z-10 gradient-text">AI Strategy</span>
-                <motion.span 
-                  className="absolute bottom-1 md:bottom-2 left-0 h-3 md:h-4 w-full bg-accent-highlight/20 -z-10 rounded-full"
+              <span className="block">AI STRATEGIST</span>
+              <span className="text-2xl md:text-3xl lg:text-4xl text-secondary-700 dark:text-secondary-300 block font-light mt-3 mb-2">
+                Pete Helms
+                <motion.div 
+                  className="absolute h-[3px] bg-gradient-to-r from-accent-gradient-start to-accent-gradient-end w-0 origin-left mt-1"
                   initial={{ scaleX: 0 }}
                   animate={{ scaleX: 1 }}
                   transition={{ delay: 1, duration: 0.5 }}
@@ -348,152 +356,121 @@ export default function HeroSection() {
                     transition={{
                       repeat: Infinity,
                       duration: 5,
-                      ease: "linear"
                     }}
                   />
                   
-                  Book Strategy Session
-                  <ArrowRight className="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform" />
+                  Book a Strategy Session
+                  <ArrowRight className="ml-2 h-5 w-5 transform group-hover:translate-x-1 transition-transform" />
                 </a>
               </Button>
               
               {/* Secondary CTA */}
               <Button 
                 asChild 
-                variant="outline" 
-                size="lg"
-                className="border-2 border-secondary-200 dark:border-secondary-700 text-midnight dark:text-white hover:border-midnight/70 dark:hover:border-white/70 transition-colors"
+                size="lg" 
+                variant="outline"
+                className="border-secondary-300 dark:border-secondary-600 hover:bg-secondary-50 dark:hover:bg-secondary-800/50 text-midnight dark:text-white group transition-all duration-300"
               >
-                <a href="#services" onClick={scrollToSection('services')} className="flex items-center">
-                  Learn More
-                  <ChevronDown className="ml-2 h-4 w-4 group-hover:animate-bounce" />
+                <a 
+                  href="#services" 
+                  onClick={scrollToSection('services')}
+                  className="flex items-center"
+                >
+                  View Services
+                  <ExternalLink className="ml-1 h-4 w-4 opacity-70 group-hover:opacity-100" />
                 </a>
               </Button>
             </motion.div>
             
-            {/* Trusted by logos */}
+            {/* Scroll indicator */}
             <motion.div 
-              className="pt-4"
+              className="hidden md:flex items-center gap-2 mt-16 text-secondary-500 dark:text-secondary-300"
               variants={item}
             >
-              <p className="text-xs uppercase tracking-wide font-semibold mb-5 text-secondary-500 dark:text-secondary-400">TRUSTED BY INNOVATIVE COMPANIES</p>
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 md:gap-4">
-                {companyLogos.map((company, i) => (
-                  <motion.div 
-                    key={company.name}
-                    className="h-14 px-4 bg-white dark:bg-secondary-900/80 backdrop-blur-sm shadow-sm border border-secondary-200 dark:border-secondary-700 rounded-xl flex items-center justify-center text-secondary-800 dark:text-secondary-300 hover:text-midnight hover:dark:text-white hover:shadow-md transition-all duration-300"
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ 
-                      opacity: 1, 
-                      y: 0,
-                      transition: { 
-                        delay: 0.7 + (i * 0.1), 
-                        type: "spring",
-                        stiffness: 100
-                      } 
-                    }}
-                    whileHover={{ 
-                      y: -5, 
-                      boxShadow: "0 10px 25px -5px rgba(0,0,0,0.1)" 
-                    }}
-                  >
-                    {company.logo}
-                  </motion.div>
-                ))}
-              </div>
+              <motion.div 
+                ref={scope}
+                className="flex items-center justify-center w-8 h-8 rounded-full border border-secondary-200 dark:border-secondary-700"
+              >
+                <ChevronDown size={16} />
+              </motion.div>
+              <span className="text-xs font-medium uppercase tracking-wider">Scroll to explore</span>
             </motion.div>
           </motion.div>
           
-          {/* Right content - Profile Image */}
+          {/* Right Column - Image and Badges */}
           <motion.div 
-            className="lg:w-1/2 relative order-1 lg:order-2 min-h-[300px] sm:min-h-[400px] z-0"
+            className="relative flex justify-center lg:justify-end"
             variants={fadeInScale}
             initial="hidden"
             animate="show"
           >
-            {/* Profile image with 3D tilt effect */}
-            {!isMobile ? (
+            {/* Feature Badges */}
+            <FeatureBadge 
+              icon={<Star size={12} />}
+              text="AI Expertise"
+              position="top-4 -left-8"
+              delay={0.5}
+            />
+            
+            <FeatureBadge 
+              icon={<LightbulbIcon size={12} />}
+              text="Strategic Insight"
+              position="top-24 right-0"
+              delay={0.7}
+            />
+            
+            <FeatureBadge 
+              icon={<MousePointer2 size={12} />}
+              text="Book Now"
+              position="bottom-16 -right-6"
+              delay={0.9}
+            />
+            
+            {/* Profile Image with 3D tilt effect on desktop */}
+            <motion.div 
+              className="relative z-10 w-[280px] h-[380px] md:w-[320px] md:h-[420px] lg:w-[380px] lg:h-[500px]"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+            >
+              {!isMobile ? (
               <TiltCard>
                 <img 
                   src={peteProfile} 
                   alt="Pete Helms - AI Strategy Expert" 
-                  className="w-full h-full object-cover object-center"
+                  className="w-full h-full object-cover"
+                  style={{ objectPosition: "50% 15%" }}
                   loading="eager"
                 />
                 
-                {/* Gradient overlay */}
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-midnight/80"></div>
+                {/* Dark gradient overlay */}
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-midnight/40 mix-blend-multiply" />
                 
-                {/* Image caption */}
-                <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-3">
-                    <div>
-                      <h2 className="text-white font-bold text-lg md:text-xl">Pete Helms</h2>
-                      <p className="text-white/90 text-sm">AI & Business Transformation Expert</p>
-                    </div>
-                    <motion.a 
-                      href="#book" 
-                      onClick={scrollToSection('book')}
-                      className="group flex items-center gap-1 text-sm text-white font-medium bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-full px-3 py-1.5 transition-colors duration-300"
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                    >
-                      Book a Call <ExternalLink className="h-3.5 w-3.5 ml-0.5 group-hover:translate-x-0.5 transition-transform" />
-                    </motion.a>
-                  </div>
-                </div>
+                {/* Accent border */}
+                <div className="absolute inset-0 border-2 border-accent-highlight/30 rounded-2xl" />
               </TiltCard>
-            ) : (
-              // Mobile version without tilt effect
+              ) : (
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img 
                   src={peteProfile} 
                   alt="Pete Helms - AI Strategy Expert" 
-                  className="w-full h-full object-cover object-center"
+                  className="w-full h-full object-cover"
+                  style={{ objectPosition: "50% 15%" }}
                   loading="eager"
                 />
                 
-                {/* Gradient overlay */}
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-midnight/80"></div>
+                {/* Dark gradient overlay */}
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-midnight/40 mix-blend-multiply" />
                 
-                {/* Image caption */}
-                <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <div className="flex flex-col items-start justify-between gap-2">
-                    <div>
-                      <h2 className="text-white font-bold text-lg">Pete Helms</h2>
-                      <p className="text-white/90 text-sm">AI & Business Transformation Expert</p>
-                    </div>
-                    <a 
-                      href="#book" 
-                      onClick={scrollToSection('book')}
-                      className="flex items-center gap-1 text-sm text-white font-medium bg-white/20 backdrop-blur-sm rounded-full px-3 py-1.5"
-                    >
-                      Book a Call <ExternalLink className="h-3.5 w-3.5 ml-0.5" />
-                    </a>
-                  </div>
-                </div>
+                {/* Accent border */}
+                <div className="absolute inset-0 border-2 border-accent-highlight/30 rounded-2xl" />
               </div>
-            )}
-            
-            {/* Feature badges - positioned around the image */}
-            <FeatureBadge 
-              icon={<Star className="h-3 w-3" />}
-              text="10+ Years Experience"
-              position="top-0 right-1/4 transform -translate-y-1/2"
-              delay={0.9}
-            />
-            <FeatureBadge 
-              icon={<LightbulbIcon className="h-3 w-3" />}
-              text="AI Strategy Expert"
-              position="bottom-1/3 -right-2 transform translate-x-1/2"
-              delay={1.1}
-            />
-            <FeatureBadge 
-              icon={<MousePointer2 className="h-3 w-3" />}
-              text="Click to Learn More"
-              position="bottom-0 left-1/4 transform translate-y-1/2"
-              delay={1.3}
-            />
+              )}
+              
+              {/* Decorative elements */}
+              <div className="absolute -top-6 -right-6 w-1/2 h-1/3 border-2 border-accent-highlight/30 rounded-xl -z-10" />
+              <div className="absolute -bottom-6 -left-6 w-1/2 h-1/3 border-2 border-accent-highlight/30 rounded-xl -z-10" />
+            </motion.div>
           </motion.div>
         </div>
       </div>
