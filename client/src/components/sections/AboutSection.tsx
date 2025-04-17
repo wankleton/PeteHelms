@@ -52,7 +52,7 @@ export default function AboutSection() {
                 src={peteProfile} 
                 alt="Pete Helms - AI Expert" 
                 className="w-full h-full object-cover"
-                style={{ objectPosition: "50% 15%" }}
+                style={{ objectPosition: "50% 30%" }}
               />
               {/* Subtle overlay */}
               <div className="absolute inset-0 bg-gradient-to-b from-transparent to-midnight/30 mix-blend-multiply"></div>

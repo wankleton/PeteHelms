@@ -83,7 +83,7 @@ export default function Navbar() {
                 src={peteProfile} 
                 alt="Pete Helms" 
                 className="w-full h-full object-cover object-[center_top]"
-                style={{ objectPosition: "50% 15%" }}
+                style={{ objectPosition: "50% 30%" }}
               />
             </div>
             <span className="text-xl font-display font-bold text-midnight dark:text-white tracking-tight">

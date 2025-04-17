@@ -439,7 +439,7 @@ export default function HeroSection() {
                   src={peteProfile} 
                   alt="Pete Helms - AI Strategy Expert" 
                   className="w-full h-full object-cover"
-                  style={{ objectPosition: "50% 15%" }}
+                  style={{ objectPosition: "50% 30%" }}
                   loading="eager"
                 />
                 
@@ -455,7 +455,7 @@ export default function HeroSection() {
                   src={peteProfile} 
                   alt="Pete Helms - AI Strategy Expert" 
                   className="w-full h-full object-cover"
-                  style={{ objectPosition: "50% 15%" }}
+                  style={{ objectPosition: "50% 30%" }}
                   loading="eager"
                 />
                 
