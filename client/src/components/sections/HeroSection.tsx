@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { motion, useAnimate, useMotionValue, useTransform } from "framer-motion";
 import { ArrowRight, ChevronDown, Star, ExternalLink, MousePointer2, LightbulbIcon } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
+import peteProfile from "@/assets/pete-profile.jpg";
 import { useIsMobile } from "@/hooks/use-mobile";
 
 // Type animation component for dynamic text
@@ -414,7 +415,7 @@ export default function HeroSection() {
             {!isMobile ? (
               <TiltCard>
                 <img 
-                  src="/attached_assets/FD1_6369.jpg" 
+                  src={peteProfile} 
                   alt="Pete Helms - AI Strategy Expert" 
                   className="w-full h-full object-cover"
                   loading="eager"
@@ -446,7 +447,7 @@ export default function HeroSection() {
               // Mobile version without tilt effect
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img 
-                  src="/attached_assets/FD1_6369.jpg" 
+                  src={peteProfile} 
                   alt="Pete Helms - AI Strategy Expert" 
                   className="w-full h-full object-cover"
                   loading="eager"
