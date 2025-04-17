@@ -438,8 +438,8 @@ export default function HeroSection() {
                 <img 
                   src={peteProfile} 
                   alt="Pete Helms - AI Strategy Expert" 
-                  className="w-full h-full object-cover"
-                  className="object-center"
+                  className="w-full h-full object-cover object-center"
+                  
                   loading="eager"
                 />
                 
@@ -454,8 +454,8 @@ export default function HeroSection() {
                 <img 
                   src={peteProfile} 
                   alt="Pete Helms - AI Strategy Expert" 
-                  className="w-full h-full object-cover"
-                  className="object-center"
+                  className="w-full h-full object-cover object-center"
+                  
                   loading="eager"
                 />
                 
