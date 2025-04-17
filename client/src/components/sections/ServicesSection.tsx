@@ -140,7 +140,7 @@ const ServiceCard = ({
             `}
             onClick={onClick}
           >
-            Explore Solutions
+            Learn More
             <ExternalLink className="ml-1.5 h-3.5 w-3.5 transition-transform duration-300 group-hover/btn:translate-x-1" />
           </Button>
         </div>
@@ -205,7 +205,7 @@ export default function ServicesSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <SectionHeading 
           title={<>AI <span className="gradient-text font-bold">Services</span></>}
-          description="Proven solutions that deliver 10x ROI. Pete's methodologies have generated millions for market leaders."
+          description="Solutions that deliver 10x ROI for market leaders."
           className="max-w-3xl"
         />
         
@@ -247,8 +247,8 @@ export default function ServicesSection() {
             <div className="relative z-10">
               <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
                 <div className="max-w-lg">
-                  <h3 className="text-2xl md:text-3xl font-bold mb-4">Ready for AI that delivers results?</h3>
-                  <p className="text-secondary-200 mb-6 md:mb-0">Book a strategy session to transform your business.</p>
+                  <h3 className="text-2xl md:text-3xl font-bold mb-4">Ready for results-driven AI?</h3>
+                  <p className="text-secondary-200 mb-6 md:mb-0">Transform your business. Book now.</p>
                 </div>
                 
                 <Button

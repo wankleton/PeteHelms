@@ -13,7 +13,7 @@ export default function ProcessSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <SectionHeading 
           title={<>My Proven <span className="gradient-text">Process</span></>}
-          description="I follow a structured approach to help businesses navigate their AI journey, from initial assessment to implementation and beyond."
+          description="A structured approach from assessment to implementation."
           centered={false}
           className="lg:max-w-lg mb-12"
         />
@@ -82,7 +82,7 @@ export default function ProcessSection() {
               
               <div className="mt-6 p-4 bg-secondary-50 border border-secondary-200 rounded-lg">
                 <p className="text-sm text-secondary-600 italic">
-                  "Pete's structured approach brought clarity to our AI initiatives and helped us achieve measurable results in record time."
+                  "Pete's structured approach brought clarity and measurable results in record time."
                 </p>
                 <p className="text-sm font-medium mt-2">— Client Testimonial</p>
               </div>

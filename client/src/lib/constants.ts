@@ -22,12 +22,12 @@ export const services = [
     id: "ai-strategy",
     icon: LightbulbIcon,
     title: "AI Strategy Consulting",
-    description: "Develop a comprehensive AI roadmap aligned with your business objectives. Identify opportunities, prioritize initiatives, and create an implementation plan.",
+    description: "Develop an AI roadmap aligned with business goals. Identify priorities and create implementation plans.",
     features: [
-      "Opportunity assessment and prioritization",
-      "ROI analysis and business case development",
-      "Technology selection and vendor evaluation",
-      "Risk assessment and mitigation strategies"
+      "Opportunity assessment",
+      "ROI analysis",
+      "Technology selection",
+      "Risk mitigation"
     ]
   },
   {
@@ -96,42 +96,42 @@ export const services = [
 export const processSteps = [
   {
     title: "Discovery & Assessment",
-    description: "Understand your business objectives, current capabilities, and opportunities for AI implementation."
+    description: "Analyze business objectives and AI opportunities."
   },
   {
     title: "Strategy Development",
-    description: "Create a roadmap aligning AI initiatives with business goals, including resource planning and ROI projections."
+    description: "Create AI roadmap with resource planning and ROI projections."
   },
   {
     title: "Implementation Planning",
-    description: "Define the technical approach, data requirements, and organizational changes needed for success."
+    description: "Define technical approach and organizational requirements."
   },
   {
     title: "Execution Support",
-    description: "Provide ongoing guidance during implementation, addressing challenges and ensuring alignment with strategy."
+    description: "Provide guidance during implementation, ensuring strategic alignment."
   },
   {
     title: "Measurement & Refinement",
-    description: "Evaluate outcomes against objectives, capture learnings, and refine the approach for continuous improvement."
+    description: "Evaluate outcomes and refine for continuous improvement."
   }
 ];
 
 // Testimonials
 export const testimonials = [
   {
-    quote: "Pete's strategic guidance helped us navigate the complexities of AI adoption. His approach is both visionary and practical, resulting in tangible business outcomes.",
+    quote: "Pete's guidance helped us navigate AI adoption with a practical approach that delivered tangible business outcomes.",
     name: "Michael Roberts",
     title: "CTO",
     company: "TechInnovate"
   },
   {
-    quote: "Working with Pete has transformed how we approach AI. His ability to translate complex technical concepts into business value is exceptional.",
+    quote: "Pete transforms complex AI concepts into exceptional business value.",
     name: "Sarah Johnson",
     title: "CEO",
     company: "DataDriven Inc."
   },
   {
-    quote: "Pete's strategic insights helped us prioritize our AI initiatives and focus on those with the highest ROI. His guidance was invaluable in our digital transformation journey.",
+    quote: "His strategic insights helped us prioritize AI initiatives with the highest ROI for our transformation.",
     name: "David Chen",
     title: "COO",
     company: "Global Solutions"
@@ -142,5 +142,5 @@ export const testimonials = [
 export const contactInfo = {
   email: "hello@petehelms.com",
   phone: "+1 (555) 123-4567",
-  location: "San Francisco, CA (Available for remote consultation worldwide)"
+  location: "San Francisco, CA (Remote worldwide)"
 };
