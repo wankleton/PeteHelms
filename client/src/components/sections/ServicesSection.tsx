@@ -204,8 +204,8 @@ export default function ServicesSection() {
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <SectionHeading 
-          title={<>Services & <span className="gradient-text font-bold">Expertise</span></>}
-          description="Strategic AI solutions tailored to transform your business, drive growth, and create sustainable competitive advantages."
+          title={<>AI <span className="gradient-text font-bold">Services</span></>}
+          description="Proven solutions that deliver 10x ROI. Pete's methodologies have generated millions for market leaders."
           className="max-w-3xl"
         />
         
@@ -247,8 +247,8 @@ export default function ServicesSection() {
             <div className="relative z-10">
               <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
                 <div className="max-w-lg">
-                  <h3 className="text-2xl md:text-3xl font-bold mb-4">Ready to explore AI solutions for your business?</h3>
-                  <p className="text-secondary-200 mb-6 md:mb-0">Book a strategy session to discuss your unique challenges and opportunities.</p>
+                  <h3 className="text-2xl md:text-3xl font-bold mb-4">Ready for AI that delivers results?</h3>
+                  <p className="text-secondary-200 mb-6 md:mb-0">Book a strategy session to transform your business.</p>
                 </div>
                 
                 <Button
@@ -256,7 +256,7 @@ export default function ServicesSection() {
                   className="whitespace-nowrap bg-white text-midnight hover:bg-accent-highlight transition-colors duration-300 shadow-lg font-medium group"
                   onClick={scrollToBooking}
                 >
-                  Schedule a Consultation
+                  Book Now
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Button>
               </div>

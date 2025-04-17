@@ -282,7 +282,7 @@ export default function HeroSection() {
               variants={item}
             >
               <Star className="h-3.5 w-3.5 text-accent-highlight fill-accent-highlight" />
-              <span className="text-xs font-semibold tracking-wide text-midnight dark:text-white">ELITE AI STRATEGIST & TECH VISIONARY</span>
+              <span className="text-xs font-semibold tracking-wide text-midnight dark:text-white">AI STRATEGIST</span>
             </motion.div>
             
             {/* Heading */}
@@ -290,10 +290,10 @@ export default function HeroSection() {
               className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.1] font-display"
               variants={item}
             >
-              Dominate Your Industry <span className="md:hidden">With</span>
-              <span className="hidden md:inline">Through</span><br className="hidden md:block" /> Strategic{" "}
+              Dominate Markets <span className="md:hidden">With</span>
+              <span className="hidden md:inline">Through</span><br className="hidden md:block" /> 
               <span className="relative">
-                <span className="relative z-10 gradient-text">AI Mastery</span>
+                <span className="relative z-10 gradient-text">AI Strategy</span>
                 <motion.span 
                   className="absolute bottom-1 md:bottom-2 left-0 h-3 md:h-4 w-full bg-accent-highlight/20 -z-10 rounded-full"
                   initial={{ scaleX: 0 }}
@@ -309,14 +309,14 @@ export default function HeroSection() {
               variants={item}
             >
               <p>
-                Partnering with elite leaders to deliver AI transformations that{" "}
+                AI solutions that{" "}
                 <TypeAnimation 
                   phrases={[
                     "outperform competitors by 300%+",
-                    "slash operational costs by 65%",
-                    "create unmatched market advantage",
-                    "generate millions in new revenue",
-                    "revolutionize entire industries"
+                    "slash costs by 65%",
+                    "create market advantage",
+                    "generate millions in revenue",
+                    "transform industries"
                   ]} 
                 />
               </p>
@@ -352,7 +352,7 @@ export default function HeroSection() {
                     }}
                   />
                   
-                  Secure Your Elite Strategy Session
+                  Book Strategy Session
                   <ArrowRight className="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform" />
                 </a>
               </Button>
