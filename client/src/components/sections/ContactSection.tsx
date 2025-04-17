@@ -83,8 +83,8 @@ export default function ContactSection() {
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading 
-          title={<>Get in <span className="gradient-text">Touch</span></>}
-          description="Have questions or want to discuss potential collaboration? Reach out directly."
+          title={<>Contact <span className="gradient-text">Me</span></>}
+          description="Questions or ready to start? Reach out."
         />
         
         <div className="max-w-6xl mx-auto">
@@ -104,7 +104,7 @@ export default function ContactSection() {
                 
                 <div className="relative">
                   <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
-                  <p className="text-secondary-300 mb-8">Ready to elevate your AI strategy? Reach out through any of these channels.</p>
+                  <p className="text-secondary-300 mb-8">Ready for AI results? Connect with me.</p>
                   
                   <div className="space-y-6 mb-8">
                     <motion.div 
@@ -210,7 +210,7 @@ export default function ContactSection() {
                   Quick Response Guarantee
                 </h4>
                 <p className="text-secondary-600">
-                  I respond to all inquiries within 24 hours during business days. Your message is important to me.
+                  24-hour response guaranteed on business days.
                 </p>
               </div>
             </motion.div>
@@ -224,7 +224,7 @@ export default function ContactSection() {
             >
               <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)} className="bg-white rounded-xl p-8 shadow-lg border border-secondary-100">
-                  <h3 className="text-2xl font-bold text-midnight mb-6">Send a Message</h3>
+                  <h3 className="text-2xl font-bold text-midnight mb-6">Message Me</h3>
                   
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                     <FormField

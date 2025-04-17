@@ -351,19 +351,18 @@ export default function TestimonialsSection() {
               <div className="grid grid-cols-1 md:grid-cols-5 gap-8 md:gap-12 relative z-10">
                 <div className="md:col-span-3">
                   <h3 className="text-2xl md:text-3xl font-bold mb-4 text-midnight-900 dark:text-white">
-                    Ready to transform your business with strategic AI?
+                    Ready for AI-powered results?
                   </h3>
                   <p className="text-secondary-600 dark:text-secondary-300 mb-6 md:mb-8">
-                    Book a personalized strategy session to explore how AI can drive growth, 
-                    optimize operations, and create sustainable competitive advantages for your organization.
+                    Book a strategy session to unlock growth and competitive advantage.
                   </p>
                   
                   {/* Benefits list */}
                   <div className="space-y-3 mb-8 md:mb-0">
                     {[
-                      "Tailored strategic recommendations",
-                      "Implementation roadmap and prioritization",
-                      "ROI analysis and opportunity assessment"
+                      "Custom strategy",
+                      "Implementation roadmap",
+                      "ROI analysis"
                     ].map((item, i) => (
                       <div key={i} className="flex items-start">
                         <div className="flex-shrink-0 h-5 w-5 rounded-full bg-accent-gradient-start text-white flex items-center justify-center mt-0.5 mr-3">
@@ -393,8 +392,7 @@ export default function TestimonialsSection() {
                     </div>
                     
                     <p className="text-secondary-200 mb-6 text-sm">
-                      Limited availability for personalized consultations. 
-                      Secure your spot today.
+                      Limited spots available. Book now.
                     </p>
                     
                     <Button
