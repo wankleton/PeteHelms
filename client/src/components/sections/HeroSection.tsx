@@ -317,7 +317,8 @@ export default function HeroSection() {
                 AI solutions that{" "}
                 <TypeAnimation 
                   phrases={[
-                    "outperform competitors by 300%+",
+                    "outperform competitors",
+                    "deliver 10x Growth",
                     "slash costs by 65%",
                     "create market advantage",
                     "generate millions in revenue",
