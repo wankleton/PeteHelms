@@ -78,11 +78,11 @@ export default function Navbar() {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 z-20 relative">
-            <div className="w-8 h-8 rounded-full overflow-hidden bg-gradient-to-r from-accent-gradient-start to-accent-gradient-end border-2 border-white dark:border-midnight-700">
+            <div className="w-8 h-8 rounded-full overflow-hidden bg-gradient-to-r from-accent-gradient-start to-accent-gradient-end border-2 border-white dark:border-midnight-700 flex items-center justify-center">
               <img 
                 src={peteProfile} 
                 alt="Pete Helms" 
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-center"
               />
             </div>
             <span className="text-xl font-display font-bold text-midnight dark:text-white tracking-tight">
