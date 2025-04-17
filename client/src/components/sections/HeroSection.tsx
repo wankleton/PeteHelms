@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { motion, useAnimate, useMotionValue, useTransform } from "framer-motion";
-import peteProfile from "@/assets/pete-profile.jpg";
 import { ArrowRight, ChevronDown, Star, ExternalLink, MousePointer2, LightbulbIcon } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 import { useIsMobile } from "@/hooks/use-mobile";
@@ -305,7 +304,7 @@ export default function HeroSection() {
             
             {/* Description with animated text */}
             <motion.div 
-              className="text-lg md:text-xl text-secondary-600 leading-relaxed max-w-xl"
+              className="text-lg md:text-xl text-secondary-600 dark:text-secondary-300 leading-relaxed max-w-xl"
               variants={item}
             >
               <p>
@@ -362,7 +361,7 @@ export default function HeroSection() {
                 asChild 
                 variant="outline" 
                 size="lg"
-                className="border-2 border-secondary-200 text-midnight hover:border-midnight/70 transition-colors"
+                className="border-2 border-secondary-200 dark:border-secondary-700 text-midnight dark:text-white hover:border-midnight/70 dark:hover:border-white/70 transition-colors"
               >
                 <a href="#services" onClick={scrollToSection('services')} className="flex items-center">
                   Learn More
@@ -376,12 +375,12 @@ export default function HeroSection() {
               className="pt-4"
               variants={item}
             >
-              <p className="text-xs uppercase tracking-wide font-semibold mb-5 text-secondary-500">TRUSTED BY INNOVATIVE COMPANIES</p>
+              <p className="text-xs uppercase tracking-wide font-semibold mb-5 text-secondary-500 dark:text-secondary-400">TRUSTED BY INNOVATIVE COMPANIES</p>
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 md:gap-4">
                 {companyLogos.map((company, i) => (
                   <motion.div 
                     key={company.name}
-                    className="h-14 px-4 bg-white dark:bg-secondary-900/80 backdrop-blur-sm shadow-sm border border-secondary-200 dark:border-secondary-700 rounded-xl flex items-center justify-center text-secondary-800 dark:text-secondary-300 hover:text-midnight hover:shadow-md transition-all duration-300"
+                    className="h-14 px-4 bg-white dark:bg-secondary-900/80 backdrop-blur-sm shadow-sm border border-secondary-200 dark:border-secondary-700 rounded-xl flex items-center justify-center text-secondary-800 dark:text-secondary-300 hover:text-midnight hover:dark:text-white hover:shadow-md transition-all duration-300"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ 
                       opacity: 1, 
@@ -415,7 +414,7 @@ export default function HeroSection() {
             {!isMobile ? (
               <TiltCard>
                 <img 
-                  src={peteProfile} 
+                  src="/attached_assets/FD1_6369.jpg" 
                   alt="Pete Helms - AI Strategy Expert" 
                   className="w-full h-full object-cover"
                   loading="eager"
@@ -447,7 +446,7 @@ export default function HeroSection() {
               // Mobile version without tilt effect
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img 
-                  src={peteProfile} 
+                  src="/attached_assets/FD1_6369.jpg" 
                   alt="Pete Helms - AI Strategy Expert" 
                   className="w-full h-full object-cover"
                   loading="eager"
@@ -458,54 +457,44 @@ export default function HeroSection() {
                 
                 {/* Image caption */}
                 <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <div className="flex flex-col items-start justify-between gap-3">
+                  <div className="flex flex-col items-start justify-between gap-2">
                     <div>
                       <h2 className="text-white font-bold text-lg">Pete Helms</h2>
                       <p className="text-white/90 text-sm">AI & Business Transformation Expert</p>
                     </div>
+                    <a 
+                      href="#book" 
+                      onClick={scrollToSection('book')}
+                      className="flex items-center gap-1 text-sm text-white font-medium bg-white/20 backdrop-blur-sm rounded-full px-3 py-1.5"
+                    >
+                      Book a Call <ExternalLink className="h-3.5 w-3.5 ml-0.5" />
+                    </a>
                   </div>
                 </div>
               </div>
             )}
             
-            {/* Decorative elements */}
-            <div className="absolute -bottom-6 -right-6 w-3/4 h-3/4 bg-accent-highlight/30 rounded-2xl -z-10 blur-sm"></div>
-            <div className="absolute top-1/4 -left-4 w-8 h-32 bg-accent-gradient-start/40 rounded-full -z-10 blur-md"></div>
-            
-            {/* Feature badges */}
+            {/* Feature badges - positioned around the image */}
             <FeatureBadge 
-              icon={<LightbulbIcon className="w-3 h-3" />}
-              text="AI Implementation Expert"
-              position="-left-4 top-8"
-              delay={1.2}
-            />
-            
-            <FeatureBadge 
-              icon={<Star className="w-3 h-3" />}
+              icon={<Star className="h-3 w-3" />}
               text="10+ Years Experience"
-              position="-right-4 bottom-24"
-              delay={1.4}
+              position="top-0 right-1/4 transform -translate-y-1/2"
+              delay={0.9}
+            />
+            <FeatureBadge 
+              icon={<LightbulbIcon className="h-3 w-3" />}
+              text="AI Strategy Expert"
+              position="bottom-1/3 -right-2 transform translate-x-1/2"
+              delay={1.1}
+            />
+            <FeatureBadge 
+              icon={<MousePointer2 className="h-3 w-3" />}
+              text="Click to Learn More"
+              position="bottom-0 left-1/4 transform translate-y-1/2"
+              delay={1.3}
             />
           </motion.div>
         </div>
-        
-        {/* Scroll indicator */}
-        <motion.div 
-          className="absolute left-1/2 -translate-x-1/2 bottom-8 hidden lg:flex flex-col items-center opacity-70 hover:opacity-100 transition-opacity cursor-pointer"
-          onClick={scrollToSection('about')}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.5 }}
-          whileHover={{ y: 5 }}
-        >
-          <p className="text-xs text-secondary-500 font-medium tracking-wider mb-2">SCROLL DOWN</p>
-          <motion.div
-            animate={{ y: [0, 10, 0] }}
-            transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
-          >
-            <ChevronDown className="w-6 h-6 text-secondary-400" />
-          </motion.div>
-        </motion.div>
       </div>
     </section>
   );
