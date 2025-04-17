@@ -9,17 +9,17 @@ export default function AboutSection() {
     {
       icon: <BrainCircuit className="h-6 w-6 text-midnight" />,
       title: "AI Expertise",
-      description: "10+ years implementing AI solutions with measurable ROI across industries."
+      description: "10+ years building AI solutions with measurable ROI."
     },
     {
       icon: <ChartLine className="h-6 w-6 text-midnight" />,
       title: "Business Strategy",
-      description: "Technical knowledge paired with business acumen to position companies for market leadership."
+      description: "Technical knowledge with business acumen for market leadership."
     },
     {
       icon: <Rocket className="h-6 w-6 text-midnight" />,
       title: "Tech Founder",
-      description: "Founder experience building products and teams that succeed in competitive markets."
+      description: "Built successful products and teams in competitive markets."
     }
   ];
 
@@ -32,7 +32,7 @@ export default function AboutSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading 
           title={<>About <span className="gradient-text">Pete Helms</span></>}
-          description="AI expert, strategist, and founder driving business transformation."
+          description="AI expert driving business transformation."
         />
         
         <motion.div 
@@ -95,7 +95,7 @@ export default function AboutSection() {
             </div>
             <h3 className="text-2xl md:text-3xl font-bold mb-6">AI That Delivers Real Results</h3>
             <p className="text-secondary-600 mb-8 leading-relaxed">
-              I create AI strategies that blend business insight, technical expertise, and human-centered design. My approach focuses on what's both possible and practical, helping companies gain competitive advantage while ensuring ethical implementation.
+              I create AI strategies that blend business insight with technical expertise. My approach delivers competitive advantage through practical, ethical implementation.
             </p>
             
             <div className="p-6 bg-midnight-50 rounded-xl border border-accent-highlight/30">
@@ -112,8 +112,8 @@ export default function AboutSection() {
                   </span>
                 </div>
                 <div>
-                  <p className="font-medium text-midnight">Proven results across industries</p>
-                  <p className="text-sm text-secondary-600">From startups to Fortune 500 companies</p>
+                  <p className="font-medium text-midnight">Proven industry results</p>
+                  <p className="text-sm text-secondary-600">Startups to Fortune 500</p>
                 </div>
               </div>
             </div>
