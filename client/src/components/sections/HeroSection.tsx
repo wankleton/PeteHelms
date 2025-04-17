@@ -299,16 +299,13 @@ export default function HeroSection() {
               className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 relative"
               variants={item}
             >
-              <span className="block">AI STRATEGIST</span>
-              <span className="text-2xl md:text-3xl lg:text-4xl text-secondary-700 dark:text-secondary-300 block font-light mt-3 mb-2">
-                Pete Helms
-                <motion.div 
-                  className="absolute h-[3px] bg-gradient-to-r from-accent-gradient-start to-accent-gradient-end w-0 origin-left mt-1"
-                  initial={{ scaleX: 0 }}
-                  animate={{ scaleX: 1 }}
-                  transition={{ delay: 1, duration: 0.5 }}
-                />
-              </span>
+              <span className="block">Let's Streamline Your Business With AI</span>
+              <motion.div 
+                className="absolute h-[3px] bg-gradient-to-r from-accent-gradient-start to-accent-gradient-end w-0 origin-left mt-1"
+                initial={{ scaleX: 0 }}
+                animate={{ scaleX: 1 }}
+                transition={{ delay: 1, duration: 0.5 }}
+              />
             </motion.h1>
             
             {/* Description with animated text */}
