@@ -1,8 +1,7 @@
 import { motion } from "framer-motion";
-import { BrainCircuit, ChartLine, Rocket, Check, LightbulbIcon, Award, TrendingUp } from "lucide-react";
+import { BrainCircuit, ChartLine, Rocket, Check, LightbulbIcon } from "lucide-react";
 import { fadeIn, fadeInUp, staggerContainer } from "@/lib/animations";
 import SectionHeading from "@/components/ui/section-heading";
-import peteProfile from "@/assets/pete-profile.jpg";
 
 export default function AboutSection() {
   const expertiseItems = [
@@ -36,62 +35,9 @@ export default function AboutSection() {
           description="AI expert driving business transformation."
         />
         
-        <div className="flex flex-col md:flex-row gap-16 items-center mb-20">
+        <div className="mb-20">
           <motion.div 
-            className="md:w-1/2 relative"
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-          >
-            <motion.div 
-              className="rounded-2xl overflow-hidden shadow-2xl relative z-10"
-              variants={fadeIn}
-            >
-              <img 
-                src={peteProfile} 
-                alt="Pete Helms - AI Expert" 
-                className="w-full h-full object-cover object-center"
-              />
-              {/* Subtle overlay */}
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-midnight/30 mix-blend-multiply"></div>
-              
-              {/* Stat badges */}
-              <motion.div 
-                className="absolute -top-4 -right-4 bg-white dark:bg-midnight-900 shadow-lg rounded-lg p-3 flex gap-2 items-center"
-                initial={{ opacity: 0, x: 20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.5 }}
-              >
-                <Award className="h-6 w-6 text-accent-highlight" />
-                <div>
-                  <p className="text-sm font-bold">Industry Expert</p>
-                  <p className="text-xs text-secondary-600">10+ Years Experience</p>
-                </div>
-              </motion.div>
-              
-              <motion.div 
-                className="absolute -bottom-4 -left-4 bg-white dark:bg-midnight-900 shadow-lg rounded-lg p-3 flex gap-2 items-center"
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.7 }}
-              >
-                <TrendingUp className="h-6 w-6 text-accent-highlight" />
-                <div>
-                  <p className="text-sm font-bold">Proven Results</p>
-                  <p className="text-xs text-secondary-600">Fortune 500 & Startups</p>
-                </div>
-              </motion.div>
-            </motion.div>
-            
-            {/* Decorative element */}
-            <div className="absolute -bottom-6 -left-6 w-2/3 h-full border-2 border-accent-highlight/30 rounded-xl -z-10"></div>
-          </motion.div>
-          
-          <motion.div 
-            className="md:w-1/2"
+            className="w-full max-w-2xl mx-auto"
             variants={fadeInUp}
             initial="hidden"
             whileInView="visible"
