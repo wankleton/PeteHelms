@@ -55,9 +55,7 @@ export default function AboutSection() {
               <p>
                 Professionally, I'm here to create innovative solutions, build impactful communities, and serve business leaders with the knowledge, clarity, and creativity I've been blessed with.
               </p>
-              <p>
-                I believe business is a powerful platform for service and transformation. When we help businesses operate more efficiently, reduce costs, and unlock new possibilities, we're not just improving bottom lines—we're creating space for leaders to focus on what matters most.
-              </p>
+              <p>Prof</p>
             </div>
           </motion.div>
         </div>
