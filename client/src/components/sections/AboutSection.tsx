@@ -43,30 +43,28 @@ export default function AboutSection() {
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
           >
-            <div className="inline-flex items-center rounded-full bg-accent-highlight/20 px-3 py-1 text-sm font-medium text-midnight dark:text-white mb-6">
-              <LightbulbIcon className="h-4 w-4 mr-1" /> My Philosophy
+            <div className="inline-flex items-center rounded-full bg-slate-100 dark:bg-slate-800 px-4 py-2 text-sm font-semibold text-slate-700 dark:text-slate-300 mb-8 border border-slate-200 dark:border-slate-700">
+              <div className="w-2 h-2 rounded-full bg-accent-gradient-start mr-2"></div>
+              Philosophy
             </div>
-            <h3 className="text-2xl md:text-3xl font-bold mb-6">AI That Delivers Real Results</h3>
-            <p className="text-secondary-600 dark:text-secondary-300 mb-8 leading-relaxed">
-              I create AI strategies that blend business insight with technical expertise. My approach delivers competitive advantage through practical, ethical implementation.
+            <h3 className="text-3xl md:text-4xl font-black mb-6 text-slate-900 dark:text-white leading-tight">Strategic AI Implementation That Drives Growth</h3>
+            <p className="text-lg text-slate-600 dark:text-slate-300 mb-8 leading-relaxed font-medium">
+              I bridge the gap between cutting-edge AI technology and practical business results. My proven methodology transforms complex AI concepts into competitive advantages that deliver measurable ROI.
             </p>
             
-            <div className="p-6 bg-gradient-to-br from-midnight-50 to-secondary-100 dark:from-midnight-800 dark:to-midnight-900 rounded-xl border border-accent-highlight/30 backdrop-blur-sm shadow-lg">
-              <div className="flex items-center">
-                <div className="flex -space-x-3 mr-4">
-                  <span className="inline-flex items-center justify-center h-12 w-12 rounded-full shadow-md bg-midnight text-white font-medium text-sm border-2 border-white dark:border-midnight-700">
-                    <Check size={18} />
-                  </span>
-                  <span className="inline-flex items-center justify-center h-12 w-12 rounded-full shadow-md bg-accent-gradient-start text-white font-medium text-sm border-2 border-white dark:border-midnight-700">
-                    <Check size={18} />
-                  </span>
-                  <span className="inline-flex items-center justify-center h-12 w-12 rounded-full shadow-md bg-accent-gradient-end text-white font-medium text-sm border-2 border-white dark:border-midnight-700">
-                    <Check size={18} />
-                  </span>
+            <div className="p-8 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-lg">
+              <div className="flex items-center justify-between">
+                <div>
+                  <p className="text-3xl font-black text-slate-900 dark:text-white mb-1">500+</p>
+                  <p className="text-sm font-medium text-slate-600 dark:text-slate-400">Companies Transformed</p>
                 </div>
                 <div>
-                  <p className="font-medium text-midnight dark:text-white">Proven industry results</p>
-                  <p className="text-sm text-secondary-600 dark:text-secondary-400">Startups to Fortune 500</p>
+                  <p className="text-3xl font-black text-slate-900 dark:text-white mb-1">$2B+</p>
+                  <p className="text-sm font-medium text-slate-600 dark:text-slate-400">Value Generated</p>
+                </div>
+                <div>
+                  <p className="text-3xl font-black text-slate-900 dark:text-white mb-1">10+</p>
+                  <p className="text-sm font-medium text-slate-600 dark:text-slate-400">Years Experience</p>
                 </div>
               </div>
             </div>
@@ -83,15 +81,15 @@ export default function AboutSection() {
           {expertiseItems.map((item, index) => (
             <motion.div 
               key={index} 
-              className="bg-gradient-to-br from-midnight-800 to-midnight-950 p-6 sm:p-8 rounded-xl shadow-xl border border-secondary-700/30 hover:border-accent-highlight transition-all duration-300"
+              className="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-lg border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-all duration-300 group"
               variants={fadeIn}
-              whileHover={{ y: -5, boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1)" }}
+              whileHover={{ y: -5 }}
             >
-              <div className="w-14 h-14 bg-gradient-to-r from-accent-gradient-start to-accent-gradient-end rounded-lg flex items-center justify-center mb-6 shadow-lg">
+              <div className="w-16 h-16 bg-slate-100 dark:bg-slate-800 rounded-xl flex items-center justify-center mb-6 group-hover:bg-accent-gradient-start group-hover:text-white transition-all duration-300">
                 {item.icon}
               </div>
-              <h3 className="text-xl font-bold mb-4 text-white">{item.title}</h3>
-              <p className="text-secondary-300 leading-relaxed">{item.description}</p>
+              <h3 className="text-xl font-black mb-4 text-slate-900 dark:text-white">{item.title}</h3>
+              <p className="text-slate-600 dark:text-slate-300 leading-relaxed font-medium">{item.description}</p>
             </motion.div>
           ))}
         </motion.div>

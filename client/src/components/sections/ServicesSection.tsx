@@ -26,10 +26,10 @@ const ServiceCard = ({
       ref={cardRef}
       key={service.id} 
       className={`
-        relative bg-white dark:bg-midnight-800 rounded-xl shadow-lg overflow-hidden
+        relative bg-white dark:bg-slate-900 rounded-2xl shadow-lg overflow-hidden cursor-pointer
         ${isActive 
-          ? 'border-2 border-accent-gradient-start shadow-glow-accent scale-[1.03] z-10' 
-          : 'border border-secondary-200 dark:border-secondary-700 hover:border-accent-highlight'
+          ? 'border-2 border-accent-gradient-start shadow-xl scale-[1.02] z-10' 
+          : 'border border-slate-200 dark:border-slate-700 hover:border-slate-300 dark:hover:border-slate-600'
         }
         transition-all duration-300 group
       `}
@@ -87,7 +87,7 @@ const ServiceCard = ({
         {/* Service content */}
         <div>
           <div className="flex items-center justify-between">
-            <h3 className={`text-xl font-bold font-heading mb-3 ${isActive ? 'text-accent-gradient-end' : 'text-midnight dark:text-white'} transition-colors`}>
+            <h3 className={`text-xl font-black mb-3 ${isActive ? 'text-accent-gradient-end' : 'text-slate-900 dark:text-white'} transition-colors`}>
               {service.title}
             </h3>
             
@@ -204,8 +204,8 @@ export default function ServicesSection() {
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <SectionHeading 
-          title={<>AI <span className="gradient-text font-bold">Services</span></>}
-          description="Solutions that deliver 10x ROI for market leaders."
+          title={<>Strategic <span className="bg-gradient-to-r from-accent-gradient-start to-accent-gradient-end bg-clip-text text-transparent font-black">AI Services</span></>}
+          description="Proven methodologies that transform businesses through strategic AI implementation."
           className="max-w-3xl"
         />
         
