@@ -31,8 +31,8 @@ export default function ValueSection() {
     <section id="value" className="py-20 sm:py-24 md:py-32 bg-slate-50 dark:bg-slate-900">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading 
-          title={<>How I <span className="text-slate-900 dark:text-white font-bold">Add Value</span></>}
-          description="The unique perspective and approach I bring to complex challenges."
+          title={<>How I <span className="text-slate-900 dark:text-white font-bold">Bring Value</span></>}
+          description="My approach to helping businesses simplify, automate, and innovate."
           className="max-w-3xl"
         />
         

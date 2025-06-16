@@ -306,7 +306,7 @@ export default function HeroSection() {
               variants={item}
             >
               <p>
-                I'm a serial entrepreneur and strategist who helps leaders navigate complex challenges and unlock breakthrough opportunities.
+                A purpose-driven technology consultant, strategist, and innovator. I lead a boutique firm that helps growing businesses simplify operations, cut unnecessary costs, and build custom solutions that unlock real results.
               </p>
             </motion.div>
             

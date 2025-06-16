@@ -1,34 +1,33 @@
 import { motion } from "framer-motion";
-import { BrainCircuit, ChartLine, Rocket, Check, LightbulbIcon } from "lucide-react";
+import { Heart, Users, Target, Check, LightbulbIcon } from "lucide-react";
 import { fadeIn, fadeInUp, staggerContainer } from "@/lib/animations";
 import SectionHeading from "@/components/ui/section-heading";
 
 export default function AboutSection() {
-  const experienceItems = [
+  const purposeItems = [
     {
-      icon: <BrainCircuit className="h-6 w-6 text-gray-900 dark:text-white" />,
-      title: "Builder at Heart",
-      description: "I've started companies, built teams, and learned from both successes and failures along the way."
+      icon: <Heart className="h-6 w-6 text-gray-900 dark:text-white" />,
+      title: "Faith & Family",
+      description: "Grounded in Christian values, committed to serving God and leading my family with integrity."
     },
     {
-      icon: <ChartLine className="h-6 w-6 text-gray-900 dark:text-white" />,
-      title: "Strategic Perspective",
-      description: "Years of working with diverse industries taught me to see patterns and connections across different contexts."
+      icon: <Users className="h-6 w-6 text-gray-900 dark:text-white" />,
+      title: "Community Impact",
+      description: "Building solutions that create lasting value for businesses and the communities they serve."
     },
     {
-      icon: <Rocket className="h-6 w-6 text-gray-900 dark:text-white" />,
-      title: "Practical Approach",
-      description: "I focus on what actually works in the real world, not just what sounds good in theory."
+      icon: <Target className="h-6 w-6 text-gray-900 dark:text-white" />,
+      title: "Purpose-Driven",
+      description: "Using business as a platform for service, transformation, and meaningful impact."
     }
   ];
 
   return (
     <section id="purpose" className="py-20 sm:py-24 md:py-32 bg-white dark:bg-slate-950">
-      
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading 
           title={<>My <span className="text-slate-900 dark:text-white font-bold">Purpose</span></>}
-          description="Why I'm passionate about helping leaders navigate complexity and uncertainty."
+          description="The values and beliefs that drive everything I do."
         />
         
         <div className="mb-20">
@@ -39,19 +38,16 @@ export default function AboutSection() {
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
           >
-            <h3 className="text-3xl md:text-4xl font-light mb-8 text-slate-900 dark:text-white leading-tight">What Drives Me</h3>
+            <h3 className="text-3xl md:text-4xl font-light mb-8 text-slate-900 dark:text-white leading-tight">Why I Do What I Do</h3>
             <div className="space-y-6 text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
               <p>
-                I believe that great leaders are made in moments of uncertainty. When the path forward isn't clear, when the stakes are high, when conventional wisdom doesn't apply—that's when real leadership emerges.
+                My life is grounded in purpose. As a Christian, I'm called to love and serve God in everything I do. As a husband and father, I'm committed to leading and serving my family with integrity.
               </p>
               <p>
-                I've been fascinated by these moments my entire career. How do some leaders see opportunities where others see obstacles? How do they make confident decisions with incomplete information? How do they inspire teams to pursue ambitious goals when the outcome is uncertain?
+                Professionally, I'm here to create innovative solutions, build impactful communities, and serve business leaders with the knowledge, clarity, and creativity I've been blessed with.
               </p>
               <p>
-                This curiosity led me to start companies, study successful leaders, and work alongside teams navigating complex challenges. I discovered that breakthrough results come not from having all the answers, but from asking better questions and seeing patterns that others miss.
-              </p>
-              <p>
-                Today, I'm passionate about sharing these insights with leaders who are ready to think differently and act boldly.
+                I believe business is a powerful platform for service and transformation. When we help businesses operate more efficiently, reduce costs, and unlock new possibilities, we're not just improving bottom lines—we're creating space for leaders to focus on what matters most.
               </p>
             </div>
           </motion.div>
@@ -64,7 +60,7 @@ export default function AboutSection() {
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
         >
-          {experienceItems.map((item, index) => (
+          {purposeItems.map((item, index) => (
             <motion.div 
               key={index} 
               className="bg-gray-50 dark:bg-gray-900 p-8 border border-gray-200 dark:border-gray-700 transition-all duration-300"
