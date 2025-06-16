@@ -113,22 +113,7 @@ const ServiceCard = ({
             ))}
           </div>
           
-          {/* Action button */}
-          <Button
-            size="sm"
-            className={`
-              w-full group/btn flex items-center justify-center
-              ${isActive 
-                ? 'bg-gradient-to-r from-accent-gradient-start to-accent-gradient-end text-white hover:brightness-110' 
-                : 'bg-secondary-100 dark:bg-secondary-800 text-secondary-800 dark:text-white hover:bg-secondary-200 dark:hover:bg-secondary-700'
-              }
-              transition-all duration-300
-            `}
-            onClick={onClick}
-          >
-            Learn More
-            <ExternalLink className="ml-1.5 h-3.5 w-3.5 transition-transform duration-300 group-hover/btn:translate-x-1" />
-          </Button>
+
         </div>
       </div>
     </motion.div>

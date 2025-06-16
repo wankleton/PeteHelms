@@ -97,7 +97,7 @@ export default function Navbar() {
               className="bg-black dark:bg-white text-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-200 transition-all duration-300 group shadow-lg"
               size="sm"
             >
-              <a href="#book" onClick={scrollToSection('book')} className="flex items-center">
+              <a href="https://calendly.com/pete-helms/intro-call" target="_blank" rel="noopener noreferrer" className="flex items-center">
                 <Calendar className="mr-1.5 h-4 w-4" />
                 Book a Call
                 <ArrowRight className="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform" />
@@ -108,8 +108,9 @@ export default function Navbar() {
           {/* Mobile Menu Toggle */}
           <div className="md:hidden z-20 flex gap-3 items-center">
             <a 
-              href="#book" 
-              onClick={scrollToSection('book')}
+              href="https://calendly.com/pete-helms/intro-call" 
+              target="_blank" 
+              rel="noopener noreferrer"
               className="px-3 py-1.5 rounded-full bg-black dark:bg-white text-white dark:text-black text-sm font-medium flex items-center whitespace-nowrap"
             >
               <Calendar className="mr-1.5 h-3.5 w-3.5" />
@@ -190,15 +191,14 @@ export default function Navbar() {
                   className="absolute bottom-16 flex flex-col items-center"
                 >
                   <a 
-                    href="#book" 
-                    onClick={(e) => {
-                      scrollToSection('book')(e);
-                      handleMobileItemClick();
-                    }}
+                    href="https://calendly.com/pete-helms/intro-call" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    onClick={handleMobileItemClick}
                     className="px-6 py-3 rounded-full bg-black dark:bg-white text-white dark:text-black font-medium flex items-center"
                   >
                     <Calendar className="mr-2 h-4 w-4" />
-                    Book a Strategy Session
+                    Book a Call
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </a>
                   <button
