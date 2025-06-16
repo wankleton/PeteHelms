@@ -156,7 +156,6 @@ export default function ServicesSection() {
 
   return (
     <section id="services" className="py-20 sm:py-24 md:py-32 bg-gray-50 dark:bg-gray-950">
-      
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="relative mb-20 md:mb-24">
           <div className="text-center">
@@ -164,9 +163,7 @@ export default function ServicesSection() {
               <span className="text-ultra-thin">WHAT I CAN</span> OFFER
             </h2>
             <div className="w-16 h-1 bg-black dark:bg-white mb-6 mx-auto"></div>
-            <p className="text-xl md:text-2xl text-black dark:text-white font-light leading-relaxed max-w-3xl mx-auto">
-              Three ways to transform your business.
-            </p>
+            <p className="text-xl md:text-2xl text-black dark:text-white font-light leading-relaxed max-w-3xl mx-auto">Here are three ways I can help...</p>
           </div>
         </div>
         
