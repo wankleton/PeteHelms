@@ -172,11 +172,17 @@ export default function ServicesSection() {
     <section id="services" className="py-20 sm:py-24 md:py-32 bg-gray-50 dark:bg-gray-950">
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <SectionHeading 
-          title={<>What I Can <span className="text-black dark:text-white font-bold">Offer</span></>}
-          description="Tailored solutions for three distinct audiences seeking growth and innovation."
-          className="max-w-3xl"
-        />
+        <div className="relative mb-16">
+          <div className="absolute left-1/2 transform -translate-x-1/2 top-0 w-2 h-32 bg-black dark:bg-white"></div>
+          <div className="text-center">
+            <h2 className="text-5xl md:text-6xl lg:text-7xl font-black mb-6 leading-tight tracking-tight">
+              WHAT I CAN <span className="text-ultra-thin">OFFER</span>
+            </h2>
+            <p className="text-xl md:text-2xl text-black dark:text-white font-light max-w-3xl mx-auto">
+              Tailored solutions for three distinct audiences seeking growth and innovation.
+            </p>
+          </div>
+        </div>
         
         {/* Service cards with interactive layout */}
         <div ref={containerRef} className="mt-10 md:mt-16">

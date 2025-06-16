@@ -14,13 +14,17 @@ export default function ContactSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
         >
-          <SectionHeading 
-            title={
-              <>Book a <span className="text-black dark:text-white font-bold">Call</span></>
-            }
-            description="Ready to explore how we can work together? Let's start with a conversation."
-            className="text-black dark:text-white [&>p]:text-gray-700 dark:[&>p]:text-gray-300 max-w-3xl"
-          />
+          <div className="relative mb-16">
+            <div className="absolute left-0 top-0 w-2 h-32 bg-black dark:bg-white"></div>
+            <div className="pl-8">
+              <h2 className="text-5xl md:text-6xl lg:text-7xl font-black mb-6 leading-tight tracking-tight">
+                BOOK A <span className="text-ultra-thin">CALL</span>
+              </h2>
+              <p className="text-xl md:text-2xl text-black dark:text-white font-light">
+                Ready to explore how we can work together? Let's start with a conversation.
+              </p>
+            </div>
+          </div>
         </motion.div>
         
         <motion.div 
@@ -33,11 +37,11 @@ export default function ContactSection() {
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
             <div>
-              <h3 className="text-3xl md:text-4xl font-light mb-8 text-black dark:text-white leading-tight">
-                Let's Start Simple
+              <h3 className="text-4xl md:text-5xl font-bold mb-12 text-black dark:text-white leading-tight tracking-tight">
+                LET'S START SIMPLE
               </h3>
               
-              <div className="space-y-6 mb-12 text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+              <div className="space-y-8 mb-16 text-xl md:text-2xl text-black dark:text-white leading-relaxed font-light">
                 <p>
                   The best way to explore working together is to start with a conversation. No commitment, no pressure—just an opportunity to share what you're working on and see if there's a fit.
                 </p>
@@ -51,12 +55,12 @@ export default function ContactSection() {
             </div>
             
             <div>
-              <h4 className="text-2xl font-light mb-8 text-black dark:text-white">
-                Schedule Your Call
+              <h4 className="text-3xl font-bold mb-12 text-black dark:text-white tracking-tight">
+                SCHEDULE YOUR CALL
               </h4>
               
-              <div className="space-y-6">
-                <div className="p-6 bg-gray-50 dark:bg-gray-900 border border-black dark:border-white">
+              <div className="space-y-8">
+                <div className="p-8 bg-gray-50 dark:bg-gray-900 border-stark relative overflow-hidden group">
                   <div className="space-y-4">
                     <div className="flex items-start">
                       <Clock className="h-5 w-5 text-black dark:text-white mt-1 mr-3" />
@@ -84,31 +88,31 @@ export default function ContactSection() {
                   </div>
                 </div>
                 
-                <div className="space-y-4">
+                <div className="space-y-8">
                   <div className="text-center">
                     <Button 
                       asChild
                       size="lg"
-                      className="bg-black dark:bg-white text-white dark:text-black hover:bg-gray-900 dark:hover:bg-gray-100 px-8 py-3 font-normal w-full"
+                      className="bg-black dark:bg-white text-white dark:text-black hover:bg-gray-900 dark:hover:bg-gray-100 px-12 py-6 text-lg font-bold tracking-wide w-full border-stark transform hover:scale-105 transition-all duration-200"
                     >
                       <a href="https://calendly.com/petehelms" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center">
-                        <Clock className="h-4 w-4 mr-2" />
-                        Schedule on Calendly
+                        <Clock className="h-5 w-5 mr-3" />
+                        SCHEDULE ON CALENDLY
                       </a>
                     </Button>
                   </div>
                   
                   <div className="text-center">
-                    <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">Prefer to email first?</p>
+                    <p className="text-lg text-black dark:text-white mb-4 font-light">Prefer to email first?</p>
                     <Button 
                       asChild
                       size="lg"
-                      variant="ghost"
-                      className="text-gray-700 hover:text-black dark:text-gray-400 dark:hover:text-white px-8 py-3 font-normal"
+                      variant="outline"
+                      className="border-stark border-black dark:border-white text-black dark:text-white hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black px-12 py-6 text-lg font-bold tracking-wide transform hover:scale-105 transition-all duration-200"
                     >
                       <a href="mailto:hello@petehelms.com" className="flex items-center justify-center">
-                        <Mail className="h-4 w-4 mr-2" />
-                        Send Me an Email
+                        <Mail className="h-5 w-5 mr-3" />
+                        SEND ME AN EMAIL
                       </a>
                     </Button>
                   </div>

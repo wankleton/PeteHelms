@@ -30,11 +30,17 @@ export default function ValueSection() {
   return (
     <section id="value" className="py-20 sm:py-24 md:py-32 bg-gray-50 dark:bg-gray-950">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading 
-          title={<>How I <span className="text-black dark:text-white font-bold">Bring Value</span></>}
-          description="My approach to helping businesses simplify, automate, and innovate."
-          className="max-w-3xl"
-        />
+        <div className="relative mb-16">
+          <div className="absolute right-0 top-0 w-2 h-32 bg-black dark:bg-white"></div>
+          <div className="pr-8 text-right">
+            <h2 className="text-5xl md:text-6xl lg:text-7xl font-black mb-6 leading-tight tracking-tight">
+              HOW I <span className="text-ultra-thin">BRING VALUE</span>
+            </h2>
+            <p className="text-xl md:text-2xl text-black dark:text-white font-light">
+              My approach to helping businesses simplify, automate, and innovate.
+            </p>
+          </div>
+        </div>
         
         {/* Personal Value Statement */}
         <div className="mb-20 mt-12">
@@ -45,8 +51,9 @@ export default function ValueSection() {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.7 }}
           >
-            <div className="bg-white dark:bg-black p-8 md:p-12 border border-black dark:border-white">
-              <div className="space-y-6 text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            <div className="bg-white dark:bg-black p-12 md:p-16 border-stark relative overflow-hidden">
+              <div className="absolute top-0 left-0 w-full h-2 bg-black dark:bg-white"></div>
+              <div className="space-y-8 text-2xl md:text-3xl text-black dark:text-white leading-relaxed font-light">
                 <p>
                   I approach every project with curiosity and intention. I don't just help clients build custom solutions—I help them rethink how they operate.
                 </p>
@@ -68,15 +75,18 @@ export default function ValueSection() {
           {valueItems.map((item, index) => (
             <motion.div 
               key={index} 
-              className="bg-white dark:bg-black p-8 border border-black dark:border-white transition-all duration-300"
+              className="bg-white dark:bg-black p-10 border-stark transition-all duration-300 hover:shadow-2xl relative overflow-hidden group"
               variants={fadeIn}
               whileHover={{ y: -5 }}
             >
-              <div className="w-16 h-16 bg-gray-100 dark:bg-gray-900 flex items-center justify-center mb-6 transition-all duration-300">
-                {item.icon}
+              <div className="absolute top-0 right-0 w-full h-1 bg-black dark:bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+              <div className="w-24 h-24 bg-black dark:bg-white flex items-center justify-center mb-8 transition-all duration-300 group-hover:-rotate-12">
+                <div className="text-white dark:text-black text-xl">
+                  {item.icon}
+                </div>
               </div>
-              <h3 className="text-xl font-light mb-4 text-black dark:text-white">{item.title}</h3>
-              <p className="text-gray-700 dark:text-gray-300 leading-relaxed">{item.description}</p>
+              <h3 className="text-2xl font-bold mb-6 text-black dark:text-white tracking-wide">{item.title.toUpperCase()}</h3>
+              <p className="text-lg text-black dark:text-white leading-relaxed font-light">{item.description}</p>
             </motion.div>
           ))}
         </motion.div>
