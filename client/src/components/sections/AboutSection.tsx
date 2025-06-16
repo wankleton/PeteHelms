@@ -4,21 +4,21 @@ import { fadeIn, fadeInUp, staggerContainer } from "@/lib/animations";
 import SectionHeading from "@/components/ui/section-heading";
 
 export default function AboutSection() {
-  const expertiseItems = [
+  const experienceItems = [
     {
-      icon: <BrainCircuit className="h-6 w-6 text-white" />,
-      title: "AI Expertise",
-      description: "10+ years building AI solutions with measurable ROI."
+      icon: <BrainCircuit className="h-6 w-6 text-gray-900 dark:text-white" />,
+      title: "Builder at Heart",
+      description: "I've started companies, built teams, and learned from both successes and failures along the way."
     },
     {
-      icon: <ChartLine className="h-6 w-6 text-white" />,
-      title: "Business Strategy",
-      description: "Technical knowledge with business acumen for market leadership."
+      icon: <ChartLine className="h-6 w-6 text-gray-900 dark:text-white" />,
+      title: "Strategic Perspective",
+      description: "Years of working with diverse industries taught me to see patterns and connections across different contexts."
     },
     {
-      icon: <Rocket className="h-6 w-6 text-white" />,
-      title: "Tech Founder",
-      description: "Built successful products and teams in competitive markets."
+      icon: <Rocket className="h-6 w-6 text-gray-900 dark:text-white" />,
+      title: "Practical Approach",
+      description: "I focus on what actually works in the real world, not just what sounds good in theory."
     }
   ];
 
@@ -27,8 +27,8 @@ export default function AboutSection() {
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading 
-          title={<>Meet <span className="text-slate-900 dark:text-white font-bold">Pete Helms</span></>}
-          description="Strategic innovation that transforms businesses."
+          title={<>My <span className="text-slate-900 dark:text-white font-bold">Story</span></>}
+          description="How I became passionate about helping leaders navigate uncertainty."
         />
         
         <div className="mb-20">
@@ -39,24 +39,17 @@ export default function AboutSection() {
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
           >
-            <h3 className="text-3xl md:text-4xl font-light mb-8 text-slate-900 dark:text-white leading-tight">Innovation That Scales</h3>
-            <p className="text-xl text-slate-600 dark:text-slate-300 mb-12 leading-relaxed">
-              Turning vision into reality through strategic innovation.
-            </p>
-            
-            <div className="grid grid-cols-3 gap-8 pt-8">
-              <div className="text-center">
-                <p className="text-4xl font-light text-slate-900 dark:text-white mb-2">15+</p>
-                <p className="text-slate-600 dark:text-slate-400">Years</p>
-              </div>
-              <div className="text-center">
-                <p className="text-4xl font-light text-slate-900 dark:text-white mb-2">$500M+</p>
-                <p className="text-slate-600 dark:text-slate-400">Value Created</p>
-              </div>
-              <div className="text-center">
-                <p className="text-4xl font-light text-slate-900 dark:text-white mb-2">50+</p>
-                <p className="text-slate-600 dark:text-slate-400">Projects</p>
-              </div>
+            <h3 className="text-3xl md:text-4xl font-light mb-8 text-slate-900 dark:text-white leading-tight">Why I Do This Work</h3>
+            <div className="space-y-6 text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
+              <p>
+                I've spent my career building companies and watching leaders struggle with the same challenge: how do you navigate uncertainty when the stakes are high?
+              </p>
+              <p>
+                Early in my journey, I learned that innovation isn't just about technology—it's about people, timing, and understanding what really matters. I've seen brilliant ideas fail because they solved the wrong problem, and simple solutions succeed because they addressed real human needs.
+              </p>
+              <p>
+                Today, I work with leaders who are facing complex decisions. My role isn't to have all the answers, but to help you ask better questions and see patterns that might not be obvious when you're in the middle of it all.
+              </p>
             </div>
           </motion.div>
         </div>
@@ -68,18 +61,18 @@ export default function AboutSection() {
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
         >
-          {expertiseItems.map((item, index) => (
+          {experienceItems.map((item, index) => (
             <motion.div 
               key={index} 
-              className="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-lg border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-all duration-300 group"
+              className="bg-gray-50 dark:bg-gray-900 p-8 border border-gray-200 dark:border-gray-700 transition-all duration-300"
               variants={fadeIn}
               whileHover={{ y: -5 }}
             >
-              <div className="w-16 h-16 bg-slate-100 dark:bg-slate-800 rounded-xl flex items-center justify-center mb-6 group-hover:bg-accent-gradient-start group-hover:text-white transition-all duration-300">
+              <div className="w-16 h-16 bg-gray-100 dark:bg-gray-800 flex items-center justify-center mb-6 transition-all duration-300">
                 {item.icon}
               </div>
-              <h3 className="text-xl font-black mb-4 text-slate-900 dark:text-white">{item.title}</h3>
-              <p className="text-slate-600 dark:text-slate-300 leading-relaxed font-medium">{item.description}</p>
+              <h3 className="text-xl font-light mb-4 text-slate-900 dark:text-white">{item.title}</h3>
+              <p className="text-slate-600 dark:text-slate-300 leading-relaxed">{item.description}</p>
             </motion.div>
           ))}
         </motion.div>

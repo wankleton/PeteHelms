@@ -19,75 +19,39 @@ export const navigationItems = [
 // Services
 export const services = [
   {
-    id: "ai-strategy",
+    id: "strategic-thinking",
     icon: LightbulbIcon,
-    title: "Innovation Strategy",
-    description: "Build breakthrough roadmaps. Strategic innovation that drives growth.",
+    title: "Strategic Thinking",
+    description: "I help leaders see possibilities others miss. Years of building companies taught me to spot patterns and connect dots that others overlook.",
     features: [
-      "Opportunity assessment",
-      "ROI analysis",
-      "Technology selection",
-      "Risk mitigation"
+      "Pattern recognition",
+      "Systems thinking", 
+      "Future scenario planning",
+      "Decision frameworks"
     ]
   },
   {
-    id: "ai-transformation",
+    id: "innovation-guidance",
     icon: NetworkIcon,
-    title: "Business Transformation",
-    description: "Revolutionize operations. Scale breakthrough innovations across your organization.",
+    title: "Innovation Guidance",
+    description: "Having lived through the messy reality of innovation, I guide teams through the human side of transformation.",
     features: [
-      "Readiness assessment",
-      "Change management",
-      "Technology strategy",
-      "Capability development"
+      "Problem reframing",
+      "Solution architecture",
+      "Team alignment",
+      "Execution planning"
     ]
   },
   {
-    id: "product-strategy",
+    id: "technology-wisdom",
     icon: PieChartIcon,
-    title: "Product Innovation",
-    description: "Build breakthrough products customers love. From concept to market domination.",
+    title: "Technology Wisdom",
+    description: "Multiple tech cycles have shown me what actually works. I share practical insights from the trenches.",
     features: [
-      "Market analysis",
-      "User-centered design",
-      "MVP definition",
-      "Go-to-market strategy"
-    ]
-  },
-  {
-    id: "executive-advisory",
-    icon: UsersIcon,
-    title: "Executive Advisory",
-    description: "Strategic guidance for leadership teams. Navigate innovation trends and market disruption.",
-    features: [
-      "Innovation trend briefings",
-      "Competitive intelligence",
-      "Strategic planning",
-      "Board communication prep"
-    ]
-  },
-  {
-    id: "ai-workshops",
-    icon: GraduationCapIcon,
-    title: "Innovation Workshops",
-    description: "Upskill your teams. Build innovation capabilities that drive competitive advantage.",
-    features: [
-      "Executive innovation literacy",
-      "Technical team upskilling",
-      "Business team training",
-      "Interactive workshops"
-    ]
-  },
-  {
-    id: "ai-ethics",
-    icon: FileTextIcon,
-    title: "Technology Governance",
-    description: "Build responsible innovation. Ensure compliant and ethical technology deployment.",
-    features: [
-      "Governance frameworks",
-      "Risk assessment",
-      "Compliance guidance",
-      "Transparency solutions"
+      "Technology selection",
+      "Implementation strategy",
+      "Risk mitigation",
+      "Team development"
     ]
   }
 ];
@@ -119,22 +83,22 @@ export const processSteps = [
 // Testimonials
 export const testimonials = [
   {
-    quote: "Pete's guidance helped us navigate AI adoption with a practical approach that delivered tangible business outcomes.",
-    name: "Michael Roberts",
-    title: "CTO",
-    company: "TechInnovate"
+    quote: "Pete sees around corners in ways that consistently surprise me. His ability to connect seemingly unrelated trends into actionable strategy is remarkable.",
+    name: "Sarah Chen",
+    title: "Founder",
+    company: "Next Horizon"
   },
   {
-    quote: "Pete transforms complex AI concepts into exceptional business value.",
-    name: "Sarah Johnson",
+    quote: "What I appreciate most about Pete is his honesty. He tells you what you need to hear, not what you want to hear. That's rare and valuable.",
+    name: "Michael Torres",
     title: "CEO",
-    company: "DataDriven Inc."
+    company: "Evolved Systems"
   },
   {
-    quote: "His strategic insights helped us prioritize AI initiatives with the highest ROI for our transformation.",
-    name: "David Chen",
-    title: "COO",
-    company: "Global Solutions"
+    quote: "Pete doesn't just think strategically—he thinks like someone who's actually built things. That practical wisdom makes all the difference.",
+    name: "Lisa Park",
+    title: "CTO",
+    company: "Forward Labs"
   }
 ];
 

@@ -287,30 +287,30 @@ export default function HeroSection() {
           >
 
             
-            {/* Minimal Headline */}
+            {/* Personal Introduction */}
             <motion.h1 
               className="text-5xl sm:text-6xl md:text-7xl font-light mb-12 relative leading-[0.9] tracking-tight"
               variants={item}
             >
               <span className="block text-slate-900 dark:text-white">
-                Innovation That
+                Hi, I'm
               </span>
               <span className="block text-slate-900 dark:text-white font-bold">
-                Delivers Results
+                Pete Helms
               </span>
             </motion.h1>
             
-            {/* Minimal Description */}
+            {/* Personal Story */}
             <motion.div 
               className="text-xl text-slate-600 dark:text-gray-300 leading-relaxed max-w-xl mx-auto lg:mx-0 mb-16"
               variants={item}
             >
               <p>
-                Strategic innovation that transforms businesses.
+                I build companies and help leaders navigate complex challenges. After years in the trenches of innovation, I've learned what actually works.
               </p>
             </motion.div>
             
-            {/* Minimal CTA */}
+            {/* Simple CTA */}
             <motion.div 
               className="flex flex-col sm:flex-row gap-6"
               variants={item}
@@ -321,11 +321,11 @@ export default function HeroSection() {
                 className="bg-slate-900 hover:bg-slate-800 text-white px-8 py-3 font-normal"
               >
                 <a 
-                  href="#book" 
-                  onClick={scrollToSection('book')} 
+                  href="#about" 
+                  onClick={scrollToSection('about')} 
                   className="flex items-center justify-center"
                 >
-                  Book Session
+                  Learn More About Me
                 </a>
               </Button>
               
@@ -336,11 +336,11 @@ export default function HeroSection() {
                 className="text-slate-600 hover:text-slate-900 px-8 py-3 font-normal"
               >
                 <a 
-                  href="#services" 
-                  onClick={scrollToSection('services')}
+                  href="#contact" 
+                  onClick={scrollToSection('contact')}
                   className="flex items-center justify-center"
                 >
-                  View Services
+                  Get In Touch
                 </a>
               </Button>
             </motion.div>
