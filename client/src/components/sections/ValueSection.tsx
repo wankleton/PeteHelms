@@ -7,23 +7,23 @@ export default function ValueSection() {
   const valueItems = [
     {
       icon: <Eye className="h-6 w-6 text-gray-900 dark:text-white" />,
-      title: "Pattern Recognition",
-      description: "I help you see connections and opportunities that aren't immediately obvious, drawing insights from diverse experiences across industries."
+      title: "Curiosity & Intention",
+      description: "I approach every project with genuine curiosity about your unique challenges and clear intention to create meaningful impact."
     },
     {
       icon: <Lightbulb className="h-6 w-6 text-gray-900 dark:text-white" />,
-      title: "Strategic Clarity",
-      description: "I cut through complexity to help you focus on what truly matters, turning overwhelming decisions into clear action plans."
+      title: "Simplify Operations",
+      description: "I help you streamline five tools into one unified platform, eliminating redundancy and reducing operational complexity."
     },
     {
       icon: <Target className="h-6 w-6 text-gray-900 dark:text-white" />,
-      title: "Practical Solutions",
-      description: "I bridge the gap between vision and execution, ensuring strategies are not just brilliant on paper but actually work in practice."
+      title: "Cut Costs",
+      description: "Through strategic automation and custom solutions, I help reduce marketing costs by 30-50% while maintaining or improving results."
     },
     {
       icon: <Users className="h-6 w-6 text-gray-900 dark:text-white" />,
-      title: "Objective Perspective",
-      description: "As an outside advisor, I bring fresh eyes to your challenges without internal politics or assumptions clouding judgment."
+      title: "Custom Innovation",
+      description: "I build AI-powered systems and custom solutions tailored to your specific needs, bringing strategy, execution, and valuable experience together."
     }
   ];
 
@@ -36,8 +36,30 @@ export default function ValueSection() {
           className="max-w-3xl"
         />
         
+        {/* Personal Value Statement */}
+        <div className="mb-20 mt-12">
+          <motion.div 
+            className="w-full max-w-3xl mx-auto"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.7 }}
+          >
+            <div className="bg-white dark:bg-slate-950 p-8 md:p-12 border border-gray-200 dark:border-gray-700">
+              <div className="space-y-6 text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
+                <p>
+                  I approach every project with curiosity and intention. I don't just help clients build custom solutions—I help them rethink how they operate.
+                </p>
+                <p>
+                  Together, we simplify, automate, and innovate. Whether it's streamlining five tools into one unified platform, reducing marketing costs by 30–50%, or launching custom AI-powered systems, I bring strategy, execution, and valuable experience to the table.
+                </p>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+        
         <motion.div 
-          className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-16"
+          className="grid grid-cols-1 sm:grid-cols-2 gap-8"
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"

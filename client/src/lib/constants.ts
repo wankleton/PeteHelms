@@ -19,39 +19,39 @@ export const navigationItems = [
 // Services
 export const services = [
   {
-    id: "strategy-sessions",
+    id: "for-clients",
     icon: LightbulbIcon,
-    title: "Strategy Sessions",
-    description: "Deep dive conversations to clarify your biggest challenges and identify breakthrough opportunities. Perfect for when you need to think through complex decisions.",
+    title: "For Clients",
+    description: "Strategic consulting and custom software development designed to cut costs and drive results for growing businesses.",
     features: [
-      "90-minute focused sessions",
-      "Strategic problem-solving",
-      "Opportunity identification", 
-      "Action plan development"
+      "Operations simplification",
+      "Cost reduction strategies (30-50%)",
+      "Custom AI-powered systems",
+      "Strategic consulting"
     ]
   },
   {
-    id: "advisory-partnership",
+    id: "for-partners",
     icon: NetworkIcon,
-    title: "Advisory Partnership",
-    description: "Ongoing strategic guidance for leaders navigating transformation. Think of it as having an experienced advisor in your corner.",
+    title: "For Partners",
+    description: "Collaborative builds and product innovation with a lean, high-performing team that delivers exceptional results.",
     features: [
-      "Monthly strategic check-ins",
-      "Real-time decision support",
-      "Team alignment sessions",
-      "Strategic planning facilitation"
+      "Joint product development",
+      "Innovation partnerships",
+      "Lean team collaboration",
+      "Shared expertise projects"
     ]
   },
   {
-    id: "executive-workshops",
+    id: "for-investors",
     icon: PieChartIcon,
-    title: "Executive Workshops",
-    description: "Custom workshops designed to align your leadership team around complex challenges and build strategic thinking capabilities.",
+    title: "For Investors",
+    description: "Insight and access to early-stage products rooted in real-world business needs with proven market validation.",
     features: [
-      "Leadership team alignment",
-      "Strategic thinking development",
-      "Innovation methodology",
-      "Decision-making frameworks"
+      "Market-validated opportunities",
+      "Early-stage product access",
+      "Business needs insights",
+      "Investment guidance"
     ]
   }
 ];
