@@ -7,7 +7,7 @@ export default function AboutSection() {
   const purposeItems = [
     {
       icon: <Heart className="h-6 w-6 text-gray-900 dark:text-white" />,
-      title: "Service & Integrity",
+      title: "Faith",
       description: "Grounded in Christian values, committed to serving the business community with integrity and excellence."
     },
     {
