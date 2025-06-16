@@ -58,9 +58,9 @@ export const services = [
     id: "executive-advisory",
     icon: UsersIcon,
     title: "Executive Advisory",
-    description: "Strategic guidance for leadership teams. Navigate AI trends and competitive threats.",
+    description: "Strategic guidance for leadership teams. Navigate innovation trends and market disruption.",
     features: [
-      "Technology trend briefings",
+      "Innovation trend briefings",
       "Competitive intelligence",
       "Strategic planning",
       "Board communication prep"
@@ -69,10 +69,10 @@ export const services = [
   {
     id: "ai-workshops",
     icon: GraduationCapIcon,
-    title: "AI Workshops & Training",
-    description: "Upskill your teams. Build AI literacy that drives adoption.",
+    title: "Innovation Workshops",
+    description: "Upskill your teams. Build innovation capabilities that drive competitive advantage.",
     features: [
-      "Executive AI literacy",
+      "Executive innovation literacy",
       "Technical team upskilling",
       "Business team training",
       "Interactive workshops"
@@ -81,11 +81,11 @@ export const services = [
   {
     id: "ai-ethics",
     icon: FileTextIcon,
-    title: "AI Ethics & Governance",
-    description: "Build responsible AI. Ensure compliance and ethical implementation.",
+    title: "Technology Governance",
+    description: "Build responsible innovation. Ensure compliant and ethical technology deployment.",
     features: [
-      "Ethical frameworks",
-      "Bias detection",
+      "Governance frameworks",
+      "Risk assessment",
       "Compliance guidance",
       "Transparency solutions"
     ]

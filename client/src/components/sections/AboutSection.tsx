@@ -55,16 +55,16 @@ export default function AboutSection() {
             <div className="p-8 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-lg">
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="text-3xl font-black text-slate-900 dark:text-white mb-1">500+</p>
-                  <p className="text-sm font-medium text-slate-600 dark:text-slate-400">Companies Transformed</p>
+                  <p className="text-3xl font-black text-slate-900 dark:text-white mb-1">15+</p>
+                  <p className="text-sm font-medium text-slate-600 dark:text-slate-400">Years Innovating</p>
                 </div>
                 <div>
-                  <p className="text-3xl font-black text-slate-900 dark:text-white mb-1">$2B+</p>
-                  <p className="text-sm font-medium text-slate-600 dark:text-slate-400">Value Generated</p>
+                  <p className="text-3xl font-black text-slate-900 dark:text-white mb-1">$500M+</p>
+                  <p className="text-sm font-medium text-slate-600 dark:text-slate-400">Value Created</p>
                 </div>
                 <div>
-                  <p className="text-3xl font-black text-slate-900 dark:text-white mb-1">10+</p>
-                  <p className="text-sm font-medium text-slate-600 dark:text-slate-400">Years Experience</p>
+                  <p className="text-3xl font-black text-slate-900 dark:text-white mb-1">50+</p>
+                  <p className="text-sm font-medium text-slate-600 dark:text-slate-400">Success Stories</p>
                 </div>
               </div>
             </div>

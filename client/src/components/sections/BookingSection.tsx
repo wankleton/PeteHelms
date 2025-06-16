@@ -181,9 +181,9 @@ export default function BookingSection() {
               {/* Session benefits with enhanced styling */}
               <div className="space-y-5 mb-8">
                 {[
-                  "Identify your biggest AI opportunities",
-                  "Get a custom implementation roadmap",
-                  "Receive actionable next steps",
+                  "Identify breakthrough opportunities",
+                  "Get a custom innovation roadmap",
+                  "Receive proven growth strategies",
                   "60 minutes + follow-up materials"
                 ].map((item, index) => (
                   <motion.div 
