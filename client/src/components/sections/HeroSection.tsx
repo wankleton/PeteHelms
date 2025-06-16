@@ -308,8 +308,8 @@ export default function HeroSection() {
             >
               <div className="absolute -left-6 top-0 w-2 h-full bg-black dark:bg-white rounded-full"></div>
               <p className="text-black dark:text-white pl-12 leading-[1.5]">
-                I'm a <span className="font-semibold bg-black dark:bg-white text-white dark:text-black px-2 py-1">purpose-driven</span> technology consultant. 
-                I lead a boutique consultancy that is focused on <span className="font-semibold bg-black dark:bg-white text-white dark:text-black px-2 py-1">creating innovative solutions</span>.
+                I'm a <span className="font-semibold bg-black dark:bg-white text-white dark:text-black px-2 py-1">purpose-driven</span> innovator. 
+                I lead a boutique consultancy that is focused on <span className="font-semibold bg-black dark:bg-white text-white dark:text-black px-2 py-1">creating meaningful solutions</span>.
               </p>
             </motion.div>
             
