@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Eye, Lightbulb, Target, Users } from "lucide-react";
-import { fadeIn, staggerContainer } from "@/lib/animations";
+import { fadeIn, staggerContainer, scaleInSpring, cardHover, slideInLeft, slideInRight } from "@/lib/animations";
 import SectionHeading from "@/components/ui/section-heading";
 
 export default function ValueSection() {
@@ -30,15 +30,51 @@ export default function ValueSection() {
   return (
     <section id="value" className="py-20 sm:py-24 md:py-32 bg-gray-50 dark:bg-gray-950">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="relative mb-20 md:mb-24">
-          <div className="absolute right-0 top-0 w-2 h-32 bg-black dark:bg-white rounded-full"></div>
-          <div className="pr-12 text-right">
+        <motion.div 
+          className="relative mb-20 md:mb-24"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8 }}
+        >
+          <motion.div 
+            className="absolute right-0 top-0 w-2 bg-black dark:bg-white rounded-full"
+            initial={{ height: 0 }}
+            whileInView={{ height: 128 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, delay: 0.3, ease: [0.33, 1, 0.68, 1] }}
+          />
+          <motion.div 
+            className="pr-12 text-right"
+            variants={slideInRight}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+          >
             <h2 className="text-5xl md:text-6xl lg:text-7xl font-black mb-8 leading-[0.9] tracking-tight">
-              <span className="text-ultra-thin">HOW I</span> BRING VALUE
+              <motion.span 
+                className="text-ultra-thin"
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+              >HOW I</motion.span> 
+              <motion.span
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+              >BRING VALUE</motion.span>
             </h2>
-            <div className="w-16 h-1 bg-black dark:bg-white mb-6 ml-auto"></div>
-          </div>
-        </div>
+            <motion.div 
+              className="w-16 h-1 bg-black dark:bg-white mb-6 ml-auto"
+              initial={{ width: 0 }}
+              whileInView={{ width: 64 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.8, ease: [0.33, 1, 0.68, 1] }}
+            />
+          </motion.div>
+        </motion.div>
         
         {/* Personal Value Statement */}
         <div className="mb-20 mt-12">

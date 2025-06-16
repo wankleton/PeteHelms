@@ -1,9 +1,10 @@
 import { Button } from "@/components/ui/button";
-import { motion, useAnimate, useMotionValue, useTransform } from "framer-motion";
-import { ArrowRight, ChevronDown, Star, ExternalLink, MousePointer2, LightbulbIcon } from "lucide-react";
+import { motion, useAnimate, useMotionValue, useTransform, useScroll } from "framer-motion";
+import { ArrowRight, ChevronDown, Star, ExternalLink, MousePointer2, LightbulbIcon, Sparkles } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 import peteProfile from "@/assets/pete-profile.jpg";
 import { useIsMobile } from "@/hooks/use-mobile";
+import { slideInLeft, slideInRight, scaleInSpring, buttonPulse, floatingElement, revealUp } from "@/lib/animations";
 
 // Type animation component for dynamic text
 const TypeAnimation = ({ phrases }: { phrases: string[] }) => {
@@ -289,64 +290,143 @@ export default function HeroSection() {
             
             {/* Brief Introduction */}
             <motion.h1 
-              className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl mb-16 md:mb-20 relative"
-              variants={item}
+              className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl mb-16 md:mb-20 relative overflow-hidden"
+              variants={revealUp}
             >
-              <span className="block text-ultra-bold text-black dark:text-white relative geometric-accent">
+              <motion.span 
+                className="block text-ultra-bold text-black dark:text-white relative geometric-accent"
+                initial={{ y: 100 }}
+                animate={{ y: 0 }}
+                transition={{ 
+                  duration: 1.2, 
+                  ease: [0.33, 1, 0.68, 1],
+                  delay: 0.5
+                }}
+              >
                 PETE HELMS
-              </span>
-              <div className="absolute -bottom-4 left-0 w-24 h-1 bg-black dark:bg-white"></div>
+              </motion.span>
+              <motion.div 
+                className="absolute -bottom-4 left-0 h-1 bg-black dark:bg-white"
+                initial={{ width: 0 }}
+                animate={{ width: 96 }}
+                transition={{ 
+                  duration: 0.8,
+                  delay: 1.5,
+                  ease: [0.33, 1, 0.68, 1]
+                }}
+              />
+              
+              {/* Sparkle effects */}
+              <motion.div
+                className="absolute top-4 right-12 text-black dark:text-white"
+                initial={{ opacity: 0, scale: 0 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: 2, duration: 0.5 }}
+              >
+                <Sparkles className="h-8 w-8" />
+              </motion.div>
             </motion.h1>
             
             {/* Brief Description */}
             <motion.div 
               className="text-2xl md:text-3xl font-light leading-[1.4] max-w-2xl mx-auto lg:mx-0 mb-20 md:mb-24 relative"
-              variants={item}
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.8, ease: [0.33, 1, 0.68, 1] }}
             >
-              <div className="absolute -left-6 top-0 w-2 h-full bg-black dark:bg-white rounded-full"></div>
-              <p className="text-black dark:text-white pl-12 leading-[1.5]">
-                I'm a <span className="font-semibold bg-black dark:bg-white text-white dark:text-black px-2 py-1">purpose-driven</span> technology consultant. 
-                I lead a boutique consultancy focused on <span className="font-semibold bg-black dark:bg-white text-white dark:text-black px-2 py-1">innovative solutions</span> 
+              <motion.div 
+                className="absolute -left-6 top-0 w-2 bg-black dark:bg-white rounded-full"
+                initial={{ height: 0 }}
+                animate={{ height: "100%" }}
+                transition={{ duration: 1, delay: 1.2, ease: [0.33, 1, 0.68, 1] }}
+              />
+              <motion.p 
+                className="text-black dark:text-white pl-12 leading-[1.5]"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.6, delay: 1.5 }}
+              >
+                I'm a <motion.span 
+                  className="font-semibold bg-black dark:bg-white text-white dark:text-black px-2 py-1"
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.4, delay: 1.8 }}
+                >purpose-driven</motion.span> technology consultant. 
+                I lead a boutique consultancy focused on <motion.span 
+                  className="font-semibold bg-black dark:bg-white text-white dark:text-black px-2 py-1"
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.4, delay: 2.1 }}
+                >innovative solutions</motion.span> 
                 <br />
                 that have a lasting impact.
-              </p>
+              </motion.p>
             </motion.div>
             
             {/* Bold CTA */}
             <motion.div 
               className="flex flex-col sm:flex-row gap-6 md:gap-8"
-              variants={item}
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 2.4, ease: [0.33, 1, 0.68, 1] }}
             >
-              <Button 
-                asChild 
-                size="lg" 
-                className="bg-black hover:bg-gray-900 text-white px-14 py-8 text-lg font-bold tracking-wider border-stark transition-bounce hover:scale-[1.02] shadow-xl hover:shadow-2xl focus-ring"
+              <motion.div
+                whileHover={{ 
+                  scale: 1.02, 
+                  y: -4,
+                  boxShadow: "0 25px 50px rgba(0,0,0,0.2)",
+                  transition: { duration: 0.3, ease: [0.33, 1, 0.68, 1] }
+                }}
+                whileTap={{ scale: 0.98 }}
               >
-                <a 
-                  href="#purpose" 
-                  onClick={scrollToSection('purpose')} 
-                  className="flex items-center justify-center group"
+                <Button 
+                  asChild 
+                  size="lg" 
+                  className="bg-black hover:bg-gray-900 text-white px-14 py-8 text-lg font-bold tracking-wider border-stark shadow-xl hover:shadow-2xl focus-ring relative overflow-hidden"
                 >
-                  EXPLORE MY STORY
-                  <ArrowRight className="ml-4 h-6 w-6 transition-transform group-hover:translate-x-1" />
-                </a>
-              </Button>
+                  <a 
+                    href="#purpose" 
+                    onClick={scrollToSection('purpose')} 
+                    className="flex items-center justify-center group relative z-10"
+                  >
+                    <motion.div
+                      className="absolute inset-0 bg-gradient-to-r from-gray-800 to-black opacity-0 group-hover:opacity-100"
+                      transition={{ duration: 0.3 }}
+                    />
+                    <span className="relative z-10">EXPLORE MY STORY</span>
+                    <ArrowRight className="ml-4 h-6 w-6 transition-transform group-hover:translate-x-1 relative z-10" />
+                  </a>
+                </Button>
+              </motion.div>
               
-              <Button 
-                asChild 
-                size="lg" 
-                variant="outline"
-                className="border-stark border-2 border-black dark:border-white text-black dark:text-white hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black px-14 py-8 text-lg font-bold tracking-wider transition-bounce hover:scale-[1.02] shadow-xl hover:shadow-2xl focus-ring"
+              <motion.div
+                whileHover={{ 
+                  scale: 1.02, 
+                  y: -4,
+                  transition: { duration: 0.3, ease: [0.33, 1, 0.68, 1] }
+                }}
+                whileTap={{ scale: 0.98 }}
               >
-                <a 
-                  href="#book" 
-                  onClick={scrollToSection('book')}
-                  className="flex items-center justify-center group"
+                <Button 
+                  asChild 
+                  size="lg" 
+                  variant="outline"
+                  className="border-stark border-2 border-black dark:border-white text-black dark:text-white hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black px-14 py-8 text-lg font-bold tracking-wider shadow-xl hover:shadow-2xl focus-ring relative overflow-hidden"
                 >
-                  START A CONVERSATION
-                  <ArrowRight className="ml-4 h-6 w-6 transition-transform group-hover:translate-x-1" />
-                </a>
-              </Button>
+                  <a 
+                    href="#book" 
+                    onClick={scrollToSection('book')}
+                    className="flex items-center justify-center group relative z-10"
+                  >
+                    <motion.div
+                      className="absolute inset-0 bg-black dark:bg-white opacity-0 group-hover:opacity-100"
+                      transition={{ duration: 0.3 }}
+                    />
+                    <span className="relative z-10">START A CONVERSATION</span>
+                    <ArrowRight className="ml-4 h-6 w-6 transition-transform group-hover:translate-x-1 relative z-10" />
+                  </a>
+                </Button>
+              </motion.div>
             </motion.div>
             
             {/* Scroll indicator */}
