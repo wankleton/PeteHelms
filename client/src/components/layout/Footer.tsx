@@ -52,7 +52,7 @@ export default function Footer() {
                 <SiWhatsapp size={18} />
               </a>
               <a 
-                href="https://facebook.com" 
+                href="https://www.facebook.com/petehelmsman/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-secondary-400 hover:text-white transition-colors"
