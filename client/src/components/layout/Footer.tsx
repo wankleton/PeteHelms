@@ -29,7 +29,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           <div className="space-y-4 text-left">
             <div>
-              <h3 className="text-lg font-bold mb-2">Pete Helms</h3>
+              <h2 className="text-2xl font-bold mb-3">Pete Helms</h2>
               <p className="text-secondary-400">I'm a purpose-driven technology consultant. I lead a boutique consultancy focused on innovative solutions that have a lasting impact.</p>
             </div>
             <div className="flex space-x-4">
