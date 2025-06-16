@@ -173,8 +173,8 @@ export default function ServicesSection() {
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <SectionHeading 
-          title={<>Innovation <span className="text-slate-900 dark:text-white font-bold">Services</span></>}
-          description="Strategic solutions that drive growth."
+          title={<>How I <span className="text-slate-900 dark:text-white font-bold">Work</span></>}
+          description="The ways I typically help leaders and teams."
           className="max-w-3xl"
         />
         

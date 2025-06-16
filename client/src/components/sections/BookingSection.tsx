@@ -108,9 +108,9 @@ export default function BookingSection() {
         >
           <SectionHeading 
             title={
-              <>Book Your <span className="text-slate-900 dark:text-white font-bold">Innovation Session</span></>
+              <>Let's <span className="text-slate-900 dark:text-white font-bold">Connect</span></>
             }
-            description="Strategic consultation that transforms businesses."
+            description="I'm always interested in hearing about interesting challenges and meeting thoughtful people."
             className="text-slate-900 dark:text-white [&>p]:text-slate-600 dark:[&>p]:text-slate-300 max-w-3xl"
           />
         </motion.div>
@@ -126,29 +126,19 @@ export default function BookingSection() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
             <div>
               <h3 className="text-3xl md:text-4xl font-light mb-8 text-slate-900 dark:text-white leading-tight">
-                Get Your Innovation Strategy
+                What to Expect
               </h3>
               
-              <div className="space-y-4 mb-12">
-                {[
-                  "Identify breakthrough opportunities",
-                  "Get a custom innovation roadmap",
-                  "Receive proven growth strategies",
-                  "60 minutes + follow-up materials"
-                ].map((item, index) => (
-                  <div key={index} className="flex items-center">
-                    <div className="w-1.5 h-1.5 bg-slate-900 dark:bg-white rounded-full mr-4"></div>
-                    <p className="text-slate-700 dark:text-slate-300">{item}</p>
-                  </div>
-                ))}
-              </div>
-              
-              {/* Client testimonial */}
-              <div className="p-6 bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700">
-                <p className="text-gray-600 dark:text-gray-300 italic leading-relaxed mb-4">
-                  "The strategy session with Pete provided more value than months of internal discussions. His ability to quickly understand our business and identify AI opportunities was remarkable."
+              <div className="space-y-6 mb-12 text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
+                <p>
+                  I typically work best with leaders who are facing complex decisions or navigating uncertain territory. 
                 </p>
-                <p className="text-sm text-gray-500 dark:text-gray-400">Recent client</p>
+                <p>
+                  Whether you're thinking through a strategic challenge, exploring new possibilities, or just want to bounce ideas around with someone who's been there before, I'm happy to listen and share what I've learned.
+                </p>
+                <p>
+                  No agenda, no pitch. Just a conversation between people who care about building something meaningful.
+                </p>
               </div>
             </div>
             

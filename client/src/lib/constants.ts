@@ -11,7 +11,7 @@ import {
 export const navigationItems = [
   { id: "home", name: "Home" },
   { id: "about", name: "About" },
-  { id: "services", name: "Services" },
+  { id: "services", name: "Work" },
   { id: "testimonials", name: "Testimonials" },
   { id: "contact", name: "Contact" }
 ];
