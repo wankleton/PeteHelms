@@ -8,7 +8,7 @@ export default function AboutSection() {
     {
       icon: (
         <svg className="h-6 w-6 text-white dark:text-black" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M13 2V8H17V10H13V22H11V10H7V8H11V2H13Z"/>
+          <path d="M12 2C11.17 2 10.5 2.67 10.5 3.5V9.5H4.5C3.67 9.5 3 10.17 3 11V13C3 13.83 3.67 14.5 4.5 14.5H10.5V20.5C10.5 21.33 11.17 22 12 22C12.83 22 13.5 21.33 13.5 20.5V14.5H19.5C20.33 14.5 21 13.83 21 13V11C21 10.17 20.33 9.5 19.5 9.5H13.5V3.5C13.5 2.67 12.83 2 12 2Z"/>
         </svg>
       ),
       title: "Faith",
