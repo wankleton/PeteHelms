@@ -1,7 +1,7 @@
 import HeroSection from "@/components/sections/HeroSection";
 import AboutSection from "@/components/sections/AboutSection";
+import ValueSection from "@/components/sections/ValueSection";
 import ServicesSection from "@/components/sections/ServicesSection";
-import TestimonialsSection from "@/components/sections/TestimonialsSection";
 import ContactSection from "@/components/sections/ContactSection";
 
 export default function Home() {
@@ -9,8 +9,8 @@ export default function Home() {
     <>
       <HeroSection />
       <AboutSection />
+      <ValueSection />
       <ServicesSection />
-      <TestimonialsSection />
       <ContactSection />
     </>
   );
