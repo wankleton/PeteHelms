@@ -1,22 +1,22 @@
 import { motion } from "framer-motion";
-import { Heart, Users, Target, Check, LightbulbIcon } from "lucide-react";
+import { Cross, Star, Target, Check, LightbulbIcon } from "lucide-react";
 import { fadeIn, fadeInUp, staggerContainer } from "@/lib/animations";
 import SectionHeading from "@/components/ui/section-heading";
 
 export default function AboutSection() {
   const purposeItems = [
     {
-      icon: <Heart className="h-6 w-6 text-gray-900 dark:text-white" />,
+      icon: <Cross className="h-6 w-6 text-gray-900 dark:text-white" />,
       title: "Faith",
       description: "Grounded in Christian values, committed to serving the business community with integrity and excellence."
     },
     {
-      icon: <Target className="h-6 w-6 text-gray-900 dark:text-white" />,
+      icon: <Star className="h-6 w-6 text-gray-900 dark:text-white" />,
       title: "Purpose",
       description: "Using business as a platform for service, transformation, and meaningful impact that creates lasting value."
     },
     {
-      icon: <Users className="h-6 w-6 text-gray-900 dark:text-white" />,
+      icon: <Target className="h-6 w-6 text-gray-900 dark:text-white" />,
       title: "Impact",
       description: "Building innovative solutions that create lasting value for businesses and the communities they serve."
     }
