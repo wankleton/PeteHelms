@@ -34,7 +34,7 @@ export default function ValueSection() {
           <div className="absolute right-0 top-0 w-2 h-32 bg-black dark:bg-white rounded-full"></div>
           <div className="pr-12 text-right">
             <h2 className="text-5xl md:text-6xl lg:text-7xl font-black mb-8 leading-[0.9] tracking-tight">
-              HOW I <span className="text-ultra-thin">BRING VALUE</span>
+              <span className="text-ultra-thin">HOW I</span> BRING VALUE
             </h2>
             <div className="w-16 h-1 bg-black dark:bg-white mb-6 ml-auto"></div>
             <p className="text-xl md:text-2xl text-black dark:text-white font-light leading-relaxed max-w-2xl ml-auto">
