@@ -441,8 +441,8 @@ export default function HeroSection() {
                   loading="eager"
                 />
                 
-                {/* Dark gradient overlay */}
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-midnight/40 mix-blend-multiply" />
+                {/* Subtle gradient overlay */}
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-midnight/10 mix-blend-multiply" />
                 
                 {/* Accent border */}
                 <div className="absolute inset-0 border-2 border-accent-highlight/30 rounded-2xl" />
@@ -457,8 +457,8 @@ export default function HeroSection() {
                   loading="eager"
                 />
                 
-                {/* Dark gradient overlay */}
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-midnight/40 mix-blend-multiply" />
+                {/* Subtle gradient overlay */}
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-midnight/10 mix-blend-multiply" />
                 
                 {/* Accent border */}
                 <div className="absolute inset-0 border-2 border-accent-highlight/30 rounded-2xl" />
