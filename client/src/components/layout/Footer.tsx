@@ -29,9 +29,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
             <h3 className="text-lg font-bold mb-4">Pete Helms</h3>
-            <p className="text-secondary-400 mb-6">
-              AI Expert, Business Strategist, and Tech Founder helping businesses leverage cutting-edge technology.
-            </p>
+            <p className="text-secondary-400 mb-6">I'm a purpose-driven technology consultant. I lead a boutique consultancy focused on innovative solutions
+            that have a lasting impact.</p>
             <div className="flex space-x-4">
               <a 
                 href="https://www.linkedin.com/in/petehelmsman/" 
