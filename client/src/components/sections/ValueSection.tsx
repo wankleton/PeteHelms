@@ -54,12 +54,9 @@ export default function ValueSection() {
           >
             <div className="bg-white dark:bg-black p-12 md:p-16 border-stark relative overflow-hidden shadow-lg">
               <div className="absolute top-0 left-0 w-full h-3 bg-black dark:bg-white"></div>
-              <div className="space-y-10 text-2xl md:text-3xl text-black dark:text-white leading-[1.5] font-light">
+              <div className="text-2xl md:text-3xl text-black dark:text-white leading-[1.5] font-light italic">
                 <p>
-                  I approach every project with curiosity and intention. I don't just help clients build custom solutions—I help them rethink how they operate.
-                </p>
-                <p>
-                  Together, we simplify, automate, and innovate. Whether it's streamlining five tools into one unified platform, reducing marketing costs by 30–50%, or launching custom AI-powered systems, I bring strategy, execution, and valuable experience to the table.
+                  "I approach every project with curiosity and intention. I don't just help clients build custom solutions—I help them rethink how they operate."
                 </p>
               </div>
             </div>
