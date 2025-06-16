@@ -46,7 +46,7 @@ export const services = [
     id: "development",
     icon: PieChartIcon,
     title: "Development",
-    description: "Custom app development and AI solutions.",
+    description: "Custom app development and AI implementations.",
     features: [
       "Custom applications",
       "AI system integration",
