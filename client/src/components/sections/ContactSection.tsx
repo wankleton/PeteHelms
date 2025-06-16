@@ -21,9 +21,7 @@ export default function ContactSection() {
                 BOOK A CALL
               </h2>
               <div className="w-16 h-1 bg-black dark:bg-white mb-6"></div>
-              <p className="text-xl md:text-2xl text-black dark:text-white font-light leading-relaxed max-w-2xl">
-                Ready to transform your business? Let's talk.
-              </p>
+              <p className="text-xl md:text-2xl text-black dark:text-white font-light leading-relaxed max-w-2xl">Are you interested to explore working together?</p>
             </div>
           </div>
         </motion.div>
