@@ -64,7 +64,7 @@ export default function Footer() {
           </div>
           
           <div className="space-y-4 text-right">
-            <h3 className="text-lg font-bold text-white">Contact</h3>
+            <h3 className="text-lg font-bold text-white">Contact Info</h3>
             <ul className="space-y-3">
               <li className="flex items-start justify-end">
                 <a 
