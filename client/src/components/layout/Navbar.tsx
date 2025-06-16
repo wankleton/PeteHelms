@@ -163,7 +163,7 @@ export default function Navbar() {
                           scrollToSection(item.id)(e);
                           handleMobileItemClick();
                         }}
-                        className={`text-2xl font-bold flex items-center py-4 px-6 rounded-xl transition-colors min-h-[60px] ${
+                        className={`text-xl sm:text-2xl font-bold flex items-center py-4 px-6 rounded-xl transition-colors min-h-[60px] min-w-[200px] justify-center ${
                           activeSection === item.id 
                             ? 'text-white bg-white/10' 
                             : 'text-secondary-300 hover:text-white hover:bg-white/5'

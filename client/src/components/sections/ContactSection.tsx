@@ -73,14 +73,14 @@ export default function ContactSection() {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.7 }}
         >
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 md:gap-16">
             <div>
-              <h3 className="text-4xl md:text-5xl font-bold mb-16 text-black dark:text-white leading-[0.9] tracking-tight relative">
+              <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 sm:mb-12 md:mb-16 text-black dark:text-white leading-[0.9] tracking-tight relative">
                 LET'S START SIMPLE
-                <div className="absolute -bottom-4 left-0 w-20 h-1 bg-black dark:bg-white"></div>
+                <div className="absolute -bottom-4 left-0 w-16 sm:w-20 h-1 bg-black dark:bg-white"></div>
               </h3>
               
-              <div className="space-y-10 mb-20 text-xl md:text-2xl text-black dark:text-white leading-[1.6] font-light">
+              <div className="space-y-6 sm:space-y-8 md:space-y-10 mb-12 sm:mb-16 md:mb-20 text-lg sm:text-xl md:text-2xl text-black dark:text-white leading-[1.6] font-light">
                 <p>The best way to explore working together is to start with a conversation. No commitment, no pressure—just an opportunity to see if there's a fit.</p>
                 <p>
                   During our call, I'll listen to your challenges, ask clarifying questions, and share my perspective on potential approaches. You'll walk away with at least one new way of thinking about your situation.
@@ -89,13 +89,13 @@ export default function ContactSection() {
             </div>
             
             <div>
-              <h4 className="text-3xl font-bold mb-16 text-black dark:text-white tracking-tight relative">
+              <h4 className="text-xl sm:text-2xl md:text-3xl font-bold mb-8 sm:mb-12 md:mb-16 text-black dark:text-white tracking-tight relative">
                 SCHEDULE YOUR CALL
-                <div className="absolute -bottom-4 left-0 w-16 h-1 bg-black dark:bg-white"></div>
+                <div className="absolute -bottom-4 left-0 w-12 sm:w-16 h-1 bg-black dark:bg-white"></div>
               </h4>
               
-              <div className="space-y-10">
-                <div className="p-10 bg-gray-50 dark:bg-gray-900 border-stark relative overflow-hidden group shadow-lg">
+              <div className="space-y-6 sm:space-y-8 md:space-y-10">
+                <div className="p-6 sm:p-8 md:p-10 bg-gray-50 dark:bg-gray-900 border-stark relative overflow-hidden group shadow-lg">
                   <div className="space-y-4">
                     <div className="flex items-start">
                       <Clock className="h-5 w-5 text-black dark:text-white mt-1 mr-3" />
