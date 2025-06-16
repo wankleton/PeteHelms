@@ -22,7 +22,7 @@ export const services = [
     id: "workshops",
     icon: NetworkIcon,
     title: "Workshops",
-    description: "Hands-on AI training for teams.",
+    description: "Hands-on training for teams looking to implement AI.",
     features: [
       "AI literacy training",
       "Custom workshop design",
