@@ -91,27 +91,14 @@ export default function ContactSection() {
                       size="lg"
                       className="bg-black dark:bg-white text-white dark:text-black hover:bg-gray-900 dark:hover:bg-gray-100 px-14 py-8 text-lg font-bold tracking-wider w-full border-stark transform hover:scale-105 transition-smooth shadow-xl"
                     >
-                      <a href="https://calendly.com/petehelms" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center">
+                      <a href="https://calendly.com/pete-helms/intro-call" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center">
                         <Clock className="h-6 w-6 mr-4" />
-                        SCHEDULE ON CALENDLY
+                        BOOK A CALL
                       </a>
                     </Button>
                   </div>
                   
-                  <div className="text-center">
-                    <p className="text-lg text-black dark:text-white mb-4 font-light">Prefer to email first?</p>
-                    <Button 
-                      asChild
-                      size="lg"
-                      variant="outline"
-                      className="border-stark border-2 border-black dark:border-white text-black dark:text-white hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black px-14 py-8 text-lg font-bold tracking-wider transform hover:scale-105 transition-smooth shadow-lg"
-                    >
-                      <a href="mailto:pete@devellp.com" className="flex items-center justify-center">
-                        <Mail className="h-6 w-6 mr-4" />
-                        SEND ME AN EMAIL
-                      </a>
-                    </Button>
-                  </div>
+                  
                 </div>
               </div>
             </div>
