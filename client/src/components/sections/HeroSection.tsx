@@ -313,7 +313,7 @@ export default function HeroSection() {
               variants={item}
             >
               <p className="font-medium">
-                From Fortune 500 companies to innovative startups, I help businesses unlock competitive advantages through strategic AI implementation.
+                Turn AI complexity into competitive advantage. Proven strategies that deliver measurable ROI.
               </p>
             </motion.div>
             

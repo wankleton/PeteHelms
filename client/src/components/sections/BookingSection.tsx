@@ -144,7 +144,7 @@ export default function BookingSection() {
             title={
               <>Book Your <span className="bg-gradient-to-r from-accent-gradient-start to-accent-gradient-end bg-clip-text text-transparent font-black">Strategy Session</span></>
             }
-            description="Ready to transform your business with AI? Schedule a personalized strategy session to discuss your challenges and unlock new opportunities."
+            description="Get your AI roadmap. 60 minutes that could transform your business."
             className="text-slate-900 dark:text-white [&>p]:text-slate-600 dark:[&>p]:text-slate-300 max-w-3xl"
           />
         </motion.div>
@@ -175,16 +175,16 @@ export default function BookingSection() {
               </motion.div>
               
               <h3 className="text-3xl md:text-4xl font-black mb-8 text-slate-900 dark:text-white leading-tight">
-                Transform Your AI Strategy
+                Get Your AI Roadmap
               </h3>
               
               {/* Session benefits with enhanced styling */}
               <div className="space-y-5 mb-8">
                 {[
-                  "In-depth discussion of your business goals and challenges",
-                  "Custom assessment of AI opportunities for your organization",
-                  "Strategic recommendations and implementation roadmap",
-                  "60-minute video call with follow-up materials and action plan"
+                  "Identify your biggest AI opportunities",
+                  "Get a custom implementation roadmap",
+                  "Receive actionable next steps",
+                  "60 minutes + follow-up materials"
                 ].map((item, index) => (
                   <motion.div 
                     key={index} 

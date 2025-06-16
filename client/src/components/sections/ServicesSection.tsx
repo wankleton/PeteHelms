@@ -205,7 +205,7 @@ export default function ServicesSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <SectionHeading 
           title={<>Strategic <span className="bg-gradient-to-r from-accent-gradient-start to-accent-gradient-end bg-clip-text text-transparent font-black">AI Services</span></>}
-          description="Proven methodologies that transform businesses through strategic AI implementation."
+          description="Transform your business. Measurable results guaranteed."
           className="max-w-3xl"
         />
         

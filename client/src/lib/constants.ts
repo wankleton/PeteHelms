@@ -22,7 +22,7 @@ export const services = [
     id: "ai-strategy",
     icon: LightbulbIcon,
     title: "AI Strategy Consulting",
-    description: "Develop an AI roadmap aligned with business goals. Identify priorities and create implementation plans.",
+    description: "Build your AI roadmap. Strategic planning that delivers ROI.",
     features: [
       "Opportunity assessment",
       "ROI analysis",
