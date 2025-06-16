@@ -12,8 +12,7 @@ export const navigationItems = [
   { id: "home", name: "Home" },
   { id: "purpose", name: "Purpose" },
   { id: "value", name: "Value" },
-  { id: "services", name: "Offerings" },
-  { id: "book", name: "Book Call" }
+  { id: "services", name: "Offerings" }
 ];
 
 // Services
