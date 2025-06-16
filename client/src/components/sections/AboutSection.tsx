@@ -23,16 +23,12 @@ export default function AboutSection() {
   ];
 
   return (
-    <section id="about" className="py-12 sm:py-16 md:py-24 bg-white dark:bg-midnight-950 relative overflow-hidden">
-      {/* Decorative elements */}
-      <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-accent-highlight/10 blur-3xl -z-10"></div>
-      <div className="absolute bottom-0 left-0 w-1/3 h-1/3 bg-accent-gradient-start/10 blur-3xl -z-10"></div>
-      <div className="absolute -top-20 -left-20 w-60 h-60 bg-data-grid opacity-5 rounded-full"></div>
+    <section id="about" className="py-20 sm:py-24 md:py-32 bg-white dark:bg-slate-950">
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading 
-          title={<>Meet <span className="bg-gradient-to-r from-accent-gradient-start to-accent-gradient-end bg-clip-text text-transparent font-black">Pete Helms</span></>}
-          description="Serial innovator and business strategist with a proven track record of driving exponential growth."
+          title={<>Meet <span className="text-slate-900 dark:text-white font-bold">Pete Helms</span></>}
+          description="Strategic innovation that transforms businesses."
         />
         
         <div className="mb-20">

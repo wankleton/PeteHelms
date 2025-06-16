@@ -285,73 +285,62 @@ export default function HeroSection() {
             animate="show"
             className="z-10 text-center lg:text-left"
           >
-            {/* Modern Badge */}
-            <motion.div 
-              className="inline-flex items-center rounded-full bg-gradient-to-r from-accent-gradient-start/10 to-accent-gradient-end/10 border border-accent-gradient-start/20 px-4 py-2 text-sm font-semibold text-accent-gradient-start dark:text-white mb-8 backdrop-blur-sm"
-              variants={item}
-            >
-              <div className="w-2 h-2 rounded-full bg-accent-gradient-start mr-2 animate-pulse"></div>
-              Available for Strategy Sessions
-            </motion.div>
+
             
-            {/* Modern Headline */}
+            {/* Minimal Headline */}
             <motion.h1 
-              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-6 relative leading-[0.9] tracking-tight"
+              className="text-5xl sm:text-6xl md:text-7xl font-light mb-12 relative leading-[0.9] tracking-tight"
               variants={item}
             >
-              <span className="block bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 dark:from-white dark:via-gray-100 dark:to-white bg-clip-text text-transparent">
+              <span className="block text-slate-900 dark:text-white">
                 Innovation That
               </span>
-              <span className="block bg-gradient-to-r from-accent-gradient-start to-accent-gradient-end bg-clip-text text-transparent mt-2">
+              <span className="block text-slate-900 dark:text-white font-bold">
                 Delivers Results
               </span>
             </motion.h1>
             
-            {/* Clean Description */}
+            {/* Minimal Description */}
             <motion.div 
-              className="text-lg sm:text-xl text-slate-600 dark:text-gray-300 leading-relaxed max-w-2xl mx-auto lg:mx-0 mb-8"
+              className="text-xl text-slate-600 dark:text-gray-300 leading-relaxed max-w-xl mx-auto lg:mx-0 mb-16"
               variants={item}
             >
-              <p className="font-medium">
-                Serial innovator with a track record of transforming businesses through breakthrough strategies and cutting-edge technology.
+              <p>
+                Strategic innovation that transforms businesses.
               </p>
             </motion.div>
             
-            {/* Modern CTA Buttons */}
+            {/* Minimal CTA */}
             <motion.div 
-              className="flex flex-col sm:flex-row gap-4 pt-2"
+              className="flex flex-col sm:flex-row gap-6"
               variants={item}
             >
-              {/* Primary CTA */}
               <Button 
                 asChild 
                 size="lg" 
-                className="relative bg-slate-900 hover:bg-slate-800 text-white px-8 py-4 rounded-xl font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 group border-0"
+                className="bg-slate-900 hover:bg-slate-800 text-white px-8 py-3 font-normal"
               >
                 <a 
                   href="#book" 
                   onClick={scrollToSection('book')} 
-                  className="flex items-center justify-center text-base"
+                  className="flex items-center justify-center"
                 >
-                  Book Strategy Session
-                  <ArrowRight className="ml-2 h-5 w-5 transform group-hover:translate-x-1 transition-transform" />
+                  Book Session
                 </a>
               </Button>
               
-              {/* Secondary CTA */}
               <Button 
                 asChild 
                 size="lg" 
-                variant="outline"
-                className="border-2 border-slate-200 hover:border-slate-300 hover:bg-slate-50 text-slate-700 px-8 py-4 rounded-xl font-semibold transition-all duration-300 group"
+                variant="ghost"
+                className="text-slate-600 hover:text-slate-900 px-8 py-3 font-normal"
               >
                 <a 
                   href="#services" 
                   onClick={scrollToSection('services')}
-                  className="flex items-center justify-center text-base"
+                  className="flex items-center justify-center"
                 >
-                  View My Work
-                  <ExternalLink className="ml-2 h-4 w-4 opacity-70 group-hover:opacity-100" />
+                  View Services
                 </a>
               </Button>
             </motion.div>
