@@ -308,9 +308,9 @@ export default function HeroSection() {
             >
               <div className="absolute -left-6 top-0 w-2 h-full bg-black dark:bg-white rounded-full"></div>
               <p className="text-black dark:text-white pl-12 leading-[1.5]">
-                A <span className="font-semibold bg-black dark:bg-white text-white dark:text-black px-2 py-1">purpose-driven</span> technology consultant, strategist, and innovator. 
-                I lead a boutique firm that helps growing businesses <span className="font-semibold bg-black dark:bg-white text-white dark:text-black px-2 py-1">simplify operations</span>, 
-                cut unnecessary costs, and build custom solutions that unlock real results.
+                I'm a <span className="font-semibold bg-black dark:bg-white text-white dark:text-black px-2 py-1">purpose-driven</span> technology consultant and innovator-for-hire. 
+                I lead a boutique consultancy that is focused on <span className="font-semibold bg-black dark:bg-white text-white dark:text-black px-2 py-1">creating innovative solutions</span> 
+                that have a lasting impact.
               </p>
             </motion.div>
             
