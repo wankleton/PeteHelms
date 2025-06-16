@@ -34,7 +34,7 @@ export const services = [
     id: "ai-transformation",
     icon: NetworkIcon,
     title: "AI Transformation",
-    description: "Restructure processes and teams to integrate AI effectively. Build capabilities and governance frameworks.",
+    description: "Transform your organization. Build AI capabilities that scale.",
     features: [
       "Readiness assessment",
       "Change management",
@@ -46,7 +46,7 @@ export const services = [
     id: "product-strategy",
     icon: PieChartIcon,
     title: "Product Strategy",
-    description: "Develop AI products that solve real customer problems. Create roadmaps from ideation to market validation.",
+    description: "Build AI products customers love. From concept to market success.",
     features: [
       "Market analysis",
       "User-centered design",
@@ -58,7 +58,7 @@ export const services = [
     id: "executive-advisory",
     icon: UsersIcon,
     title: "Executive Advisory",
-    description: "Expert guidance for leadership teams implementing AI. Get insights on tech trends, risks, and competitive landscape.",
+    description: "Strategic guidance for leadership teams. Navigate AI trends and competitive threats.",
     features: [
       "Technology trend briefings",
       "Competitive intelligence",
@@ -70,7 +70,7 @@ export const services = [
     id: "ai-workshops",
     icon: GraduationCapIcon,
     title: "AI Workshops & Training",
-    description: "Build AI literacy across your organization. Equip teams with knowledge for successful AI initiatives.",
+    description: "Upskill your teams. Build AI literacy that drives adoption.",
     features: [
       "Executive AI literacy",
       "Technical team upskilling",
@@ -82,7 +82,7 @@ export const services = [
     id: "ai-ethics",
     icon: FileTextIcon,
     title: "AI Ethics & Governance",
-    description: "Develop responsible AI frameworks. Align initiatives with ethical principles and regulatory requirements.",
+    description: "Build responsible AI. Ensure compliance and ethical implementation.",
     features: [
       "Ethical frameworks",
       "Bias detection",
