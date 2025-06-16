@@ -307,7 +307,7 @@ export default function HeroSection() {
               <p className="text-black dark:text-white pl-12 leading-[1.5]">
                 I'm a <span className="font-semibold bg-black dark:bg-white text-white dark:text-black px-2 py-1">purpose-driven</span> technology consultant. 
                 I lead a boutique consultancy focused on <span className="font-semibold bg-black dark:bg-white text-white dark:text-black px-2 py-1">innovative solutions</span> 
-                with lasting impact.
+                that have a lasting impact.
               </p>
             </motion.div>
             
