@@ -26,16 +26,16 @@ const ServiceCard = ({
       ref={cardRef}
       key={service.id} 
       className={`
-        relative bg-white dark:bg-slate-900 rounded-2xl shadow-lg overflow-hidden cursor-pointer
+        relative bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-700 p-8 cursor-pointer
         ${isActive 
-          ? 'border-2 border-accent-gradient-start shadow-xl scale-[1.02] z-10' 
-          : 'border border-slate-200 dark:border-slate-700 hover:border-slate-300 dark:hover:border-slate-600'
+          ? 'border-slate-900 dark:border-white' 
+          : 'hover:border-slate-300 dark:hover:border-slate-600'
         }
-        transition-all duration-300 group
+        transition-all duration-300
       `}
       variants={fadeIn}
       custom={index * 0.1}
-      whileHover={{ y: -5, boxShadow: "0 10px 40px -15px rgba(0, 0, 0, 0.2)" }}
+      whileHover={{ y: -2 }}
       onClick={onActive}
       style={{
         opacity: isInView ? 1 : 0,
@@ -169,43 +169,12 @@ export default function ServicesSection() {
   };
 
   return (
-    <section id="services" className="py-12 sm:py-16 md:py-24 bg-secondary-50 dark:bg-midnight-900 relative overflow-hidden">
-      {/* Enhanced background elements */}
-      <div className="absolute inset-0 ai-pattern opacity-5"></div>
-      <div className="absolute inset-0 bg-noise-subtle"></div>
-      
-      {/* Animated gradient orbs */}
-      <motion.div 
-        className="absolute -bottom-32 -right-32 w-80 h-80 rounded-full bg-accent-highlight/20 blur-3xl -z-10"
-        animate={{ 
-          scale: [1, 1.2, 1],
-          opacity: [0.2, 0.3, 0.2],
-        }}
-        transition={{ 
-          duration: 8, 
-          repeat: Infinity, 
-          repeatType: 'reverse',
-        }}
-      />
-      
-      <motion.div 
-        className="absolute -top-32 -left-32 w-80 h-80 rounded-full bg-accent-gradient-start/10 blur-3xl -z-10"
-        animate={{ 
-          scale: [1, 1.1, 1],
-          opacity: [0.1, 0.2, 0.1],
-        }}
-        transition={{ 
-          duration: 10, 
-          repeat: Infinity, 
-          repeatType: 'reverse',
-          delay: 2
-        }}
-      />
+    <section id="services" className="py-20 sm:py-24 md:py-32 bg-slate-50 dark:bg-slate-900">
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <SectionHeading 
-          title={<>Innovation <span className="bg-gradient-to-r from-accent-gradient-start to-accent-gradient-end bg-clip-text text-transparent font-black">Services</span></>}
-          description="Strategic solutions that drive breakthrough growth and competitive advantage."
+          title={<>Innovation <span className="text-slate-900 dark:text-white font-bold">Services</span></>}
+          description="Strategic solutions that drive growth."
           className="max-w-3xl"
         />
         

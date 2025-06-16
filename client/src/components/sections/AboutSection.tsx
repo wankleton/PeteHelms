@@ -39,29 +39,23 @@ export default function AboutSection() {
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
           >
-            <div className="inline-flex items-center rounded-full bg-slate-100 dark:bg-slate-800 px-4 py-2 text-sm font-semibold text-slate-700 dark:text-slate-300 mb-8 border border-slate-200 dark:border-slate-700">
-              <div className="w-2 h-2 rounded-full bg-accent-gradient-start mr-2"></div>
-              Philosophy
-            </div>
-            <h3 className="text-3xl md:text-4xl font-black mb-6 text-slate-900 dark:text-white leading-tight">Innovation That Scales</h3>
-            <p className="text-lg text-slate-600 dark:text-slate-300 mb-8 leading-relaxed font-medium">
-              I've built companies, led transformations, and pioneered breakthrough solutions. My track record speaks to consistent success in turning vision into reality.
+            <h3 className="text-3xl md:text-4xl font-light mb-8 text-slate-900 dark:text-white leading-tight">Innovation That Scales</h3>
+            <p className="text-xl text-slate-600 dark:text-slate-300 mb-12 leading-relaxed">
+              Turning vision into reality through strategic innovation.
             </p>
             
-            <div className="p-8 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-lg">
-              <div className="flex items-center justify-between">
-                <div>
-                  <p className="text-3xl font-black text-slate-900 dark:text-white mb-1">15+</p>
-                  <p className="text-sm font-medium text-slate-600 dark:text-slate-400">Years Innovating</p>
-                </div>
-                <div>
-                  <p className="text-3xl font-black text-slate-900 dark:text-white mb-1">$500M+</p>
-                  <p className="text-sm font-medium text-slate-600 dark:text-slate-400">Value Created</p>
-                </div>
-                <div>
-                  <p className="text-3xl font-black text-slate-900 dark:text-white mb-1">50+</p>
-                  <p className="text-sm font-medium text-slate-600 dark:text-slate-400">Success Stories</p>
-                </div>
+            <div className="grid grid-cols-3 gap-8 pt-8">
+              <div className="text-center">
+                <p className="text-4xl font-light text-slate-900 dark:text-white mb-2">15+</p>
+                <p className="text-slate-600 dark:text-slate-400">Years</p>
+              </div>
+              <div className="text-center">
+                <p className="text-4xl font-light text-slate-900 dark:text-white mb-2">$500M+</p>
+                <p className="text-slate-600 dark:text-slate-400">Value Created</p>
+              </div>
+              <div className="text-center">
+                <p className="text-4xl font-light text-slate-900 dark:text-white mb-2">50+</p>
+                <p className="text-slate-600 dark:text-slate-400">Projects</p>
               </div>
             </div>
           </motion.div>

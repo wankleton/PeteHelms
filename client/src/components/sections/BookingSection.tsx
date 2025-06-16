@@ -97,41 +97,7 @@ export default function BookingSection() {
   };
 
   return (
-    <section id="book" className="py-16 sm:py-20 md:py-32 bg-gradient-to-br from-slate-50 to-white dark:from-slate-900 dark:to-slate-950 relative overflow-hidden">
-      {/* Enhanced background elements */}
-      <div className="absolute inset-0 bg-data-grid opacity-15"></div>
-      <div className="absolute inset-0 bg-noise-subtle opacity-20"></div>
-      
-      {/* Animated gradient orbs */}
-      <motion.div 
-        className="absolute -top-32 -right-32 w-96 h-96 bg-accent-gradient-start/20 rounded-full blur-3xl"
-        animate={{ 
-          scale: [1, 1.2, 1],
-          opacity: [0.2, 0.3, 0.2],
-        }}
-        transition={{ 
-          duration: 12, 
-          repeat: Infinity, 
-          repeatType: 'reverse',
-        }}
-      />
-      
-      <motion.div 
-        className="absolute -bottom-40 -left-40 w-96 h-96 bg-accent-gradient-end/20 rounded-full blur-3xl"
-        animate={{ 
-          scale: [1, 1.3, 1],
-          opacity: [0.15, 0.25, 0.15],
-        }}
-        transition={{ 
-          duration: 15, 
-          repeat: Infinity, 
-          repeatType: 'reverse',
-          delay: 2
-        }}
-      />
-      
-      {/* Subtle animated circuit pattern for tech feel */}
-      <div className="absolute inset-0 bg-circuit-pattern opacity-10"></div>
+    <section id="book" className="py-20 sm:py-24 md:py-32 bg-white dark:bg-slate-950">
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
@@ -142,39 +108,24 @@ export default function BookingSection() {
         >
           <SectionHeading 
             title={
-              <>Book Your <span className="bg-gradient-to-r from-accent-gradient-start to-accent-gradient-end bg-clip-text text-transparent font-black">Innovation Session</span></>
+              <>Book Your <span className="text-slate-900 dark:text-white font-bold">Innovation Session</span></>
             }
-            description="Get breakthrough strategies. 60 minutes that could transform your business."
+            description="Strategic consultation that transforms businesses."
             className="text-slate-900 dark:text-white [&>p]:text-slate-600 dark:[&>p]:text-slate-300 max-w-3xl"
           />
         </motion.div>
         
         <motion.div 
-          className="bg-white dark:bg-slate-900 rounded-3xl p-6 sm:p-8 md:p-12 shadow-xl max-w-5xl mx-auto mt-12 sm:mt-16 md:mt-20 border border-slate-200 dark:border-slate-700 overflow-hidden"
+          className="max-w-4xl mx-auto mt-16 sm:mt-20 md:mt-24"
           variants={fadeInUp}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.7 }}
         >
-          {/* Subtle background patterns */}
-          <div className="absolute inset-0 bg-noise-subtle opacity-20"></div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-6 md:gap-10 relative z-10">
-            <div className="md:col-span-2">
-              {/* Animated badge */}
-              <motion.div 
-                className="inline-flex items-center rounded-full bg-slate-100 dark:bg-slate-800 px-4 py-2 text-sm font-semibold text-slate-700 dark:text-slate-300 mb-6 border border-slate-200 dark:border-slate-700"
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5 }}
-              >
-                <div className="w-2 h-2 rounded-full bg-accent-gradient-start mr-2"></div>
-                Premium Strategy Session
-              </motion.div>
-              
-              <h3 className="text-3xl md:text-4xl font-black mb-8 text-slate-900 dark:text-white leading-tight">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
+            <div>
+              <h3 className="text-3xl md:text-4xl font-light mb-8 text-slate-900 dark:text-white leading-tight">
                 Get Your Innovation Strategy
               </h3>
               
