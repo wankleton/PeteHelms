@@ -8,22 +8,22 @@ export default function ValueSection() {
     {
       icon: <Eye className="h-6 w-6 text-gray-900 dark:text-white" />,
       title: "Curiosity & Intention",
-      description: "I approach every project with genuine curiosity about your unique challenges and clear intention to create meaningful impact."
+      description: "Deep understanding of your challenges drives meaningful solutions."
     },
     {
       icon: <Lightbulb className="h-6 w-6 text-gray-900 dark:text-white" />,
       title: "Simplify Operations",
-      description: "I help you streamline five tools into one unified platform, eliminating redundancy and reducing operational complexity."
+      description: "Streamline multiple tools into unified platforms."
     },
     {
       icon: <Target className="h-6 w-6 text-gray-900 dark:text-white" />,
       title: "Cut Costs",
-      description: "Through strategic automation and custom solutions, I help reduce marketing costs by 30-50% while maintaining or improving results."
+      description: "Reduce operational costs by 30-50% through automation."
     },
     {
       icon: <Users className="h-6 w-6 text-gray-900 dark:text-white" />,
       title: "Custom Innovation",
-      description: "I build AI-powered systems and custom solutions tailored to your specific needs, bringing strategy, execution, and valuable experience together."
+      description: "AI-powered systems tailored to your specific needs."
     }
   ];
 
@@ -38,7 +38,7 @@ export default function ValueSection() {
             </h2>
             <div className="w-16 h-1 bg-black dark:bg-white mb-6 ml-auto"></div>
             <p className="text-xl md:text-2xl text-black dark:text-white font-light leading-relaxed max-w-2xl ml-auto">
-              My approach to helping businesses simplify, automate, and innovate.
+              Simplify, automate, and innovate.
             </p>
           </div>
         </div>

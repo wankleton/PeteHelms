@@ -165,7 +165,7 @@ export default function ServicesSection() {
             </h2>
             <div className="w-16 h-1 bg-black dark:bg-white mb-6 mx-auto"></div>
             <p className="text-xl md:text-2xl text-black dark:text-white font-light leading-relaxed max-w-3xl mx-auto">
-              Tailored solutions for three distinct audiences seeking growth and innovation.
+              Three ways to transform your business.
             </p>
           </div>
         </div>

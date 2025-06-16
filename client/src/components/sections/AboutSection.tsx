@@ -12,17 +12,17 @@ export default function AboutSection() {
         </svg>
       ),
       title: "Faith",
-      description: "Grounded in Christian values, committed to serving the business community with integrity and excellence."
+      description: "Christian values guide every business decision."
     },
     {
       icon: <Star className="h-6 w-6 text-white dark:text-black" />,
       title: "Purpose",
-      description: "Using business as a platform for service, transformation, and meaningful impact that creates lasting value."
+      description: "Technology as a platform for meaningful transformation."
     },
     {
       icon: <Target className="h-6 w-6 text-white dark:text-black" />,
       title: "Impact",
-      description: "Building innovative solutions that create lasting value for businesses and the communities they serve."
+      description: "Solutions that create lasting business value."
     }
   ];
 
@@ -37,7 +37,7 @@ export default function AboutSection() {
             </h2>
             <div className="w-16 h-1 bg-black dark:bg-white mb-6"></div>
             <p className="text-xl md:text-2xl text-black dark:text-white font-light leading-relaxed max-w-2xl">
-              The values and beliefs that drive everything I do.
+              The foundation of my work and approach.
             </p>
           </div>
         </div>
