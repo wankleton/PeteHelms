@@ -300,10 +300,10 @@ export default function HeroSection() {
               variants={item}
             >
               <span className="block bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 dark:from-white dark:via-gray-100 dark:to-white bg-clip-text text-transparent">
-                Transform Your Business
+                Innovation That
               </span>
               <span className="block bg-gradient-to-r from-accent-gradient-start to-accent-gradient-end bg-clip-text text-transparent mt-2">
-                With AI Strategy
+                Delivers Results
               </span>
             </motion.h1>
             
@@ -313,7 +313,7 @@ export default function HeroSection() {
               variants={item}
             >
               <p className="font-medium">
-                Turn AI complexity into competitive advantage. Proven strategies that deliver measurable ROI.
+                Serial innovator with a track record of transforming businesses through breakthrough strategies and cutting-edge technology.
               </p>
             </motion.div>
             

@@ -142,9 +142,9 @@ export default function BookingSection() {
         >
           <SectionHeading 
             title={
-              <>Book Your <span className="bg-gradient-to-r from-accent-gradient-start to-accent-gradient-end bg-clip-text text-transparent font-black">Strategy Session</span></>
+              <>Book Your <span className="bg-gradient-to-r from-accent-gradient-start to-accent-gradient-end bg-clip-text text-transparent font-black">Innovation Session</span></>
             }
-            description="Get your AI roadmap. 60 minutes that could transform your business."
+            description="Get breakthrough strategies. 60 minutes that could transform your business."
             className="text-slate-900 dark:text-white [&>p]:text-slate-600 dark:[&>p]:text-slate-300 max-w-3xl"
           />
         </motion.div>
@@ -175,7 +175,7 @@ export default function BookingSection() {
               </motion.div>
               
               <h3 className="text-3xl md:text-4xl font-black mb-8 text-slate-900 dark:text-white leading-tight">
-                Get Your AI Roadmap
+                Get Your Innovation Strategy
               </h3>
               
               {/* Session benefits with enhanced styling */}

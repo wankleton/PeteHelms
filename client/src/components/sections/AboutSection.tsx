@@ -32,7 +32,7 @@ export default function AboutSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading 
           title={<>Meet <span className="bg-gradient-to-r from-accent-gradient-start to-accent-gradient-end bg-clip-text text-transparent font-black">Pete Helms</span></>}
-          description="AI strategist delivering 10x ROI for Fortune 500 companies."
+          description="Serial innovator and business strategist with a proven track record of driving exponential growth."
         />
         
         <div className="mb-20">
@@ -47,9 +47,9 @@ export default function AboutSection() {
               <div className="w-2 h-2 rounded-full bg-accent-gradient-start mr-2"></div>
               Philosophy
             </div>
-            <h3 className="text-3xl md:text-4xl font-black mb-6 text-slate-900 dark:text-white leading-tight">AI That Actually Works</h3>
+            <h3 className="text-3xl md:text-4xl font-black mb-6 text-slate-900 dark:text-white leading-tight">Innovation That Scales</h3>
             <p className="text-lg text-slate-600 dark:text-slate-300 mb-8 leading-relaxed font-medium">
-              I turn AI complexity into competitive advantage. Proven strategies that deliver measurable ROI, not just tech buzzwords.
+              I've built companies, led transformations, and pioneered breakthrough solutions. My track record speaks to consistent success in turning vision into reality.
             </p>
             
             <div className="p-8 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-lg">

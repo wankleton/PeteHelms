@@ -21,8 +21,8 @@ export const services = [
   {
     id: "ai-strategy",
     icon: LightbulbIcon,
-    title: "AI Strategy Consulting",
-    description: "Build your AI roadmap. Strategic planning that delivers ROI.",
+    title: "Innovation Strategy",
+    description: "Build breakthrough roadmaps. Strategic innovation that drives growth.",
     features: [
       "Opportunity assessment",
       "ROI analysis",
@@ -33,20 +33,20 @@ export const services = [
   {
     id: "ai-transformation",
     icon: NetworkIcon,
-    title: "AI Transformation",
-    description: "Transform your organization. Build AI capabilities that scale.",
+    title: "Business Transformation",
+    description: "Revolutionize operations. Scale breakthrough innovations across your organization.",
     features: [
       "Readiness assessment",
       "Change management",
-      "Data strategy",
+      "Technology strategy",
       "Capability development"
     ]
   },
   {
     id: "product-strategy",
     icon: PieChartIcon,
-    title: "Product Strategy",
-    description: "Build AI products customers love. From concept to market success.",
+    title: "Product Innovation",
+    description: "Build breakthrough products customers love. From concept to market domination.",
     features: [
       "Market analysis",
       "User-centered design",
