@@ -289,58 +289,61 @@ export default function HeroSection() {
             
             {/* Brief Introduction */}
             <motion.h1 
-              className="text-5xl sm:text-6xl md:text-7xl font-light mb-12 relative leading-[0.9] tracking-tight"
+              className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl mb-12 relative leading-[0.8] tracking-tight"
               variants={item}
             >
-              <span className="block text-slate-900 dark:text-white">
+              <span className="block text-ultra-thin text-black dark:text-white">
                 Hi, I'm
               </span>
-              <span className="block text-slate-900 dark:text-white font-bold">
-                Pete Helms
+              <span className="block text-ultra-bold text-black dark:text-white relative geometric-accent">
+                PETE HELMS
               </span>
             </motion.h1>
             
             {/* Brief Description */}
             <motion.div 
-              className="text-xl text-gray-800 dark:text-gray-200 leading-relaxed max-w-xl mx-auto lg:mx-0 mb-16"
+              className="text-2xl md:text-3xl font-light leading-relaxed max-w-2xl mx-auto lg:mx-0 mb-16 relative"
               variants={item}
             >
-              <p>
-                A purpose-driven technology consultant, strategist, and innovator. I lead a boutique firm that helps growing businesses simplify operations, cut unnecessary costs, and build custom solutions that unlock real results.
+              <div className="absolute -left-4 top-0 w-1 h-full bg-black dark:bg-white"></div>
+              <p className="text-black dark:text-white pl-8">
+                A <span className="font-semibold">purpose-driven</span> technology consultant, strategist, and innovator. 
+                I lead a boutique firm that helps growing businesses <span className="font-semibold">simplify operations</span>, 
+                cut unnecessary costs, and build custom solutions that unlock real results.
               </p>
             </motion.div>
             
-            {/* Simple CTA */}
+            {/* Bold CTA */}
             <motion.div 
-              className="flex flex-col sm:flex-row gap-6"
+              className="flex flex-col sm:flex-row gap-8"
               variants={item}
             >
               <Button 
                 asChild 
                 size="lg" 
-                className="bg-black hover:bg-gray-900 text-white px-8 py-3 font-normal"
+                className="bg-black hover:bg-gray-900 text-white px-12 py-6 text-lg font-semibold tracking-wide border-stark transform hover:scale-105 transition-all duration-200"
               >
                 <a 
                   href="#purpose" 
                   onClick={scrollToSection('purpose')} 
                   className="flex items-center justify-center"
                 >
-                  Learn More
+                  EXPLORE MY STORY
                 </a>
               </Button>
               
               <Button 
                 asChild 
                 size="lg" 
-                variant="ghost"
-                className="text-gray-700 hover:text-black px-8 py-3 font-normal"
+                variant="outline"
+                className="border-stark border-black dark:border-white text-black dark:text-white hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black px-12 py-6 text-lg font-semibold tracking-wide transform hover:scale-105 transition-all duration-200"
               >
                 <a 
                   href="#book" 
                   onClick={scrollToSection('book')}
                   className="flex items-center justify-center"
                 >
-                  Book a Call
+                  START A CONVERSATION
                 </a>
               </Button>
             </motion.div>
