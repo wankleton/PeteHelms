@@ -372,12 +372,7 @@ export default function HeroSection() {
             animate="show"
           >
             {/* Feature Badges */}
-            <FeatureBadge 
-              icon={<Star size={12} />}
-              text="AI Expertise"
-              position="top-8 -left-4"
-              delay={0.5}
-            />
+
             
 
             
