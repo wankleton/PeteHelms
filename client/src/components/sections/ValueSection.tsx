@@ -30,13 +30,14 @@ export default function ValueSection() {
   return (
     <section id="value" className="py-20 sm:py-24 md:py-32 bg-gray-50 dark:bg-gray-950">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="relative mb-16">
-          <div className="absolute right-0 top-0 w-2 h-32 bg-black dark:bg-white"></div>
-          <div className="pr-8 text-right">
-            <h2 className="text-5xl md:text-6xl lg:text-7xl font-black mb-6 leading-tight tracking-tight">
+        <div className="relative mb-20 md:mb-24">
+          <div className="absolute right-0 top-0 w-2 h-32 bg-black dark:bg-white rounded-full"></div>
+          <div className="pr-12 text-right">
+            <h2 className="text-5xl md:text-6xl lg:text-7xl font-black mb-8 leading-[0.9] tracking-tight">
               HOW I <span className="text-ultra-thin">BRING VALUE</span>
             </h2>
-            <p className="text-xl md:text-2xl text-black dark:text-white font-light">
+            <div className="w-16 h-1 bg-black dark:bg-white mb-6 ml-auto"></div>
+            <p className="text-xl md:text-2xl text-black dark:text-white font-light leading-relaxed max-w-2xl ml-auto">
               My approach to helping businesses simplify, automate, and innovate.
             </p>
           </div>
@@ -51,9 +52,9 @@ export default function ValueSection() {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.7 }}
           >
-            <div className="bg-white dark:bg-black p-12 md:p-16 border-stark relative overflow-hidden">
-              <div className="absolute top-0 left-0 w-full h-2 bg-black dark:bg-white"></div>
-              <div className="space-y-8 text-2xl md:text-3xl text-black dark:text-white leading-relaxed font-light">
+            <div className="bg-white dark:bg-black p-12 md:p-16 border-stark relative overflow-hidden shadow-lg">
+              <div className="absolute top-0 left-0 w-full h-3 bg-black dark:bg-white"></div>
+              <div className="space-y-10 text-2xl md:text-3xl text-black dark:text-white leading-[1.5] font-light">
                 <p>
                   I approach every project with curiosity and intention. I don't just help clients build custom solutions—I help them rethink how they operate.
                 </p>
@@ -75,18 +76,18 @@ export default function ValueSection() {
           {valueItems.map((item, index) => (
             <motion.div 
               key={index} 
-              className="bg-white dark:bg-black p-10 border-stark transition-all duration-300 hover:shadow-2xl relative overflow-hidden group"
+              className="bg-white dark:bg-black p-12 md:p-14 border-stark transition-smooth hover:shadow-2xl relative overflow-hidden group"
               variants={fadeIn}
               whileHover={{ y: -5 }}
             >
-              <div className="absolute top-0 right-0 w-full h-1 bg-black dark:bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
-              <div className="w-24 h-24 bg-black dark:bg-white flex items-center justify-center mb-8 transition-all duration-300 group-hover:-rotate-12">
-                <div className="text-white dark:text-black text-xl">
+              <div className="absolute top-0 right-0 w-full h-2 bg-black dark:bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
+              <div className="w-28 h-28 bg-black dark:bg-white flex items-center justify-center mb-12 transition-bounce group-hover:-rotate-12 shadow-lg">
+                <div className="text-white dark:text-black text-2xl">
                   {item.icon}
                 </div>
               </div>
-              <h3 className="text-2xl font-bold mb-6 text-black dark:text-white tracking-wide">{item.title.toUpperCase()}</h3>
-              <p className="text-lg text-black dark:text-white leading-relaxed font-light">{item.description}</p>
+              <h3 className="text-2xl font-bold mb-8 text-black dark:text-white tracking-wider leading-tight">{item.title.toUpperCase()}</h3>
+              <p className="text-lg text-black dark:text-white leading-[1.7] font-light">{item.description}</p>
             </motion.div>
           ))}
         </motion.div>

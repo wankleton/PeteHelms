@@ -14,13 +14,14 @@ export default function ContactSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
         >
-          <div className="relative mb-16">
-            <div className="absolute left-0 top-0 w-2 h-32 bg-black dark:bg-white"></div>
-            <div className="pl-8">
-              <h2 className="text-5xl md:text-6xl lg:text-7xl font-black mb-6 leading-tight tracking-tight">
+          <div className="relative mb-20 md:mb-24">
+            <div className="absolute left-0 top-0 w-2 h-32 bg-black dark:bg-white rounded-full"></div>
+            <div className="pl-12">
+              <h2 className="text-5xl md:text-6xl lg:text-7xl font-black mb-8 leading-[0.9] tracking-tight">
                 BOOK A <span className="text-ultra-thin">CALL</span>
               </h2>
-              <p className="text-xl md:text-2xl text-black dark:text-white font-light">
+              <div className="w-16 h-1 bg-black dark:bg-white mb-6"></div>
+              <p className="text-xl md:text-2xl text-black dark:text-white font-light leading-relaxed max-w-2xl">
                 Ready to explore how we can work together? Let's start with a conversation.
               </p>
             </div>
@@ -37,11 +38,12 @@ export default function ContactSection() {
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
             <div>
-              <h3 className="text-4xl md:text-5xl font-bold mb-12 text-black dark:text-white leading-tight tracking-tight">
+              <h3 className="text-4xl md:text-5xl font-bold mb-16 text-black dark:text-white leading-[0.9] tracking-tight relative">
                 LET'S START SIMPLE
+                <div className="absolute -bottom-4 left-0 w-20 h-1 bg-black dark:bg-white"></div>
               </h3>
               
-              <div className="space-y-8 mb-16 text-xl md:text-2xl text-black dark:text-white leading-relaxed font-light">
+              <div className="space-y-10 mb-20 text-xl md:text-2xl text-black dark:text-white leading-[1.6] font-light">
                 <p>
                   The best way to explore working together is to start with a conversation. No commitment, no pressure—just an opportunity to share what you're working on and see if there's a fit.
                 </p>
@@ -55,12 +57,13 @@ export default function ContactSection() {
             </div>
             
             <div>
-              <h4 className="text-3xl font-bold mb-12 text-black dark:text-white tracking-tight">
+              <h4 className="text-3xl font-bold mb-16 text-black dark:text-white tracking-tight relative">
                 SCHEDULE YOUR CALL
+                <div className="absolute -bottom-4 left-0 w-16 h-1 bg-black dark:bg-white"></div>
               </h4>
               
-              <div className="space-y-8">
-                <div className="p-8 bg-gray-50 dark:bg-gray-900 border-stark relative overflow-hidden group">
+              <div className="space-y-10">
+                <div className="p-10 bg-gray-50 dark:bg-gray-900 border-stark relative overflow-hidden group shadow-lg">
                   <div className="space-y-4">
                     <div className="flex items-start">
                       <Clock className="h-5 w-5 text-black dark:text-white mt-1 mr-3" />
@@ -93,10 +96,10 @@ export default function ContactSection() {
                     <Button 
                       asChild
                       size="lg"
-                      className="bg-black dark:bg-white text-white dark:text-black hover:bg-gray-900 dark:hover:bg-gray-100 px-12 py-6 text-lg font-bold tracking-wide w-full border-stark transform hover:scale-105 transition-all duration-200"
+                      className="bg-black dark:bg-white text-white dark:text-black hover:bg-gray-900 dark:hover:bg-gray-100 px-14 py-8 text-lg font-bold tracking-wider w-full border-stark transform hover:scale-105 transition-smooth shadow-xl"
                     >
                       <a href="https://calendly.com/petehelms" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center">
-                        <Clock className="h-5 w-5 mr-3" />
+                        <Clock className="h-6 w-6 mr-4" />
                         SCHEDULE ON CALENDLY
                       </a>
                     </Button>
