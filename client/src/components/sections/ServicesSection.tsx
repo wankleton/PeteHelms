@@ -86,23 +86,9 @@ const ServiceCard = ({
         
         {/* Service content */}
         <div>
-          <div className="flex items-center justify-between">
-            <h3 className={`text-xl font-black mb-3 ${isActive ? 'text-accent-gradient-end' : 'text-slate-900 dark:text-white'} transition-colors`}>
-              {service.title}
-            </h3>
-            
-            {/* Number indicator */}
-            <span className={`
-              text-xs font-bold py-1 px-2 rounded-full
-              ${isActive 
-                ? 'bg-white text-accent-gradient-end border border-accent-gradient-end' 
-                : 'bg-secondary-100 dark:bg-secondary-800 text-secondary-500 dark:text-secondary-400 border border-secondary-200 dark:border-secondary-700'
-              }
-              transition-all duration-300
-            `}>
-              {(index + 1).toString().padStart(2, '0')}
-            </span>
-          </div>
+          <h3 className={`text-xl font-black mb-3 ${isActive ? 'text-accent-gradient-end' : 'text-slate-900 dark:text-white'} transition-colors`}>
+            {service.title}
+          </h3>
           
           <p className="text-slate-600 dark:text-slate-300 mb-6 text-base leading-relaxed font-medium">
             {service.description}
@@ -173,7 +159,6 @@ export default function ServicesSection() {
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="relative mb-20 md:mb-24">
-          <div className="absolute left-1/2 transform -translate-x-1/2 top-0 w-2 h-32 bg-black dark:bg-white rounded-full"></div>
           <div className="text-center">
             <h2 className="text-5xl md:text-6xl lg:text-7xl font-black mb-8 leading-[0.9] tracking-tight">
               <span className="text-ultra-thin">WHAT I CAN</span> OFFER
@@ -207,39 +192,7 @@ export default function ServicesSection() {
           </motion.div>
         </div>
         
-        {/* Call-to-action section */}
-        <motion.div 
-          className="mt-16 md:mt-24 max-w-4xl mx-auto relative"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.7 }}
-        >
-          <div className="bg-midnight dark:bg-midnight-800 text-white rounded-2xl shadow-xl p-8 md:p-12 relative overflow-hidden">
-            {/* Content */}
-            <div className="relative z-10">
-              <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
-                <div className="max-w-lg">
-                  <h3 className="text-2xl md:text-3xl font-bold mb-4">Ready for results-driven AI?</h3>
-                  <p className="text-secondary-200 mb-6 md:mb-0">Transform your business. Book now.</p>
-                </div>
-                
-                <Button
-                  size="lg"
-                  className="whitespace-nowrap bg-white text-midnight hover:bg-accent-highlight transition-colors duration-300 shadow-lg font-medium group"
-                  onClick={scrollToBooking}
-                >
-                  Book Now
-                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </Button>
-              </div>
-            </div>
-          </div>
-          
-          {/* Decorative elements */}
-          <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-accent-highlight/30 rounded-full blur-md -z-10"></div>
-          <div className="absolute -top-4 -left-4 w-24 h-24 bg-accent-gradient-start/30 rounded-full blur-md -z-10"></div>
-        </motion.div>
+        
       </div>
     </section>
   );

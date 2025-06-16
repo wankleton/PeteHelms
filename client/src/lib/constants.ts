@@ -19,21 +19,9 @@ export const navigationItems = [
 // Services
 export const services = [
   {
-    id: "executive-advisory",
-    icon: LightbulbIcon,
-    title: "Executive Advisory",
-    description: "Strategic guidance for leadership teams navigating digital transformation and technology decisions.",
-    features: [
-      "Technology strategy development",
-      "Digital transformation roadmaps",
-      "Executive decision support",
-      "Innovation planning"
-    ]
-  },
-  {
-    id: "ai-workshops",
+    id: "workshops",
     icon: NetworkIcon,
-    title: "AI Workshops",
+    title: "Workshops",
     description: "Hands-on training sessions to help teams understand and implement AI solutions effectively.",
     features: [
       "AI literacy training",
@@ -43,9 +31,21 @@ export const services = [
     ]
   },
   {
-    id: "software-development",
+    id: "advisory",
+    icon: LightbulbIcon,
+    title: "Advisory",
+    description: "Strategic guidance for leadership teams navigating digital transformation and technology decisions.",
+    features: [
+      "Technology strategy development",
+      "Digital transformation roadmaps",
+      "Executive decision support",
+      "Innovation planning"
+    ]
+  },
+  {
+    id: "development",
     icon: PieChartIcon,
-    title: "Software Development",
+    title: "Development",
     description: "Custom software solutions and AI-powered systems built to solve specific business challenges.",
     features: [
       "Custom application development",
