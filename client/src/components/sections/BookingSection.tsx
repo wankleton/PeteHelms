@@ -129,30 +129,17 @@ export default function BookingSection() {
                 Get Your Innovation Strategy
               </h3>
               
-              {/* Session benefits with enhanced styling */}
-              <div className="space-y-5 mb-8">
+              <div className="space-y-4 mb-12">
                 {[
                   "Identify breakthrough opportunities",
                   "Get a custom innovation roadmap",
                   "Receive proven growth strategies",
                   "60 minutes + follow-up materials"
                 ].map((item, index) => (
-                  <motion.div 
-                    key={index} 
-                    className="flex items-start perspective-1000"
-                    initial={{ opacity: 0, x: -10 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ 
-                      duration: 0.4,
-                      delay: index * 0.1
-                    }}
-                    whileHover={{ scale: 1.02, translateZ: 10 }}
-                  >
-                    <div className="flex-shrink-0 h-6 w-6 rounded-full bg-accent-gradient-start flex items-center justify-center mr-4 mt-0.5">
-                      <Check className="h-3 w-3 text-white" />
-                    </div>
-                    <p className="text-slate-700 dark:text-slate-200 font-medium">{item}</p>
-                  </motion.div>
+                  <div key={index} className="flex items-center">
+                    <div className="w-1.5 h-1.5 bg-slate-900 dark:bg-white rounded-full mr-4"></div>
+                    <p className="text-slate-700 dark:text-slate-300">{item}</p>
+                  </div>
                 ))}
               </div>
               
