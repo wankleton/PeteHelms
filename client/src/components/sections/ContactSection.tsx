@@ -48,9 +48,7 @@ export default function ContactSection() {
                 <p>
                   During our call, I'll listen to your challenges, ask clarifying questions, and share my perspective on potential approaches. You'll walk away with at least one new way of thinking about your situation.
                 </p>
-                <p>
-                  If it feels like we should work together more formally, we can discuss what that might look like. If not, you'll still have gained value from our conversation.
-                </p>
+                <p>If it feels like we should work together more formally, we can discuss what that might look like. If not, at least you made a connection.</p>
               </div>
             </div>
             
