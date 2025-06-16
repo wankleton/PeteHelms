@@ -6,7 +6,7 @@ import {
   Phone, 
   MapPin
 } from 'lucide-react';
-import { SiFacebook } from 'react-icons/si';
+import { SiFacebook, SiWhatsapp } from 'react-icons/si';
 
 import { navigationItems, services, contactInfo } from '@/lib/constants';
 
@@ -43,31 +43,22 @@ export default function Footer() {
                 <Linkedin size={18} />
               </a>
               <a 
-                href="https://twitter.com" 
+                href="https://wa.me/19545894333" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-secondary-400 hover:text-white transition-colors"
-                aria-label="Twitter"
+                aria-label="WhatsApp"
               >
-                <Twitter size={18} />
+                <SiWhatsapp size={18} />
               </a>
               <a 
-                href="https://medium.com" 
+                href="https://facebook.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-secondary-400 hover:text-white transition-colors"
-                aria-label="Medium"
+                aria-label="Facebook"
               >
-                <MessageSquare size={18} />
-              </a>
-              <a 
-                href="https://github.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-secondary-400 hover:text-white transition-colors"
-                aria-label="GitHub"
-              >
-                <Github size={18} />
+                <SiFacebook size={18} />
               </a>
             </div>
           </div>

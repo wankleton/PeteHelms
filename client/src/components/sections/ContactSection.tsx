@@ -106,7 +106,7 @@ export default function ContactSection() {
                       variant="outline"
                       className="border-stark border-2 border-black dark:border-white text-black dark:text-white hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black px-14 py-8 text-lg font-bold tracking-wider transform hover:scale-105 transition-smooth shadow-lg"
                     >
-                      <a href="mailto:hello@petehelms.com" className="flex items-center justify-center">
+                      <a href="mailto:pete@devellp.com" className="flex items-center justify-center">
                         <Mail className="h-6 w-6 mr-4" />
                         SEND ME AN EMAIL
                       </a>
