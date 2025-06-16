@@ -99,7 +99,7 @@ export default function Navbar() {
             >
               <a href="#book" onClick={scrollToSection('book')} className="flex items-center">
                 <Calendar className="mr-1.5 h-4 w-4" />
-                Book a Session
+                Book a Call
                 <ArrowRight className="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform" />
               </a>
             </Button>
