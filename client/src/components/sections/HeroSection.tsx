@@ -302,7 +302,7 @@ export default function HeroSection() {
             
             {/* Brief Description */}
             <motion.div 
-              className="text-xl text-slate-600 dark:text-gray-300 leading-relaxed max-w-xl mx-auto lg:mx-0 mb-16"
+              className="text-xl text-gray-800 dark:text-gray-200 leading-relaxed max-w-xl mx-auto lg:mx-0 mb-16"
               variants={item}
             >
               <p>
@@ -318,7 +318,7 @@ export default function HeroSection() {
               <Button 
                 asChild 
                 size="lg" 
-                className="bg-slate-900 hover:bg-slate-800 text-white px-8 py-3 font-normal"
+                className="bg-black hover:bg-gray-900 text-white px-8 py-3 font-normal"
               >
                 <a 
                   href="#purpose" 
@@ -333,7 +333,7 @@ export default function HeroSection() {
                 asChild 
                 size="lg" 
                 variant="ghost"
-                className="text-slate-600 hover:text-slate-900 px-8 py-3 font-normal"
+                className="text-gray-700 hover:text-black px-8 py-3 font-normal"
               >
                 <a 
                   href="#book" 

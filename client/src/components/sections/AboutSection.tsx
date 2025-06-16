@@ -23,10 +23,10 @@ export default function AboutSection() {
   ];
 
   return (
-    <section id="purpose" className="py-20 sm:py-24 md:py-32 bg-white dark:bg-slate-950">
+    <section id="purpose" className="py-20 sm:py-24 md:py-32 bg-white dark:bg-black">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading 
-          title={<>My <span className="text-slate-900 dark:text-white font-bold">Purpose</span></>}
+          title={<>My <span className="text-black dark:text-white font-bold">Purpose</span></>}
           description="The values and beliefs that drive everything I do."
         />
         
@@ -38,8 +38,8 @@ export default function AboutSection() {
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
           >
-            <h3 className="text-3xl md:text-4xl font-light mb-8 text-slate-900 dark:text-white leading-tight">Why I Do What I Do</h3>
-            <div className="space-y-6 text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
+            <h3 className="text-3xl md:text-4xl font-light mb-8 text-black dark:text-white leading-tight">Why I Do What I Do</h3>
+            <div className="space-y-6 text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
               <p>
                 My life is grounded in purpose. As a Christian, I'm called to love and serve God in everything I do. As a husband and father, I'm committed to leading and serving my family with integrity.
               </p>
