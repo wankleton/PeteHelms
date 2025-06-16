@@ -290,7 +290,7 @@ export default function HeroSection() {
             
             {/* Brief Introduction */}
             <motion.h1 
-              className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl mb-16 md:mb-20 relative"
+              className="text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl mb-8 sm:mb-12 md:mb-16 lg:mb-20 relative leading-[0.9]"
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ 
@@ -326,43 +326,43 @@ export default function HeroSection() {
             
             {/* Brief Description */}
             <motion.div 
-              className="text-2xl md:text-3xl font-light leading-[1.4] max-w-2xl mx-auto lg:mx-0 mb-20 md:mb-24 relative"
+              className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-light leading-[1.4] max-w-2xl mx-auto lg:mx-0 mb-12 sm:mb-16 md:mb-20 lg:mb-24 relative"
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.8, ease: [0.33, 1, 0.68, 1] }}
             >
               <motion.div 
-                className="absolute -left-6 top-0 w-2 bg-black dark:bg-white rounded-full"
+                className="absolute -left-3 sm:-left-6 top-0 w-1 sm:w-2 bg-black dark:bg-white rounded-full"
                 initial={{ height: 0 }}
                 animate={{ height: "100%" }}
                 transition={{ duration: 1, delay: 1.2, ease: [0.33, 1, 0.68, 1] }}
               />
               <motion.p 
-                className="text-black dark:text-white pl-12 leading-[1.5]"
+                className="text-black dark:text-white pl-6 sm:pl-12 leading-[1.5]"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.6, delay: 1.5 }}
               >
                 I'm a <motion.span 
-                  className="font-semibold bg-black dark:bg-white text-white dark:text-black px-2 py-1"
+                  className="font-semibold bg-black dark:bg-white text-white dark:text-black px-1 sm:px-2 py-1"
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.4, delay: 1.8 }}
                 >purpose-driven</motion.span> technology consultant. 
                 I lead a boutique consultancy focused on <motion.span 
-                  className="font-semibold bg-black dark:bg-white text-white dark:text-black px-2 py-1"
+                  className="font-semibold bg-black dark:bg-white text-white dark:text-black px-1 sm:px-2 py-1"
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.4, delay: 2.1 }}
                 >innovative solutions</motion.span> 
-                <br />
+                <br className="hidden sm:block" />
                 that have a lasting impact.
               </motion.p>
             </motion.div>
             
             {/* Bold CTA */}
             <motion.div 
-              className="flex flex-col sm:flex-row gap-6 md:gap-8"
+              className="flex flex-col gap-4 sm:gap-6 md:gap-8"
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 2.4, ease: [0.33, 1, 0.68, 1] }}
@@ -375,11 +375,12 @@ export default function HeroSection() {
                   transition: { duration: 0.3, ease: [0.33, 1, 0.68, 1] }
                 }}
                 whileTap={{ scale: 0.98 }}
+                className="w-full"
               >
                 <Button 
                   asChild 
                   size="lg" 
-                  className="bg-black hover:bg-gray-900 text-white px-14 py-8 text-lg font-bold tracking-wider border-stark shadow-xl hover:shadow-2xl focus-ring relative overflow-hidden"
+                  className="bg-black hover:bg-gray-900 text-white w-full px-6 sm:px-12 py-6 sm:py-8 text-base sm:text-lg font-bold tracking-wider border-stark shadow-xl hover:shadow-2xl focus-ring relative overflow-hidden"
                 >
                   <a 
                     href="#purpose" 
@@ -391,7 +392,7 @@ export default function HeroSection() {
                       transition={{ duration: 0.3 }}
                     />
                     <span className="relative z-10">EXPLORE MY STORY</span>
-                    <ArrowRight className="ml-4 h-6 w-6 transition-transform group-hover:translate-x-1 relative z-10" />
+                    <ArrowRight className="ml-3 sm:ml-4 h-5 sm:h-6 w-5 sm:w-6 transition-transform group-hover:translate-x-1 relative z-10" />
                   </a>
                 </Button>
               </motion.div>
@@ -403,12 +404,13 @@ export default function HeroSection() {
                   transition: { duration: 0.3, ease: [0.33, 1, 0.68, 1] }
                 }}
                 whileTap={{ scale: 0.98 }}
+                className="w-full"
               >
                 <Button 
                   asChild 
                   size="lg" 
                   variant="outline"
-                  className="border-stark border-2 border-black dark:border-white text-black dark:text-white hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black px-14 py-8 text-lg font-bold tracking-wider shadow-xl hover:shadow-2xl focus-ring relative overflow-hidden"
+                  className="border-stark border-2 border-black dark:border-white text-black dark:text-white hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black w-full px-6 sm:px-12 py-6 sm:py-8 text-base sm:text-lg font-bold tracking-wider shadow-xl hover:shadow-2xl focus-ring relative overflow-hidden"
                 >
                   <a 
                     href="#book" 
@@ -420,7 +422,7 @@ export default function HeroSection() {
                       transition={{ duration: 0.3 }}
                     />
                     <span className="relative z-10">START A CONVERSATION</span>
-                    <ArrowRight className="ml-4 h-6 w-6 transition-transform group-hover:translate-x-1 relative z-10" />
+                    <ArrowRight className="ml-3 sm:ml-4 h-5 sm:h-6 w-5 sm:w-6 transition-transform group-hover:translate-x-1 relative z-10" />
                   </a>
                 </Button>
               </motion.div>

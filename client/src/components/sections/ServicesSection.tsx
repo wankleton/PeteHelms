@@ -45,7 +45,7 @@ const ServiceCard = ({
       }}
     >
       {/* Main card container */}
-      <div className="relative bg-white dark:bg-gray-950 border-2 border-gray-200 dark:border-gray-800 p-8 md:p-10 group-hover:border-black dark:group-hover:border-white transition-all duration-500 shadow-lg group-hover:shadow-2xl">
+      <div className="relative bg-white dark:bg-gray-950 border-2 border-gray-200 dark:border-gray-800 p-6 sm:p-8 md:p-10 group-hover:border-black dark:group-hover:border-white transition-all duration-500 shadow-lg group-hover:shadow-2xl">
         
         {/* Top accent line */}
         <motion.div 
@@ -62,7 +62,7 @@ const ServiceCard = ({
         
         {/* Service icon */}
         <motion.div 
-          className="w-20 h-20 bg-black dark:bg-white rounded-full flex items-center justify-center mb-8 text-white dark:text-black group-hover:scale-110 transition-transform duration-300"
+          className="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 bg-black dark:bg-white rounded-full flex items-center justify-center mb-6 sm:mb-8 text-white dark:text-black group-hover:scale-110 transition-transform duration-300"
           initial={{ scale: 0, rotate: -180 }}
           whileInView={{ scale: 1, rotate: 0 }}
           viewport={{ once: true }}
@@ -78,7 +78,7 @@ const ServiceCard = ({
         
         {/* Service title */}
         <motion.h3 
-          className="text-2xl md:text-3xl font-black mb-4 text-black dark:text-white"
+          className="text-xl sm:text-2xl md:text-3xl font-black mb-3 sm:mb-4 text-black dark:text-white"
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
@@ -92,7 +92,7 @@ const ServiceCard = ({
         
         {/* Service description */}
         <motion.p 
-          className="text-gray-600 dark:text-gray-300 mb-8 text-lg leading-relaxed"
+          className="text-gray-600 dark:text-gray-300 mb-6 sm:mb-8 text-base sm:text-lg leading-relaxed"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
@@ -209,7 +209,7 @@ export default function ServicesSection() {
         
         {/* Service cards grid */}
         <motion.div 
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10 lg:gap-12"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-10 lg:gap-12"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, margin: "-50px" }}

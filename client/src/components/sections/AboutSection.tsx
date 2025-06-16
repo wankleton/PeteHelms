@@ -92,11 +92,11 @@ export default function AboutSection() {
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
           >
-            <h3 className="text-4xl md:text-5xl font-bold mb-16 text-black dark:text-white leading-[0.9] tracking-tight relative">
+            <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 sm:mb-12 md:mb-16 text-black dark:text-white leading-[0.9] tracking-tight relative">
               WHY I DO WHAT I DO
-              <div className="absolute -bottom-4 left-0 w-20 h-1 bg-black dark:bg-white"></div>
+              <div className="absolute -bottom-4 left-0 w-16 sm:w-20 h-1 bg-black dark:bg-white"></div>
             </h3>
-            <div className="space-y-10 text-xl md:text-2xl text-black dark:text-white leading-[1.6] font-light">
+            <div className="space-y-6 sm:space-y-8 md:space-y-10 text-lg sm:text-xl md:text-2xl text-black dark:text-white leading-[1.6] font-light">
               <p>My purpose is to create with intention, build what matters, and serve with integrity.</p>
               <p>I believe business is a powerful platform for service and transformation. When we help clients operate more efficiently, reduce costs, and achieve milestones, we're not just improving bottom lines—we're creating space for leaders to focus on what matters most.</p>
               <p>I'm here to serve the business community with the knowledge, clarity, and creativity I've been blessed with.</p>
@@ -114,18 +114,18 @@ export default function AboutSection() {
           {purposeItems.map((item, index) => (
             <motion.div 
               key={index} 
-              className="bg-white dark:bg-black p-10 md:p-12 border-stark transition-smooth hover:shadow-2xl relative overflow-hidden group"
+              className="bg-white dark:bg-black p-6 sm:p-8 md:p-10 lg:p-12 border-stark transition-smooth hover:shadow-2xl relative overflow-hidden group"
               variants={fadeIn}
               whileHover={{ y: -5 }}
             >
               <div className="absolute top-0 left-0 w-full h-2 bg-black dark:bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
-              <div className="w-24 h-24 bg-black dark:bg-white flex items-center justify-center mb-10 transition-bounce group-hover:rotate-12 shadow-lg">
-                <div className="text-white dark:text-black text-xl">
+              <div className="w-20 h-20 sm:w-22 sm:h-22 md:w-24 md:h-24 bg-black dark:bg-white flex items-center justify-center mb-6 sm:mb-8 md:mb-10 transition-bounce group-hover:rotate-12 shadow-lg">
+                <div className="text-white dark:text-black text-lg sm:text-xl">
                   {item.icon}
                 </div>
               </div>
-              <h3 className="text-2xl font-bold mb-8 text-black dark:text-white tracking-wider leading-tight">{item.title.toUpperCase()}</h3>
-              <p className="text-lg text-black dark:text-white leading-[1.7] font-light">{item.description}</p>
+              <h3 className="text-xl sm:text-2xl font-bold mb-6 sm:mb-8 text-black dark:text-white tracking-wider leading-tight">{item.title.toUpperCase()}</h3>
+              <p className="text-base sm:text-lg text-black dark:text-white leading-[1.7] font-light">{item.description}</p>
             </motion.div>
           ))}
         </motion.div>
