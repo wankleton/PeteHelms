@@ -78,7 +78,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 z-20 relative">
-            <div className="w-8 h-8 rounded-full overflow-hidden bg-gradient-to-r from-accent-gradient-start to-accent-gradient-end border-2 border-white dark:border-midnight-700 flex items-center justify-center">
+            <div className="w-12 h-12 rounded-full overflow-hidden bg-gradient-to-r from-accent-gradient-start to-accent-gradient-end border-2 border-white dark:border-midnight-700 flex items-center justify-center">
               <img 
                 src={peteProfile} 
                 alt="Pete Helms" 
@@ -88,24 +88,7 @@ export default function Navbar() {
             
           </Link>
           
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-1 lg:space-x-2 bg-slate-100/80 dark:bg-slate-800/50 backdrop-blur-md rounded-full px-3 py-2">
-            {navigationItems.map(item => (
-              <a 
-                key={item.id} 
-                href={`#${item.id}`}
-                onClick={scrollToSection(item.id)}
-                className={`px-4 py-1.5 rounded-full font-medium text-sm transition-all duration-200 flex items-center gap-1.5 ${
-                  activeSection === item.id 
-                    ? 'bg-white dark:bg-midnight shadow-sm text-midnight dark:text-white' 
-                    : 'text-secondary-700 dark:text-secondary-300 hover:bg-white/80 dark:hover:bg-secondary-800/80'
-                }`}
-              >
-                {getNavIcon(item.id)}
-                {item.name}
-              </a>
-            ))}
-          </nav>
+          
           
           {/* Desktop CTA Button */}
           <div className="hidden md:block">
