@@ -383,7 +383,7 @@ export default function HeroSection() {
             
             <FeatureBadge 
               icon={<MousePointer2 size={12} />}
-              text="Book Now"
+              text="Valuable Insights"
               position="bottom-16 -right-6"
               delay={0.9}
             />
