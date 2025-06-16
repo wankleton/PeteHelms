@@ -83,7 +83,7 @@ export default function AboutSection() {
           {expertiseItems.map((item, index) => (
             <motion.div 
               key={index} 
-              className="bg-gradient-to-br from-midnight-800 to-midnight-950 p-8 rounded-xl shadow-xl border border-secondary-700/30 hover:border-accent-highlight transition-all duration-300"
+              className="bg-gradient-to-br from-midnight-800 to-midnight-950 p-6 sm:p-8 rounded-xl shadow-xl border border-secondary-700/30 hover:border-accent-highlight transition-all duration-300"
               variants={fadeIn}
               whileHover={{ y: -5, boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1)" }}
             >

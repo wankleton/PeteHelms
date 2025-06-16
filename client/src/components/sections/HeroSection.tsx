@@ -41,7 +41,7 @@ const TypeAnimation = ({ phrases }: { phrases: string[] }) => {
   }, [currentText, currentPhrase, isDeleting, phrases]);
   
   return (
-    <span className="inline-block min-w-[160px] sm:min-w-[200px]">
+    <span className="inline-block min-w-[140px] sm:min-w-[160px] md:min-w-[200px]">
       <span className="gradient-text relative font-semibold">
         {currentText}
         <span className="absolute right-[-4px] h-full w-[2px] bg-accent-gradient-start animate-blink" />

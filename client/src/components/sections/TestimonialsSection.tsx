@@ -206,7 +206,7 @@ export default function TestimonialsSection() {
   };
 
   return (
-    <section id="testimonials" className="py-16 md:py-28 bg-secondary-50 dark:bg-midnight-900 relative overflow-hidden">
+    <section id="testimonials" className="py-12 sm:py-16 md:py-28 bg-secondary-50 dark:bg-midnight-900 relative overflow-hidden">
       {/* Enhanced background elements */}
       <div className="absolute inset-0 bg-gradient-to-b from-secondary-50 to-secondary-100 dark:from-midnight-900 dark:to-midnight-800 opacity-80"></div>
       <div className="absolute inset-0 ai-pattern opacity-5"></div>
