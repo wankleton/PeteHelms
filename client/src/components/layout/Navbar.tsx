@@ -137,11 +137,11 @@ export default function Navbar() {
             
             <button 
               type="button" 
-              className="flex items-center justify-center w-10 h-10 rounded-full bg-secondary-50 dark:bg-secondary-800 text-secondary-600 dark:text-secondary-300 hover:text-midnight dark:hover:text-white focus:outline-none transition-colors"
+              className="flex items-center justify-center w-11 h-11 rounded-full bg-secondary-50 dark:bg-secondary-800 text-secondary-600 dark:text-secondary-300 hover:text-midnight dark:hover:text-white focus:outline-none transition-colors min-h-[44px] min-w-[44px]"
               onClick={() => setIsOpen(!isOpen)}
               aria-label="Toggle mobile menu"
             >
-              {isOpen ? <X size={20} /> : <Menu size={20} />}
+              {isOpen ? <X size={22} /> : <Menu size={22} />}
             </button>
           </div>
         </div>
@@ -181,10 +181,10 @@ export default function Navbar() {
                           scrollToSection(item.id)(e);
                           handleMobileItemClick();
                         }}
-                        className={`text-2xl font-bold flex items-center ${
+                        className={`text-2xl font-bold flex items-center py-4 px-6 rounded-xl transition-colors min-h-[60px] ${
                           activeSection === item.id 
-                            ? 'text-white' 
-                            : 'text-secondary-300 hover:text-white'
+                            ? 'text-white bg-white/10' 
+                            : 'text-secondary-300 hover:text-white hover:bg-white/5'
                         }`}
                       >
                         <span className="mr-3 opacity-70">{getNavIcon(item.id)}</span>

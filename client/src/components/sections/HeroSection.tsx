@@ -241,7 +241,7 @@ export default function HeroSection() {
   return (
     <section 
       id="home" 
-      className="relative pt-24 md:pt-32 pb-16 overflow-hidden"
+      className="relative pt-20 sm:pt-24 md:pt-32 pb-12 sm:pb-16 overflow-hidden"
       onMouseMove={handleMouseMove}
     >
       <div className="container mx-auto px-4">
@@ -277,13 +277,13 @@ export default function HeroSection() {
           </>
         )}
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
           {/* Left Column - Text Content */}
           <motion.div
             variants={container}
             initial="hidden"
             animate="show"
-            className="z-10"
+            className="z-10 text-center lg:text-left"
           >
             {/* Badge */}
             <motion.div 
@@ -296,7 +296,7 @@ export default function HeroSection() {
             
             {/* Headline with animated underline */}
             <motion.h1 
-              className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 relative"
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 relative leading-tight"
               variants={item}
             >
               <span className="block">Let's Streamline Your Business With AI</span>
@@ -310,7 +310,7 @@ export default function HeroSection() {
             
             {/* Description with animated text */}
             <motion.div 
-              className="text-lg md:text-xl text-secondary-600 dark:text-secondary-300 leading-relaxed max-w-xl"
+              className="text-base sm:text-lg md:text-xl text-secondary-600 dark:text-secondary-300 leading-relaxed max-w-xl mx-auto lg:mx-0"
               variants={item}
             >
               <p>
@@ -330,7 +330,7 @@ export default function HeroSection() {
             
             {/* CTA Buttons */}
             <motion.div 
-              className="flex flex-col sm:flex-row gap-4 pt-2"
+              className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-4 sm:pt-2"
               variants={item}
             >
               {/* Primary CTA */}
@@ -426,7 +426,7 @@ export default function HeroSection() {
             
             {/* Profile Image with 3D tilt effect on desktop */}
             <motion.div 
-              className="relative z-10 w-[280px] h-[380px] md:w-[320px] md:h-[420px] lg:w-[380px] lg:h-[500px]"
+              className="relative z-10 w-[240px] h-[320px] sm:w-[280px] sm:h-[380px] md:w-[320px] md:h-[420px] lg:w-[380px] lg:h-[500px] mx-auto lg:mx-0"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
