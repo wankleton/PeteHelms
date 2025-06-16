@@ -51,9 +51,7 @@ export default function AboutSection() {
               <div className="absolute -bottom-4 left-0 w-20 h-1 bg-black dark:bg-white"></div>
             </h3>
             <div className="space-y-10 text-xl md:text-2xl text-black dark:text-white leading-[1.6] font-light">
-              <p>
-                My life is grounded in purpose. As a Christian, I'm called to love and serve God in everything I do. As a husband and father, I'm committed to leading and serving my family with integrity.
-              </p>
+              <p>My purpose is to create with purpose, build what matters, and serve with integrity.</p>
               <p>
                 Professionally, I'm here to create innovative solutions, build impactful communities, and serve business leaders with the knowledge, clarity, and creativity I've been blessed with.
               </p>
