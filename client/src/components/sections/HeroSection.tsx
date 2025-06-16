@@ -285,79 +285,55 @@ export default function HeroSection() {
             animate="show"
             className="z-10 text-center lg:text-left"
           >
-            {/* Badge */}
+            {/* Modern Badge */}
             <motion.div 
-              className="inline-flex items-center rounded-full bg-accent-highlight/20 px-3 py-1 text-sm font-medium text-accent-highlight dark:text-white mb-6"
+              className="inline-flex items-center rounded-full bg-gradient-to-r from-accent-gradient-start/10 to-accent-gradient-end/10 border border-accent-gradient-start/20 px-4 py-2 text-sm font-semibold text-accent-gradient-start dark:text-white mb-8 backdrop-blur-sm"
               variants={item}
             >
-              <Star size={14} className="mr-1" />
-              Top-Rated AI Strategy Expert
+              <div className="w-2 h-2 rounded-full bg-accent-gradient-start mr-2 animate-pulse"></div>
+              Available for Strategy Sessions
             </motion.div>
             
-            {/* Headline with animated underline */}
+            {/* Modern Headline */}
             <motion.h1 
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 relative leading-tight"
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-6 relative leading-[0.9] tracking-tight"
               variants={item}
             >
-              <span className="block">Let's Streamline Your Business With AI</span>
-              <motion.div 
-                className="absolute h-[3px] bg-gradient-to-r from-accent-gradient-start to-accent-gradient-end w-0 origin-left mt-1"
-                initial={{ scaleX: 0 }}
-                animate={{ scaleX: 1 }}
-                transition={{ delay: 1, duration: 0.5 }}
-              />
+              <span className="block bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 dark:from-white dark:via-gray-100 dark:to-white bg-clip-text text-transparent">
+                Transform Your Business
+              </span>
+              <span className="block bg-gradient-to-r from-accent-gradient-start to-accent-gradient-end bg-clip-text text-transparent mt-2">
+                With AI Strategy
+              </span>
             </motion.h1>
             
-            {/* Description with animated text */}
+            {/* Clean Description */}
             <motion.div 
-              className="text-base sm:text-lg md:text-xl text-secondary-600 dark:text-secondary-300 leading-relaxed max-w-xl mx-auto lg:mx-0"
+              className="text-lg sm:text-xl text-slate-600 dark:text-gray-300 leading-relaxed max-w-2xl mx-auto lg:mx-0 mb-8"
               variants={item}
             >
-              <p>
-                AI solutions that{" "}
-                <TypeAnimation 
-                  phrases={[
-                    "outperform competitors",
-                    "deliver 10x Growth",
-                    "slash costs by 65%",
-                    "create market advantage",
-                    "generate millions in revenue",
-                    "transform industries"
-                  ]} 
-                />
+              <p className="font-medium">
+                From Fortune 500 companies to innovative startups, I help businesses unlock competitive advantages through strategic AI implementation.
               </p>
             </motion.div>
             
-            {/* CTA Buttons */}
+            {/* Modern CTA Buttons */}
             <motion.div 
-              className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-4 sm:pt-2"
+              className="flex flex-col sm:flex-row gap-4 pt-2"
               variants={item}
             >
               {/* Primary CTA */}
               <Button 
                 asChild 
                 size="lg" 
-                className="relative bg-gradient-to-r from-accent-gradient-start to-accent-gradient-end hover:brightness-110 text-white transition-all duration-300 shadow-lg group overflow-hidden"
+                className="relative bg-slate-900 hover:bg-slate-800 text-white px-8 py-4 rounded-xl font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 group border-0"
               >
                 <a 
                   href="#book" 
                   onClick={scrollToSection('book')} 
-                  className="flex items-center"
+                  className="flex items-center justify-center text-base"
                 >
-                  {/* Animated light effect */}
-                  <motion.div 
-                    className="absolute w-40 h-40 bg-white/30 rounded-full blur-xl pointer-events-none"
-                    animate={{
-                      x: [30, -30, 30],
-                      y: [-30, 30, -30],
-                    }}
-                    transition={{
-                      repeat: Infinity,
-                      duration: 5,
-                    }}
-                  />
-                  
-                  Book a Strategy Session
+                  Book Strategy Session
                   <ArrowRight className="ml-2 h-5 w-5 transform group-hover:translate-x-1 transition-transform" />
                 </a>
               </Button>
@@ -367,15 +343,15 @@ export default function HeroSection() {
                 asChild 
                 size="lg" 
                 variant="outline"
-                className="border-secondary-300 dark:border-secondary-600 hover:bg-secondary-50 dark:hover:bg-secondary-800/50 text-midnight dark:text-white group transition-all duration-300"
+                className="border-2 border-slate-200 hover:border-slate-300 hover:bg-slate-50 text-slate-700 px-8 py-4 rounded-xl font-semibold transition-all duration-300 group"
               >
                 <a 
                   href="#services" 
                   onClick={scrollToSection('services')}
-                  className="flex items-center"
+                  className="flex items-center justify-center text-base"
                 >
-                  View Services
-                  <ExternalLink className="ml-1 h-4 w-4 opacity-70 group-hover:opacity-100" />
+                  View My Work
+                  <ExternalLink className="ml-2 h-4 w-4 opacity-70 group-hover:opacity-100" />
                 </a>
               </Button>
             </motion.div>

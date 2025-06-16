@@ -31,8 +31,8 @@ export default function AboutSection() {
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading 
-          title={<>About <span className="gradient-text">Pete Helms</span></>}
-          description="AI expert driving business transformation."
+          title={<>Meet <span className="bg-gradient-to-r from-accent-gradient-start to-accent-gradient-end bg-clip-text text-transparent font-black">Pete Helms</span></>}
+          description="Strategic AI implementation expert with 10+ years transforming Fortune 500 companies and innovative startups."
         />
         
         <div className="mb-20">
