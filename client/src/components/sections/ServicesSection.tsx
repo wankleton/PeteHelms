@@ -176,7 +176,7 @@ export default function ServicesSection() {
           <div className="absolute left-1/2 transform -translate-x-1/2 top-0 w-2 h-32 bg-black dark:bg-white rounded-full"></div>
           <div className="text-center">
             <h2 className="text-5xl md:text-6xl lg:text-7xl font-black mb-8 leading-[0.9] tracking-tight">
-              WHAT I CAN <span className="text-ultra-thin">OFFER</span>
+              <span className="text-ultra-thin">WHAT I CAN</span> OFFER
             </h2>
             <div className="w-16 h-1 bg-black dark:bg-white mb-6 mx-auto"></div>
             <p className="text-xl md:text-2xl text-black dark:text-white font-light leading-relaxed max-w-3xl mx-auto">
