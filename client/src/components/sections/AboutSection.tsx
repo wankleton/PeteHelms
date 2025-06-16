@@ -6,17 +6,17 @@ import SectionHeading from "@/components/ui/section-heading";
 export default function AboutSection() {
   const purposeItems = [
     {
-      icon: <Cross className="h-6 w-6 text-gray-900 dark:text-white" />,
+      icon: <Cross className="h-6 w-6 text-white dark:text-black" />,
       title: "Faith",
       description: "Grounded in Christian values, committed to serving the business community with integrity and excellence."
     },
     {
-      icon: <Star className="h-6 w-6 text-gray-900 dark:text-white" />,
+      icon: <Star className="h-6 w-6 text-white dark:text-black" />,
       title: "Purpose",
       description: "Using business as a platform for service, transformation, and meaningful impact that creates lasting value."
     },
     {
-      icon: <Target className="h-6 w-6 text-gray-900 dark:text-white" />,
+      icon: <Target className="h-6 w-6 text-white dark:text-black" />,
       title: "Impact",
       description: "Building innovative solutions that create lasting value for businesses and the communities they serve."
     }
