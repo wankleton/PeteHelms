@@ -19,39 +19,39 @@ export const navigationItems = [
 // Services
 export const services = [
   {
-    id: "for-clients",
+    id: "executive-advisory",
     icon: LightbulbIcon,
-    title: "For Clients",
-    description: "Strategic consulting and custom software development designed to cut costs and drive results for growing businesses.",
+    title: "Executive Advisory",
+    description: "Strategic guidance for leadership teams navigating digital transformation and technology decisions.",
     features: [
-      "Operations simplification",
-      "Cost reduction strategies (30-50%)",
-      "Custom AI-powered systems",
-      "Strategic consulting"
+      "Technology strategy development",
+      "Digital transformation roadmaps",
+      "Executive decision support",
+      "Innovation planning"
     ]
   },
   {
-    id: "for-partners",
+    id: "ai-workshops",
     icon: NetworkIcon,
-    title: "For Partners",
-    description: "Collaborative builds and product innovation with a lean, high-performing team that delivers exceptional results.",
+    title: "AI Workshops",
+    description: "Hands-on training sessions to help teams understand and implement AI solutions effectively.",
     features: [
-      "Joint product development",
-      "Innovation partnerships",
-      "Lean team collaboration",
-      "Shared expertise projects"
+      "AI literacy training",
+      "Custom workshop design",
+      "Practical implementation guidance",
+      "Team skill development"
     ]
   },
   {
-    id: "for-investors",
+    id: "software-development",
     icon: PieChartIcon,
-    title: "For Investors",
-    description: "Insight and access to early-stage products rooted in real-world business needs with proven market validation.",
+    title: "Software Development",
+    description: "Custom software solutions and AI-powered systems built to solve specific business challenges.",
     features: [
-      "Market-validated opportunities",
-      "Early-stage product access",
-      "Business needs insights",
-      "Investment guidance"
+      "Custom application development",
+      "AI system integration",
+      "Process automation",
+      "Technical consulting"
     ]
   }
 ];

@@ -216,9 +216,6 @@ export default function ServicesSection() {
           transition={{ duration: 0.7 }}
         >
           <div className="bg-midnight dark:bg-midnight-800 text-white rounded-2xl shadow-xl p-8 md:p-12 relative overflow-hidden">
-            {/* Background circuit pattern */}
-            <div className="absolute inset-0 bg-circuit-pattern opacity-20"></div>
-            
             {/* Content */}
             <div className="relative z-10">
               <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
