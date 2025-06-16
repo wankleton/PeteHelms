@@ -153,11 +153,8 @@ export default function BookingSection() {
             </div>
             
             <div className="md:col-span-3 relative">
-              {/* Subtle decorative elements */}
-              <div className="absolute -top-6 -right-6 w-12 h-12 bg-accent-highlight/20 rounded-full blur-lg"></div>
-              
-              <h4 className="text-2xl font-black mb-8 flex items-center text-slate-900 dark:text-white">
-                <Calendar className="h-6 w-6 mr-3 text-accent-gradient-start" />
+              <h4 className="text-2xl font-light mb-8 flex items-center text-slate-900 dark:text-white">
+                <Calendar className="h-6 w-6 mr-3 text-gray-900 dark:text-white" />
                 Select a Date & Time
               </h4>
               
@@ -171,14 +168,14 @@ export default function BookingSection() {
                   }}
                   transition={{ duration: 2, repeat: Infinity }}
                 >
-                  <Loader2 className="h-10 w-10 animate-spin text-accent-gradient-start mb-3" />
-                  <p className="text-secondary-500 dark:text-secondary-300">Loading available slots...</p>
+                  <Loader2 className="h-10 w-10 animate-spin text-gray-900 dark:text-white mb-3" />
+                  <p className="text-gray-500 dark:text-gray-400">Loading available slots...</p>
                 </motion.div>
               ) : slots.length === 0 ? (
-                <div className="text-center py-12 border border-dashed border-secondary-200 dark:border-secondary-700 rounded-xl bg-secondary-50/50 dark:bg-midnight-700/30">
-                  <Calendar className="h-12 w-12 mx-auto text-secondary-300 dark:text-secondary-600 mb-3" />
-                  <p className="text-secondary-600 dark:text-secondary-300 mb-2">No available slots at the moment.</p>
-                  <p className="text-secondary-400 dark:text-secondary-500 text-sm">Please check back later or contact directly.</p>
+                <div className="text-center py-12 border border-dashed border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-900">
+                  <Calendar className="h-12 w-12 mx-auto text-gray-400 dark:text-gray-500 mb-3" />
+                  <p className="text-gray-600 dark:text-gray-300 mb-2">No available slots at the moment.</p>
+                  <p className="text-gray-400 dark:text-gray-500 text-sm">Please check back later or contact directly.</p>
                 </div>
               ) : (
                 <motion.div 
@@ -240,8 +237,8 @@ export default function BookingSection() {
                         <div className="flex flex-col items-center">
                           <p className="font-semibold mb-2 text-midnight dark:text-white text-center">{slot.date}</p>
                           <div className="flex items-center justify-center px-3 py-1.5 bg-secondary-100/80 dark:bg-midnight-600/50 rounded-full">
-                            <Clock className="h-3.5 w-3.5 mr-1.5 text-accent-gradient-start" />
-                            <p className="text-sm text-secondary-700 dark:text-secondary-200">{firstTime}</p>
+                            <Clock className="h-3.5 w-3.5 mr-1.5 text-gray-900 dark:text-white" />
+                            <p className="text-sm text-gray-700 dark:text-gray-200">{firstTime}</p>
                           </div>
                         </div>
                       </motion.div>
@@ -259,12 +256,12 @@ export default function BookingSection() {
                       name="name"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel className="text-midnight dark:text-white font-medium">Full Name</FormLabel>
+                          <FormLabel className="text-gray-900 dark:text-white font-medium">Full Name</FormLabel>
                           <FormControl>
                             <Input 
                               placeholder="John Doe" 
                               {...field} 
-                              className="border-secondary-200 dark:border-secondary-700 focus:border-accent-gradient-start dark:focus:border-accent-gradient-start bg-white/70 dark:bg-midnight-700/50 backdrop-blur-sm" 
+                              className="border-gray-200 dark:border-gray-700 focus:border-gray-900 dark:focus:border-white bg-white dark:bg-gray-950" 
                             />
                           </FormControl>
                           <FormMessage />
@@ -277,12 +274,12 @@ export default function BookingSection() {
                       name="email"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel className="text-midnight dark:text-white font-medium">Email Address</FormLabel>
+                          <FormLabel className="text-gray-900 dark:text-white font-medium">Email Address</FormLabel>
                           <FormControl>
                             <Input 
                               placeholder="you@example.com" 
                               {...field} 
-                              className="border-secondary-200 dark:border-secondary-700 focus:border-accent-gradient-start dark:focus:border-accent-gradient-start bg-white/70 dark:bg-midnight-700/50 backdrop-blur-sm" 
+                              className="border-gray-200 dark:border-gray-700 focus:border-gray-900 dark:focus:border-white bg-white dark:bg-gray-950" 
                             />
                           </FormControl>
                           <FormMessage />
@@ -296,15 +293,15 @@ export default function BookingSection() {
                     name="company"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel className="text-midnight dark:text-white font-medium flex items-center">
-                          <Building className="h-4 w-4 mr-1.5 text-accent-gradient-start" />
+                        <FormLabel className="text-gray-900 dark:text-white font-medium flex items-center">
+                          <Building className="h-4 w-4 mr-1.5 text-gray-900 dark:text-white" />
                           Company
                         </FormLabel>
                         <FormControl>
                           <Input 
                             placeholder="Your company name" 
                             {...field} 
-                            className="border-secondary-200 dark:border-secondary-700 focus:border-accent-gradient-start dark:focus:border-accent-gradient-start bg-white/70 dark:bg-midnight-700/50 backdrop-blur-sm" 
+                            className="border-gray-200 dark:border-gray-700 focus:border-gray-900 dark:focus:border-white bg-white dark:bg-gray-950" 
                           />
                         </FormControl>
                         <FormMessage />
@@ -317,14 +314,14 @@ export default function BookingSection() {
                     name="message"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel className="text-midnight dark:text-white font-medium flex items-center">
-                          <MessageSquare className="h-4 w-4 mr-1.5 text-accent-gradient-start" />
+                        <FormLabel className="text-gray-900 dark:text-white font-medium flex items-center">
+                          <MessageSquare className="h-4 w-4 mr-1.5 text-gray-900 dark:text-white" />
                           What challenges are you looking to address?
                         </FormLabel>
                         <FormControl>
                           <Textarea 
                             placeholder="Tell me about your goals and challenges"
-                            className="resize-none border-secondary-200 dark:border-secondary-700 focus:border-accent-gradient-start dark:focus:border-accent-gradient-start bg-white/70 dark:bg-midnight-700/50 backdrop-blur-sm"
+                            className="resize-none border-gray-200 dark:border-gray-700 focus:border-gray-900 dark:focus:border-white bg-white dark:bg-gray-950"
                             rows={3}
                             {...field}
                           />
@@ -342,7 +339,7 @@ export default function BookingSection() {
                     <Button 
                       type="submit" 
                       size="lg"
-                      className="w-full bg-gradient-to-r from-accent-gradient-start to-accent-gradient-end text-white hover:brightness-110 transition-all duration-300 shadow-glow-accent font-medium group"
+                      className="w-full bg-gray-900 dark:bg-white text-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-100 transition-all duration-300 font-medium"
                       disabled={bookingMutation.isPending}
                     >
                       {bookingMutation.isPending ? (
