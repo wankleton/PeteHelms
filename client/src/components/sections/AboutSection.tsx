@@ -23,7 +23,7 @@ export default function AboutSection() {
   ];
 
   return (
-    <section id="about" className="py-16 md:py-24 bg-white dark:bg-midnight-950 relative overflow-hidden">
+    <section id="about" className="py-12 sm:py-16 md:py-24 bg-white dark:bg-midnight-950 relative overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-accent-highlight/10 blur-3xl -z-10"></div>
       <div className="absolute bottom-0 left-0 w-1/3 h-1/3 bg-accent-gradient-start/10 blur-3xl -z-10"></div>
@@ -74,7 +74,7 @@ export default function AboutSection() {
         </div>
         
         <motion.div 
-          className="grid grid-cols-1 md:grid-cols-3 gap-8"
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8"
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"

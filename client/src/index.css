@@ -133,15 +133,31 @@
   }
   
   h1 {
-    @apply text-3xl;
+    @apply text-3xl leading-tight;
   }
   
   h2 {
-    @apply text-2xl;
+    @apply text-2xl leading-snug;
   }
   
   .gradient-text {
     background-size: 200% 100%;
+  }
+  
+  /* Improve touch targets */
+  button, .btn, a[role="button"] {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Better spacing for mobile */
+  section {
+    scroll-margin-top: 80px;
+  }
+  
+  /* Optimize form elements for mobile */
+  input, textarea, select {
+    font-size: 16px; /* Prevent zoom on iOS */
   }
 }
 

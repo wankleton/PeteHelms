@@ -169,7 +169,7 @@ export default function ServicesSection() {
   };
 
   return (
-    <section id="services" className="py-16 md:py-24 bg-secondary-50 dark:bg-midnight-900 relative overflow-hidden">
+    <section id="services" className="py-12 sm:py-16 md:py-24 bg-secondary-50 dark:bg-midnight-900 relative overflow-hidden">
       {/* Enhanced background elements */}
       <div className="absolute inset-0 ai-pattern opacity-5"></div>
       <div className="absolute inset-0 bg-noise-subtle"></div>

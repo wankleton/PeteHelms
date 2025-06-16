@@ -97,7 +97,7 @@ export default function BookingSection() {
   };
 
   return (
-    <section id="book" className="py-16 md:py-28 bg-gradient-to-b from-midnight to-midnight-800 relative overflow-hidden">
+    <section id="book" className="py-12 sm:py-16 md:py-28 bg-gradient-to-b from-midnight to-midnight-800 relative overflow-hidden">
       {/* Enhanced background elements */}
       <div className="absolute inset-0 bg-data-grid opacity-15"></div>
       <div className="absolute inset-0 bg-noise-subtle opacity-20"></div>
@@ -162,7 +162,7 @@ export default function BookingSection() {
         </motion.div>
         
         <motion.div 
-          className="glass-card bg-white/90 dark:bg-midnight-800/90 backdrop-blur-sm rounded-2xl p-6 sm:p-8 md:p-12 shadow-3d max-w-4xl mx-auto mt-12 md:mt-16 border border-secondary-100 dark:border-secondary-700 overflow-hidden"
+          className="glass-card bg-white/90 dark:bg-midnight-800/90 backdrop-blur-sm rounded-2xl p-4 sm:p-6 md:p-8 lg:p-12 shadow-3d max-w-4xl mx-auto mt-8 sm:mt-12 md:mt-16 border border-secondary-100 dark:border-secondary-700 overflow-hidden"
           variants={fadeInUp}
           initial="hidden"
           whileInView="visible"
