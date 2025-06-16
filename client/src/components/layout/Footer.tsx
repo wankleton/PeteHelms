@@ -8,7 +8,7 @@ import {
 } from 'lucide-react';
 import { SiFacebook, SiWhatsapp } from 'react-icons/si';
 
-import { navigationItems, services, contactInfo } from '@/lib/constants';
+import { navigationItems, contactInfo } from '@/lib/constants';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -26,10 +26,10 @@ export default function Footer() {
   return (
     <footer className="bg-secondary-900 text-white py-12">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           <div className="space-y-4">
             <h3 className="text-lg font-bold">Pete Helms</h3>
-            <p className="text-secondary-400">AI Expert, Business Strategist, and Tech Founder helping businesses leverage cutting-edge technology.</p>
+            <p className="text-secondary-400">I'm a purpose-driven technology consultant. I lead a boutique consultancy focused on innovative solutions that have a lasting impact.</p>
             <div className="flex space-x-4 pt-2">
               <a 
                 href="https://www.linkedin.com/in/petehelmsman/" 
@@ -61,39 +61,9 @@ export default function Footer() {
             </div>
           </div>
           
-          <div className="space-y-4">
-            <h3 className="text-lg font-bold">Quick Links</h3>
-            <ul className="space-y-3">
-              {navigationItems.map(item => (
-                <li key={item.id}>
-                  <a 
-                    href={`#${item.id}`} 
-                    onClick={scrollToSection(item.id)}
-                    className="text-secondary-400 hover:text-white transition-colors"
-                  >
-                    {item.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
           
-          <div className="space-y-4">
-            <h3 className="text-lg font-bold">Services</h3>
-            <ul className="space-y-3">
-              {services.map(service => (
-                <li key={service.id}>
-                  <a 
-                    href="#services" 
-                    onClick={scrollToSection('services')}
-                    className="text-secondary-400 hover:text-white transition-colors"
-                  >
-                    {service.title}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
+          
+          
           
           <div className="space-y-4">
             <h3 className="text-lg font-bold">Contact</h3>
