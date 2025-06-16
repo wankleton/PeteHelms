@@ -104,7 +104,7 @@ export const testimonials = [
 
 // Contact information
 export const contactInfo = {
-  email: "hello@petehelms.com",
-  phone: "+1 (555) 123-4567",
-  location: "San Francisco, CA (Remote worldwide)"
+  email: "pete@devellp.com",
+  phone: "(954) 589-4333",
+  location: "Fort Lauderdale, FL"
 };

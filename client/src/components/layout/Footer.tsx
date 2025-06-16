@@ -1,13 +1,12 @@
 import { Link } from 'wouter';
 import { 
   Linkedin, 
-  Twitter, 
-  Github, 
   MessageSquare,
   Mail, 
   Phone, 
   MapPin
 } from 'lucide-react';
+import { SiFacebook } from 'react-icons/si';
 
 import { navigationItems, services, contactInfo } from '@/lib/constants';
 
