@@ -289,46 +289,48 @@ export default function HeroSection() {
             
             {/* Brief Introduction */}
             <motion.h1 
-              className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl mb-12 relative leading-[0.8] tracking-tight"
+              className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl mb-16 md:mb-20 relative"
               variants={item}
             >
-              <span className="block text-ultra-thin text-black dark:text-white">
+              <span className="block text-ultra-thin text-black dark:text-white mb-2 md:mb-4">
                 Hi, I'm
               </span>
               <span className="block text-ultra-bold text-black dark:text-white relative geometric-accent">
                 PETE HELMS
               </span>
+              <div className="absolute -bottom-4 left-0 w-24 h-1 bg-black dark:bg-white"></div>
             </motion.h1>
             
             {/* Brief Description */}
             <motion.div 
-              className="text-2xl md:text-3xl font-light leading-relaxed max-w-2xl mx-auto lg:mx-0 mb-16 relative"
+              className="text-2xl md:text-3xl font-light leading-[1.4] max-w-2xl mx-auto lg:mx-0 mb-20 md:mb-24 relative"
               variants={item}
             >
-              <div className="absolute -left-4 top-0 w-1 h-full bg-black dark:bg-white"></div>
-              <p className="text-black dark:text-white pl-8">
-                A <span className="font-semibold">purpose-driven</span> technology consultant, strategist, and innovator. 
-                I lead a boutique firm that helps growing businesses <span className="font-semibold">simplify operations</span>, 
+              <div className="absolute -left-6 top-0 w-2 h-full bg-black dark:bg-white rounded-full"></div>
+              <p className="text-black dark:text-white pl-12 leading-[1.5]">
+                A <span className="font-semibold bg-black dark:bg-white text-white dark:text-black px-2 py-1">purpose-driven</span> technology consultant, strategist, and innovator. 
+                I lead a boutique firm that helps growing businesses <span className="font-semibold bg-black dark:bg-white text-white dark:text-black px-2 py-1">simplify operations</span>, 
                 cut unnecessary costs, and build custom solutions that unlock real results.
               </p>
             </motion.div>
             
             {/* Bold CTA */}
             <motion.div 
-              className="flex flex-col sm:flex-row gap-8"
+              className="flex flex-col sm:flex-row gap-6 md:gap-8"
               variants={item}
             >
               <Button 
                 asChild 
                 size="lg" 
-                className="bg-black hover:bg-gray-900 text-white px-12 py-6 text-lg font-semibold tracking-wide border-stark transform hover:scale-105 transition-all duration-200"
+                className="bg-black hover:bg-gray-900 text-white px-12 py-6 text-lg font-bold tracking-wider border-stark transition-bounce hover:scale-[1.02] shadow-lg hover:shadow-2xl focus-ring"
               >
                 <a 
                   href="#purpose" 
                   onClick={scrollToSection('purpose')} 
-                  className="flex items-center justify-center"
+                  className="flex items-center justify-center group"
                 >
                   EXPLORE MY STORY
+                  <ArrowRight className="ml-3 h-5 w-5 transition-transform group-hover:translate-x-1" />
                 </a>
               </Button>
               
@@ -336,30 +338,31 @@ export default function HeroSection() {
                 asChild 
                 size="lg" 
                 variant="outline"
-                className="border-stark border-black dark:border-white text-black dark:text-white hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black px-12 py-6 text-lg font-semibold tracking-wide transform hover:scale-105 transition-all duration-200"
+                className="border-stark border-black dark:border-white text-black dark:text-white hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black px-12 py-6 text-lg font-bold tracking-wider transition-bounce hover:scale-[1.02] shadow-lg hover:shadow-2xl focus-ring"
               >
                 <a 
                   href="#book" 
                   onClick={scrollToSection('book')}
-                  className="flex items-center justify-center"
+                  className="flex items-center justify-center group"
                 >
                   START A CONVERSATION
+                  <ArrowRight className="ml-3 h-5 w-5 transition-transform group-hover:translate-x-1" />
                 </a>
               </Button>
             </motion.div>
             
             {/* Scroll indicator */}
             <motion.div 
-              className="hidden md:flex items-center gap-2 mt-16 text-gray-500 dark:text-gray-400"
+              className="hidden md:flex items-center gap-4 mt-20 lg:mt-24 text-black dark:text-white"
               variants={item}
             >
               <motion.div 
                 ref={scope}
-                className="flex items-center justify-center w-8 h-8 rounded-full border border-secondary-200 dark:border-secondary-700"
+                className="flex items-center justify-center w-12 h-12 border-stark bg-white dark:bg-black hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-smooth cursor-pointer"
               >
-                <ChevronDown size={16} />
+                <ChevronDown size={20} />
               </motion.div>
-              <span className="text-xs font-medium uppercase tracking-wider">Scroll to explore</span>
+              <span className="text-sm font-semibold uppercase tracking-[0.2em]">Scroll to explore</span>
             </motion.div>
           </motion.div>
           

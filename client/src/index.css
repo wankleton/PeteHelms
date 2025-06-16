@@ -13,19 +13,24 @@
     @apply bg-white dark:bg-black text-black dark:text-white;
     font-family: "Poppins", sans-serif;
     background-image: 
-      radial-gradient(circle at 20% 80%, rgba(0,0,0,0.03) 0%, transparent 50%),
-      radial-gradient(circle at 80% 20%, rgba(0,0,0,0.03) 0%, transparent 50%);
+      radial-gradient(circle at 20% 80%, rgba(0,0,0,0.02) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(0,0,0,0.02) 0%, transparent 50%);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
   }
   
   /* Custom typography classes */
   .text-ultra-bold {
     font-weight: 900;
     letter-spacing: -0.05em;
+    line-height: 0.85;
   }
   
   .text-ultra-thin {
     font-weight: 100;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.08em;
+    line-height: 1.1;
   }
   
   /* Geometric accent elements */
@@ -38,6 +43,7 @@
     left: -2rem;
     top: 50%;
     transform: translateY(-50%);
+    border-radius: 2px;
   }
   
   .dark .geometric-accent::before {
@@ -52,6 +58,36 @@
   
   .dark .border-stark {
     border-color: white;
+  }
+  
+  /* Smooth transitions */
+  .transition-smooth {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .transition-bounce {
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  /* Focus states */
+  .focus-ring:focus {
+    outline: 3px solid black;
+    outline-offset: 2px;
+  }
+  
+  .dark .focus-ring:focus {
+    outline-color: white;
+  }
+  
+  /* Selection styling */
+  ::selection {
+    background-color: black;
+    color: white;
+  }
+  
+  .dark ::selection {
+    background-color: white;
+    color: black;
   }
 }
 
