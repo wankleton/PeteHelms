@@ -11,14 +11,14 @@ export default function AboutSection() {
       description: "Grounded in Christian values, committed to serving the business community with integrity and excellence."
     },
     {
-      icon: <Users className="h-6 w-6 text-gray-900 dark:text-white" />,
-      title: "Community Impact",
-      description: "Building solutions that create lasting value for businesses and the communities they serve."
+      icon: <Target className="h-6 w-6 text-gray-900 dark:text-white" />,
+      title: "Purpose",
+      description: "Using business as a platform for service, transformation, and meaningful impact."
     },
     {
-      icon: <Target className="h-6 w-6 text-gray-900 dark:text-white" />,
-      title: "Purpose-Driven",
-      description: "Using business as a platform for service, transformation, and meaningful impact."
+      icon: <Users className="h-6 w-6 text-gray-900 dark:text-white" />,
+      title: "Impact",
+      description: "Building solutions that create lasting value for businesses and the communities they serve."
     }
   ];
 
