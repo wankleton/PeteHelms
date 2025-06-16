@@ -100,7 +100,7 @@ export default function Footer() {
             <h3 className="text-lg font-bold mb-4">Contact</h3>
             <ul className="space-y-3">
               <li className="flex items-start">
-                <Mail className="text-primary mr-3 mt-1" size={16} />
+                <Mail className="text-white mr-3 mt-1" size={16} />
                 <a 
                   href={`mailto:${contactInfo.email}`} 
                   className="text-secondary-400 hover:text-white transition-colors"
@@ -109,7 +109,7 @@ export default function Footer() {
                 </a>
               </li>
               <li className="flex items-start">
-                <Phone className="text-primary mr-3 mt-1" size={16} />
+                <Phone className="text-white mr-3 mt-1" size={16} />
                 <a 
                   href={`tel:${contactInfo.phone.replace(/[^0-9+]/g, '')}`} 
                   className="text-secondary-400 hover:text-white transition-colors"
@@ -118,7 +118,7 @@ export default function Footer() {
                 </a>
               </li>
               <li className="flex items-start">
-                <MapPin className="text-primary mr-3 mt-1" size={16} />
+                <MapPin className="text-white mr-3 mt-1" size={16} />
                 <span className="text-secondary-400">{contactInfo.location}</span>
               </li>
             </ul>
