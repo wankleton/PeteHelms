@@ -379,12 +379,7 @@ export default function HeroSection() {
               delay={0.5}
             />
             
-            <FeatureBadge 
-              icon={<LightbulbIcon size={12} />}
-              text="Strategic Insight"
-              position="top-24 right-0"
-              delay={0.7}
-            />
+
             
             <FeatureBadge 
               icon={<MousePointer2 size={12} />}
