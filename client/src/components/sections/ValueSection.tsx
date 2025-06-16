@@ -7,23 +7,23 @@ export default function ValueSection() {
   const valueItems = [
     {
       icon: <Eye className="h-6 w-6 text-gray-900 dark:text-white" />,
-      title: "Simplicity",
-      description: "Complex problems simplified into clear, actionable solutions."
+      title: "Curiosity",
+      description: "Deep understanding of your challenges drives meaningful solutions."
     },
     {
       icon: <Lightbulb className="h-6 w-6 text-gray-900 dark:text-white" />,
-      title: "Simplify Operations",
-      description: "Streamline multiple tools into unified platforms."
+      title: "Strategic",
+      description: "Comprehensive planning that aligns technology with business goals."
     },
     {
       icon: <Target className="h-6 w-6 text-gray-900 dark:text-white" />,
-      title: "Cut Costs",
-      description: "Reduce operational costs by 30-50% through automation."
+      title: "Creative",
+      description: "Innovative approaches to complex business challenges."
     },
     {
       icon: <Users className="h-6 w-6 text-gray-900 dark:text-white" />,
-      title: "Custom Innovation",
-      description: "AI-powered systems tailored to your specific needs."
+      title: "Insightful",
+      description: "Data-driven perspectives that reveal new opportunities."
     }
   ];
 
