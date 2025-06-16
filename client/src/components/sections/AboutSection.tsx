@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Star, Target, Check, LightbulbIcon, Plus } from "lucide-react";
-import { fadeIn, fadeInUp, staggerContainer } from "@/lib/animations";
+import { fadeIn, fadeInUp, staggerContainer, slideInLeft, scaleInSpring } from "@/lib/animations";
 import SectionHeading from "@/components/ui/section-heading";
 
 export default function AboutSection() {
@@ -29,18 +29,60 @@ export default function AboutSection() {
   return (
     <section id="purpose" className="py-20 sm:py-24 md:py-32 bg-white dark:bg-black">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="relative mb-20 md:mb-24">
-          <div className="absolute left-0 top-0 w-2 h-32 bg-black dark:bg-white rounded-full"></div>
-          <div className="pl-12">
+        <motion.div 
+          className="relative mb-20 md:mb-24"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8 }}
+        >
+          <motion.div 
+            className="absolute left-0 top-0 w-2 bg-black dark:bg-white rounded-full"
+            initial={{ height: 0 }}
+            whileInView={{ height: 128 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, delay: 0.3, ease: [0.33, 1, 0.68, 1] }}
+          />
+          <motion.div 
+            className="pl-12"
+            variants={slideInLeft}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+          >
             <h2 className="text-5xl md:text-6xl lg:text-7xl font-black mb-8 leading-[0.9] tracking-tight">
-              <span className="text-ultra-thin">MY</span> PURPOSE
+              <motion.span 
+                className="text-ultra-thin"
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+              >MY</motion.span> 
+              <motion.span
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+              >PURPOSE</motion.span>
             </h2>
-            <div className="w-16 h-1 bg-black dark:bg-white mb-6"></div>
-            <p className="text-xl md:text-2xl text-black dark:text-white font-light leading-relaxed max-w-2xl">
+            <motion.div 
+              className="w-16 h-1 bg-black dark:bg-white mb-6"
+              initial={{ width: 0 }}
+              whileInView={{ width: 64 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.8, ease: [0.33, 1, 0.68, 1] }}
+            />
+            <motion.p 
+              className="text-xl md:text-2xl text-black dark:text-white font-light leading-relaxed max-w-2xl"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 1 }}
+            >
               The foundation of my work and approach.
-            </p>
-          </div>
-        </div>
+            </motion.p>
+          </motion.div>
+        </motion.div>
         
         <div className="mb-20">
           <motion.div 
