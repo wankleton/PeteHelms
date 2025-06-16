@@ -1,12 +1,16 @@
 import { motion } from "framer-motion";
-import { Cross, Star, Target, Check, LightbulbIcon } from "lucide-react";
+import { Star, Target, Check, LightbulbIcon, Plus } from "lucide-react";
 import { fadeIn, fadeInUp, staggerContainer } from "@/lib/animations";
 import SectionHeading from "@/components/ui/section-heading";
 
 export default function AboutSection() {
   const purposeItems = [
     {
-      icon: <Cross className="h-6 w-6 text-white dark:text-black" />,
+      icon: (
+        <svg className="h-6 w-6 text-white dark:text-black" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M13 2V8H17V10H13V22H11V10H7V8H11V2H13Z"/>
+        </svg>
+      ),
       title: "Faith",
       description: "Grounded in Christian values, committed to serving the business community with integrity and excellence."
     },
