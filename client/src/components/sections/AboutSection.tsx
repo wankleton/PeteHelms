@@ -52,7 +52,7 @@ export default function AboutSection() {
             </h3>
             <div className="space-y-10 text-xl md:text-2xl text-black dark:text-white leading-[1.6] font-light">
               <p>My purpose is to create with intention, build what matters, and serve with integrity.</p>
-              <p>I believe business is a powerful platform for service and transformation. When we help businesses operate more efficiently, reduce costs, and unlock new possibilities, we're not just improving bottom lines—we're creating space for leaders to focus on what matters most.</p>
+              <p>I believe business is a powerful platform for service and transformation. When we help clients operate more efficiently, reduce costs, and unlock new possibilities, we're not just improving bottom lines—we're creating space for leaders to focus on what matters most.</p>
               <p>I'm here to create innovative solutions, build impactful communities, and serve business leaders with the knowledge, clarity, and creativity I've been blessed with.</p>
             </div>
           </motion.div>
