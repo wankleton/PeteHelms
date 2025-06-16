@@ -22,7 +22,7 @@ export default function ContactSection() {
               </h2>
               <div className="w-16 h-1 bg-black dark:bg-white mb-6"></div>
               <p className="text-xl md:text-2xl text-black dark:text-white font-light leading-relaxed max-w-2xl">
-                Ready to explore how we can work together? Let's start with a conversation.
+                Ready to transform your business? Let's talk.
               </p>
             </div>
           </div>

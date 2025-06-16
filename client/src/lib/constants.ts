@@ -34,11 +34,11 @@ export const services = [
     id: "advisory",
     icon: LightbulbIcon,
     title: "Advisory",
-    description: "Strategic guidance for leadership teams navigating digital transformation and technology decisions.",
+    description: "Strategic guidance for technology decisions.",
     features: [
-      "Technology strategy development",
-      "Digital transformation roadmaps",
-      "Executive decision support",
+      "Technology strategy",
+      "Digital transformation",
+      "Executive support",
       "Innovation planning"
     ]
   },
@@ -46,9 +46,9 @@ export const services = [
     id: "development",
     icon: PieChartIcon,
     title: "Development",
-    description: "Custom software solutions and AI-powered systems built to solve specific business challenges.",
+    description: "Custom software and AI-powered systems.",
     features: [
-      "Custom application development",
+      "Custom applications",
       "AI system integration",
       "Process automation",
       "Technical consulting"
