@@ -292,9 +292,6 @@ export default function HeroSection() {
               className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl mb-16 md:mb-20 relative"
               variants={item}
             >
-              <span className="block text-ultra-thin text-black dark:text-white mb-2 md:mb-4">
-                Hi, I'm
-              </span>
               <span className="block text-ultra-bold text-black dark:text-white relative geometric-accent">
                 PETE HELMS
               </span>
@@ -308,8 +305,9 @@ export default function HeroSection() {
             >
               <div className="absolute -left-6 top-0 w-2 h-full bg-black dark:bg-white rounded-full"></div>
               <p className="text-black dark:text-white pl-12 leading-[1.5]">
-                I'm a <span className="font-semibold bg-black dark:bg-white text-white dark:text-black px-2 py-1">purpose-driven</span> innovator. 
-                I lead a boutique consultancy that is focused on <span className="font-semibold bg-black dark:bg-white text-white dark:text-black px-2 py-1">creating meaningful solutions</span>.
+                I'm a <span className="font-semibold bg-black dark:bg-white text-white dark:text-black px-2 py-1">purpose-driven</span> technology consultant. 
+                I lead a boutique consultancy that is focused on <span className="font-semibold bg-black dark:bg-white text-white dark:text-black px-2 py-1">creating innovative solutions</span> 
+                that have a lasting impact.
               </p>
             </motion.div>
             
