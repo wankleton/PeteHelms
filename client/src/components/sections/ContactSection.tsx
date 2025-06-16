@@ -42,9 +42,7 @@ export default function ContactSection() {
               </h3>
               
               <div className="space-y-10 mb-20 text-xl md:text-2xl text-black dark:text-white leading-[1.6] font-light">
-                <p>
-                  The best way to explore working together is to start with a conversation. No commitment, no pressure—just an opportunity to share what you're working on and see if there's a fit.
-                </p>
+                <p>The best way to explore working together is to start with a conversation. No commitment, no pressure—just an opportunity to see if there's a fit.</p>
                 <p>
                   During our call, I'll listen to your challenges, ask clarifying questions, and share my perspective on potential approaches. You'll walk away with at least one new way of thinking about your situation.
                 </p>

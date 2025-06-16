@@ -37,9 +37,6 @@ export default function ValueSection() {
               <span className="text-ultra-thin">HOW I</span> BRING VALUE
             </h2>
             <div className="w-16 h-1 bg-black dark:bg-white mb-6 ml-auto"></div>
-            <p className="text-xl md:text-2xl text-black dark:text-white font-light leading-relaxed max-w-2xl ml-auto">
-              Simplify, automate, and innovate.
-            </p>
           </div>
         </div>
         
