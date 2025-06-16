@@ -63,15 +63,15 @@ export default function AboutSection() {
           {purposeItems.map((item, index) => (
             <motion.div 
               key={index} 
-              className="bg-gray-50 dark:bg-gray-900 p-8 border border-gray-200 dark:border-gray-700 transition-all duration-300"
+              className="bg-white dark:bg-black p-8 border border-black dark:border-white transition-all duration-300"
               variants={fadeIn}
               whileHover={{ y: -5 }}
             >
-              <div className="w-16 h-16 bg-gray-100 dark:bg-gray-800 flex items-center justify-center mb-6 transition-all duration-300">
+              <div className="w-16 h-16 bg-gray-100 dark:bg-gray-900 flex items-center justify-center mb-6 transition-all duration-300">
                 {item.icon}
               </div>
-              <h3 className="text-xl font-light mb-4 text-slate-900 dark:text-white">{item.title}</h3>
-              <p className="text-slate-600 dark:text-slate-300 leading-relaxed">{item.description}</p>
+              <h3 className="text-xl font-light mb-4 text-black dark:text-white">{item.title}</h3>
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed">{item.description}</p>
             </motion.div>
           ))}
         </motion.div>

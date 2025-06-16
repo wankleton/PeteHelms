@@ -169,11 +169,11 @@ export default function ServicesSection() {
   };
 
   return (
-    <section id="services" className="py-20 sm:py-24 md:py-32 bg-slate-50 dark:bg-slate-900">
+    <section id="services" className="py-20 sm:py-24 md:py-32 bg-gray-50 dark:bg-gray-950">
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <SectionHeading 
-          title={<>What I Can <span className="text-slate-900 dark:text-white font-bold">Offer</span></>}
+          title={<>What I Can <span className="text-black dark:text-white font-bold">Offer</span></>}
           description="Tailored solutions for three distinct audiences seeking growth and innovation."
           className="max-w-3xl"
         />

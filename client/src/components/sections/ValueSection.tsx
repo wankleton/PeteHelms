@@ -28,10 +28,10 @@ export default function ValueSection() {
   ];
 
   return (
-    <section id="value" className="py-20 sm:py-24 md:py-32 bg-slate-50 dark:bg-slate-900">
+    <section id="value" className="py-20 sm:py-24 md:py-32 bg-gray-50 dark:bg-gray-950">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading 
-          title={<>How I <span className="text-slate-900 dark:text-white font-bold">Bring Value</span></>}
+          title={<>How I <span className="text-black dark:text-white font-bold">Bring Value</span></>}
           description="My approach to helping businesses simplify, automate, and innovate."
           className="max-w-3xl"
         />
@@ -45,8 +45,8 @@ export default function ValueSection() {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.7 }}
           >
-            <div className="bg-white dark:bg-slate-950 p-8 md:p-12 border border-gray-200 dark:border-gray-700">
-              <div className="space-y-6 text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
+            <div className="bg-white dark:bg-black p-8 md:p-12 border border-black dark:border-white">
+              <div className="space-y-6 text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
                 <p>
                   I approach every project with curiosity and intention. I don't just help clients build custom solutions—I help them rethink how they operate.
                 </p>
@@ -68,15 +68,15 @@ export default function ValueSection() {
           {valueItems.map((item, index) => (
             <motion.div 
               key={index} 
-              className="bg-white dark:bg-slate-950 p-8 border border-gray-200 dark:border-gray-700 transition-all duration-300"
+              className="bg-white dark:bg-black p-8 border border-black dark:border-white transition-all duration-300"
               variants={fadeIn}
               whileHover={{ y: -5 }}
             >
-              <div className="w-16 h-16 bg-gray-100 dark:bg-gray-800 flex items-center justify-center mb-6 transition-all duration-300">
+              <div className="w-16 h-16 bg-gray-100 dark:bg-gray-900 flex items-center justify-center mb-6 transition-all duration-300">
                 {item.icon}
               </div>
-              <h3 className="text-xl font-light mb-4 text-slate-900 dark:text-white">{item.title}</h3>
-              <p className="text-slate-600 dark:text-slate-300 leading-relaxed">{item.description}</p>
+              <h3 className="text-xl font-light mb-4 text-black dark:text-white">{item.title}</h3>
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed">{item.description}</p>
             </motion.div>
           ))}
         </motion.div>
