@@ -74,8 +74,8 @@ export default function Navbar() {
           : 'py-5 bg-white/70 dark:bg-slate-950/70 backdrop-blur-md'
       }`}
     >
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center">
+      <div className="container mx-auto px-4">
+        <div className="flex justify-between items-center relative">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 z-20 relative">
             <div className="w-12 h-12 rounded-full overflow-hidden bg-gradient-to-r from-accent-gradient-start to-accent-gradient-end border-2 border-white dark:border-midnight-700 flex items-center justify-center">
