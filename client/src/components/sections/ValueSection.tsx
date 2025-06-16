@@ -6,22 +6,22 @@ import SectionHeading from "@/components/ui/section-heading";
 export default function ValueSection() {
   const valueItems = [
     {
-      icon: <Eye className="h-6 w-6 text-gray-900 dark:text-white" />,
+      icon: <Eye className="h-6 w-6 text-white dark:text-black" />,
       title: "Curiosity",
       description: "Deep understanding of your challenges drives meaningful solutions."
     },
     {
-      icon: <Lightbulb className="h-6 w-6 text-gray-900 dark:text-white" />,
+      icon: <Lightbulb className="h-6 w-6 text-white dark:text-black" />,
       title: "Strategic",
       description: "Comprehensive planning that aligns technology with business goals."
     },
     {
-      icon: <Target className="h-6 w-6 text-gray-900 dark:text-white" />,
+      icon: <Target className="h-6 w-6 text-white dark:text-black" />,
       title: "Creative",
       description: "Innovative approaches to complex business challenges."
     },
     {
-      icon: <Users className="h-6 w-6 text-gray-900 dark:text-white" />,
+      icon: <Users className="h-6 w-6 text-white dark:text-black" />,
       title: "Insightful",
       description: "Data-driven perspectives that reveal new opportunities."
     }
