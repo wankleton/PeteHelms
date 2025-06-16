@@ -287,7 +287,7 @@ export default function HeroSection() {
           >
 
             
-            {/* Personal Introduction */}
+            {/* Brief Introduction */}
             <motion.h1 
               className="text-5xl sm:text-6xl md:text-7xl font-light mb-12 relative leading-[0.9] tracking-tight"
               variants={item}
@@ -300,13 +300,13 @@ export default function HeroSection() {
               </span>
             </motion.h1>
             
-            {/* Personal Story */}
+            {/* Brief Description */}
             <motion.div 
               className="text-xl text-slate-600 dark:text-gray-300 leading-relaxed max-w-xl mx-auto lg:mx-0 mb-16"
               variants={item}
             >
               <p>
-                I build companies and help leaders navigate complex challenges. After years in the trenches of innovation, I've learned what actually works.
+                I'm a serial entrepreneur and strategist who helps leaders navigate complex challenges and unlock breakthrough opportunities.
               </p>
             </motion.div>
             
@@ -321,11 +321,11 @@ export default function HeroSection() {
                 className="bg-slate-900 hover:bg-slate-800 text-white px-8 py-3 font-normal"
               >
                 <a 
-                  href="#about" 
-                  onClick={scrollToSection('about')} 
+                  href="#purpose" 
+                  onClick={scrollToSection('purpose')} 
                   className="flex items-center justify-center"
                 >
-                  Learn More About Me
+                  Learn More
                 </a>
               </Button>
               
@@ -336,11 +336,11 @@ export default function HeroSection() {
                 className="text-slate-600 hover:text-slate-900 px-8 py-3 font-normal"
               >
                 <a 
-                  href="#contact" 
-                  onClick={scrollToSection('contact')}
+                  href="#book" 
+                  onClick={scrollToSection('book')}
                   className="flex items-center justify-center"
                 >
-                  Get In Touch
+                  Book a Call
                 </a>
               </Button>
             </motion.div>

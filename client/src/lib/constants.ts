@@ -19,39 +19,39 @@ export const navigationItems = [
 // Services
 export const services = [
   {
-    id: "strategic-thinking",
+    id: "strategy-sessions",
     icon: LightbulbIcon,
-    title: "Strategic Thinking",
-    description: "I help leaders see possibilities others miss. Years of building companies taught me to spot patterns and connect dots that others overlook.",
+    title: "Strategy Sessions",
+    description: "Deep dive conversations to clarify your biggest challenges and identify breakthrough opportunities. Perfect for when you need to think through complex decisions.",
     features: [
-      "Pattern recognition",
-      "Systems thinking", 
-      "Future scenario planning",
-      "Decision frameworks"
+      "90-minute focused sessions",
+      "Strategic problem-solving",
+      "Opportunity identification", 
+      "Action plan development"
     ]
   },
   {
-    id: "innovation-guidance",
+    id: "advisory-partnership",
     icon: NetworkIcon,
-    title: "Innovation Guidance",
-    description: "Having lived through the messy reality of innovation, I guide teams through the human side of transformation.",
+    title: "Advisory Partnership",
+    description: "Ongoing strategic guidance for leaders navigating transformation. Think of it as having an experienced advisor in your corner.",
     features: [
-      "Problem reframing",
-      "Solution architecture",
-      "Team alignment",
-      "Execution planning"
+      "Monthly strategic check-ins",
+      "Real-time decision support",
+      "Team alignment sessions",
+      "Strategic planning facilitation"
     ]
   },
   {
-    id: "technology-wisdom",
+    id: "executive-workshops",
     icon: PieChartIcon,
-    title: "Technology Wisdom",
-    description: "Multiple tech cycles have shown me what actually works. I share practical insights from the trenches.",
+    title: "Executive Workshops",
+    description: "Custom workshops designed to align your leadership team around complex challenges and build strategic thinking capabilities.",
     features: [
-      "Technology selection",
-      "Implementation strategy",
-      "Risk mitigation",
-      "Team development"
+      "Leadership team alignment",
+      "Strategic thinking development",
+      "Innovation methodology",
+      "Decision-making frameworks"
     ]
   }
 ];

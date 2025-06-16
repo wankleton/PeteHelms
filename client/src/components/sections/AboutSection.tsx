@@ -23,12 +23,12 @@ export default function AboutSection() {
   ];
 
   return (
-    <section id="about" className="py-20 sm:py-24 md:py-32 bg-white dark:bg-slate-950">
+    <section id="purpose" className="py-20 sm:py-24 md:py-32 bg-white dark:bg-slate-950">
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading 
-          title={<>My <span className="text-slate-900 dark:text-white font-bold">Story</span></>}
-          description="How I became passionate about helping leaders navigate uncertainty."
+          title={<>My <span className="text-slate-900 dark:text-white font-bold">Purpose</span></>}
+          description="Why I'm passionate about helping leaders navigate complexity and uncertainty."
         />
         
         <div className="mb-20">
@@ -39,16 +39,19 @@ export default function AboutSection() {
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
           >
-            <h3 className="text-3xl md:text-4xl font-light mb-8 text-slate-900 dark:text-white leading-tight">Why I Do This Work</h3>
+            <h3 className="text-3xl md:text-4xl font-light mb-8 text-slate-900 dark:text-white leading-tight">What Drives Me</h3>
             <div className="space-y-6 text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
               <p>
-                I've spent my career building companies and watching leaders struggle with the same challenge: how do you navigate uncertainty when the stakes are high?
+                I believe that great leaders are made in moments of uncertainty. When the path forward isn't clear, when the stakes are high, when conventional wisdom doesn't apply—that's when real leadership emerges.
               </p>
               <p>
-                Early in my journey, I learned that innovation isn't just about technology—it's about people, timing, and understanding what really matters. I've seen brilliant ideas fail because they solved the wrong problem, and simple solutions succeed because they addressed real human needs.
+                I've been fascinated by these moments my entire career. How do some leaders see opportunities where others see obstacles? How do they make confident decisions with incomplete information? How do they inspire teams to pursue ambitious goals when the outcome is uncertain?
               </p>
               <p>
-                Today, I work with leaders who are facing complex decisions. My role isn't to have all the answers, but to help you ask better questions and see patterns that might not be obvious when you're in the middle of it all.
+                This curiosity led me to start companies, study successful leaders, and work alongside teams navigating complex challenges. I discovered that breakthrough results come not from having all the answers, but from asking better questions and seeing patterns that others miss.
+              </p>
+              <p>
+                Today, I'm passionate about sharing these insights with leaders who are ready to think differently and act boldly.
               </p>
             </div>
           </motion.div>
