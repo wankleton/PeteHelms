@@ -27,7 +27,7 @@ export default function Footer() {
     <footer className="bg-secondary-900 text-white py-12">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-          <div className="space-y-4">
+          <div className="space-y-4 text-left">
             <h3 className="text-lg font-bold">Pete Helms</h3>
             <p className="text-secondary-400">I'm a purpose-driven technology consultant. I lead a boutique consultancy focused on innovative solutions that have a lasting impact.</p>
             <div className="flex space-x-4 pt-2">
@@ -61,34 +61,30 @@ export default function Footer() {
             </div>
           </div>
           
-          
-          
-          
-          
-          <div className="space-y-4">
+          <div className="space-y-4 text-right">
             <h3 className="text-lg font-bold">Contact</h3>
             <ul className="space-y-3">
-              <li className="flex items-start">
-                <Mail className="text-white mr-3 mt-1" size={16} />
+              <li className="flex items-start justify-end">
                 <a 
                   href={`mailto:${contactInfo.email}`} 
                   className="text-secondary-400 hover:text-white transition-colors"
                 >
                   {contactInfo.email}
                 </a>
+                <Mail className="text-white ml-3 mt-1" size={16} />
               </li>
-              <li className="flex items-start">
-                <Phone className="text-white mr-3 mt-1" size={16} />
+              <li className="flex items-start justify-end">
                 <a 
                   href={`tel:${contactInfo.phone.replace(/[^0-9+]/g, '')}`} 
                   className="text-secondary-400 hover:text-white transition-colors"
                 >
                   {contactInfo.phone}
                 </a>
+                <Phone className="text-white ml-3 mt-1" size={16} />
               </li>
-              <li className="flex items-start">
-                <MapPin className="text-white mr-3 mt-1" size={16} />
+              <li className="flex items-start justify-end">
                 <span className="text-secondary-400">{contactInfo.location}</span>
+                <MapPin className="text-white ml-3 mt-1" size={16} />
               </li>
             </ul>
           </div>
