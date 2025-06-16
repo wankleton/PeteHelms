@@ -244,8 +244,8 @@ export default function BookingSection() {
               {/* Subtle decorative elements */}
               <div className="absolute -top-6 -right-6 w-12 h-12 bg-accent-highlight/20 rounded-full blur-lg"></div>
               
-              <h4 className="text-xl font-bold mb-6 flex items-center text-midnight dark:text-white">
-                <Calendar className="h-5 w-5 mr-2 text-accent-gradient-start" />
+              <h4 className="text-2xl font-black mb-8 flex items-center text-slate-900 dark:text-white">
+                <Calendar className="h-6 w-6 mr-3 text-accent-gradient-start" />
                 Select a Date & Time
               </h4>
               
