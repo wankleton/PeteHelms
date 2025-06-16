@@ -8,17 +8,17 @@ export default function AboutSection() {
     {
       icon: <Heart className="h-6 w-6 text-gray-900 dark:text-white" />,
       title: "Faith",
-      description: "Grounded in Christian values, committed to serving the business community with integrity and excellence."
+      description: "Grounded in Christian values, committed to serving the business community with integrity and excellence in everything I do."
     },
     {
       icon: <Target className="h-6 w-6 text-gray-900 dark:text-white" />,
       title: "Purpose",
-      description: "Using business as a platform for service, transformation, and meaningful impact."
+      description: "Using business as a platform for service, transformation, and meaningful impact that creates lasting value for organizations."
     },
     {
       icon: <Users className="h-6 w-6 text-gray-900 dark:text-white" />,
       title: "Impact",
-      description: "Building solutions that create lasting value for businesses and the communities they serve."
+      description: "Building innovative solutions that create lasting value for businesses and the communities they serve around the world."
     }
   ];
 
