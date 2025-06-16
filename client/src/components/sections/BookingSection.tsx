@@ -97,7 +97,7 @@ export default function BookingSection() {
   };
 
   return (
-    <section id="book" className="py-12 sm:py-16 md:py-28 bg-gradient-to-b from-midnight to-midnight-800 relative overflow-hidden">
+    <section id="book" className="py-16 sm:py-20 md:py-32 bg-gradient-to-br from-slate-50 to-white dark:from-slate-900 dark:to-slate-950 relative overflow-hidden">
       {/* Enhanced background elements */}
       <div className="absolute inset-0 bg-data-grid opacity-15"></div>
       <div className="absolute inset-0 bg-noise-subtle opacity-20"></div>
@@ -142,27 +142,15 @@ export default function BookingSection() {
         >
           <SectionHeading 
             title={
-              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-center gap-2 sm:gap-3">
-                <span className="text-white">Book a</span>
-                <span className="gradient-text font-bold relative inline-block">
-                  Strategy Session
-                  <motion.span 
-                    className="absolute -bottom-1 left-0 h-1 bg-gradient-to-r from-accent-gradient-start to-accent-gradient-end rounded-full"
-                    initial={{ width: 0 }}
-                    whileInView={{ width: '100%' }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.8, delay: 0.5 }}
-                  />
-                </span>
-              </div>
+              <>Book Your <span className="bg-gradient-to-r from-accent-gradient-start to-accent-gradient-end bg-clip-text text-transparent font-black">Strategy Session</span></>
             }
-            description="Take the first step toward transforming your business with AI. Schedule a personalized strategy session to discuss your unique challenges and opportunities."
-            className="text-white [&>p]:text-secondary-300 max-w-3xl"
+            description="Ready to transform your business with AI? Schedule a personalized strategy session to discuss your challenges and unlock new opportunities."
+            className="text-slate-900 dark:text-white [&>p]:text-slate-600 dark:[&>p]:text-slate-300 max-w-3xl"
           />
         </motion.div>
         
         <motion.div 
-          className="glass-card bg-white/90 dark:bg-midnight-800/90 backdrop-blur-sm rounded-2xl p-4 sm:p-6 md:p-8 lg:p-12 shadow-3d max-w-4xl mx-auto mt-8 sm:mt-12 md:mt-16 border border-secondary-100 dark:border-secondary-700 overflow-hidden"
+          className="bg-white dark:bg-slate-900 rounded-3xl p-6 sm:p-8 md:p-12 shadow-xl max-w-5xl mx-auto mt-12 sm:mt-16 md:mt-20 border border-slate-200 dark:border-slate-700 overflow-hidden"
           variants={fadeInUp}
           initial="hidden"
           whileInView="visible"
@@ -176,23 +164,17 @@ export default function BookingSection() {
             <div className="md:col-span-2">
               {/* Animated badge */}
               <motion.div 
-                className="inline-flex items-center rounded-full bg-accent-highlight/20 px-3.5 py-1.5 text-sm font-medium text-midnight dark:text-white mb-4"
+                className="inline-flex items-center rounded-full bg-slate-100 dark:bg-slate-800 px-4 py-2 text-sm font-semibold text-slate-700 dark:text-slate-300 mb-6 border border-slate-200 dark:border-slate-700"
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
               >
-                <motion.div 
-                  className="mr-2 flex-shrink-0"
-                  animate={{ rotate: [0, 360] }}
-                  transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
-                >
-                  <Check className="h-4 w-4 text-accent-gradient-end" />
-                </motion.div>
+                <div className="w-2 h-2 rounded-full bg-accent-gradient-start mr-2"></div>
                 Premium Strategy Session
               </motion.div>
               
-              <h3 className="text-2xl md:text-3xl font-bold mb-6 text-midnight dark:text-white">
+              <h3 className="text-3xl md:text-4xl font-black mb-8 text-slate-900 dark:text-white leading-tight">
                 Transform Your AI Strategy
               </h3>
               
@@ -215,17 +197,17 @@ export default function BookingSection() {
                     }}
                     whileHover={{ scale: 1.02, translateZ: 10 }}
                   >
-                    <div className="flex-shrink-0 h-7 w-7 rounded-full bg-gradient-to-r from-accent-gradient-start to-accent-gradient-end flex items-center justify-center mr-3 mt-0.5 shadow-glow">
-                      <Check className="h-3.5 w-3.5 text-white" />
+                    <div className="flex-shrink-0 h-6 w-6 rounded-full bg-accent-gradient-start flex items-center justify-center mr-4 mt-0.5">
+                      <Check className="h-3 w-3 text-white" />
                     </div>
-                    <p className="text-secondary-700 dark:text-secondary-200">{item}</p>
+                    <p className="text-slate-700 dark:text-slate-200 font-medium">{item}</p>
                   </motion.div>
                 ))}
               </div>
               
-              {/* Client testimonial with enhanced glass card */}
+              {/* Client testimonial with enhanced card */}
               <motion.div 
-                className="p-6 glass-card rounded-xl dark:bg-midnight-700/50 relative overflow-hidden"
+                className="p-6 bg-slate-50 dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 relative overflow-hidden"
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.3 }}
               >

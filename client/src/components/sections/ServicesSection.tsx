@@ -104,7 +104,7 @@ const ServiceCard = ({
             </span>
           </div>
           
-          <p className="text-secondary-600 dark:text-secondary-300 mb-6 text-base leading-relaxed">
+          <p className="text-slate-600 dark:text-slate-300 mb-6 text-base leading-relaxed font-medium">
             {service.description}
           </p>
           
