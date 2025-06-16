@@ -375,7 +375,7 @@ export default function HeroSection() {
             <FeatureBadge 
               icon={<Star size={12} />}
               text="AI Expertise"
-              position="top-4 -left-8"
+              position="top-8 -left-4"
               delay={0.5}
             />
             
