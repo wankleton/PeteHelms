@@ -6,7 +6,11 @@ import SectionHeading from "@/components/ui/section-heading";
 export default function AboutSection() {
   const purposeItems = [
     {
-      icon: <Plus className="h-8 w-8 text-white dark:text-black rotate-0" strokeWidth={3} />,
+      icon: (
+        <svg className="h-8 w-8 text-white dark:text-black" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M10 2h4v6h6v4h-6v10h-4V12H4V8h6V2z"/>
+        </svg>
+      ),
       title: "Faith",
       description: "Grounded in Christian values, committed to serving the business community with integrity and excellence."
     },
