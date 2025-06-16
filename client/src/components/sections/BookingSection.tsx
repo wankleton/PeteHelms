@@ -143,39 +143,13 @@ export default function BookingSection() {
                 ))}
               </div>
               
-              {/* Client testimonial with enhanced card */}
-              <motion.div 
-                className="p-6 bg-slate-50 dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 relative overflow-hidden"
-                whileHover={{ scale: 1.02 }}
-                transition={{ duration: 0.3 }}
-              >
-                {/* Decorative elements */}
-                <div className="absolute -top-4 -left-4 w-10 h-10 rounded-full bg-accent-highlight/50 blur-xl"></div>
-                <div className="absolute -bottom-4 -right-4 w-10 h-10 rounded-full bg-accent-gradient-end/50 blur-xl"></div>
-                
-                <div className="absolute top-0 right-0">
-                  <svg width="70" height="70" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" opacity="0.15">
-                    <path d="M17.1 24.5H12.5L16.1 16.9H11.5V10.9H21.1V17.9L17.1 24.5ZM28.6 24.5H24L27.6 16.9H23V10.9H32.6V17.9L28.6 24.5Z" fill="currentColor"/>
-                  </svg>
-                </div>
-                
-                <div className="relative z-10">
-                  <p className="text-secondary-600 dark:text-secondary-200 italic leading-relaxed mb-4">
-                    "The strategy session with Pete provided more value than months of internal discussions. His ability to quickly understand our business and identify AI opportunities was remarkable."
-                  </p>
-                  <div className="flex items-center">
-                    <div className="w-8 h-8 rounded-full bg-gradient-to-r from-accent-gradient-start to-accent-gradient-end shadow-md p-[2px] mr-3">
-                      <div className="w-full h-full rounded-full bg-white dark:bg-midnight-700 flex items-center justify-center">
-                        <svg className="w-4 h-4 text-accent-gradient-start" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                          <path d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                        </svg>
-                      </div>
-                    </div>
-                    <p className="text-sm font-medium text-midnight-900 dark:text-white">Recent client</p>
-                  </div>
-                </div>
-              </motion.div>
+              {/* Client testimonial */}
+              <div className="p-6 bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700">
+                <p className="text-gray-600 dark:text-gray-300 italic leading-relaxed mb-4">
+                  "The strategy session with Pete provided more value than months of internal discussions. His ability to quickly understand our business and identify AI opportunities was remarkable."
+                </p>
+                <p className="text-sm text-gray-500 dark:text-gray-400">Recent client</p>
+              </div>
             </div>
             
             <div className="md:col-span-3 relative">

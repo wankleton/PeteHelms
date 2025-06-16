@@ -42,9 +42,9 @@ const TypeAnimation = ({ phrases }: { phrases: string[] }) => {
   
   return (
     <span className="inline-block min-w-[140px] sm:min-w-[160px] md:min-w-[200px]">
-      <span className="gradient-text relative font-semibold">
+      <span className="text-gray-900 dark:text-white relative font-semibold">
         {currentText}
-        <span className="absolute right-[-4px] h-full w-[2px] bg-accent-gradient-start animate-blink" />
+        <span className="absolute right-[-4px] h-full w-[2px] bg-gray-900 dark:bg-white animate-blink" />
       </span>
     </span>
   );
@@ -121,7 +121,7 @@ const FeatureBadge = ({ icon, text, position, delay }: {
     animate={{ opacity: 1, y: 0 }}
     transition={{ delay, duration: 0.5 }}
   >
-    <div className="flex-shrink-0 w-5 h-5 rounded-full bg-gradient-to-r from-accent-gradient-start to-accent-gradient-end flex items-center justify-center text-white">
+    <div className="flex-shrink-0 w-5 h-5 rounded-full bg-gray-900 dark:bg-white flex items-center justify-center text-white dark:text-black">
       {icon}
     </div>
     <p className="text-xs sm:text-sm font-medium text-midnight dark:text-white whitespace-nowrap">{text}</p>
@@ -347,7 +347,7 @@ export default function HeroSection() {
             
             {/* Scroll indicator */}
             <motion.div 
-              className="hidden md:flex items-center gap-2 mt-16 text-secondary-500 dark:text-secondary-300"
+              className="hidden md:flex items-center gap-2 mt-16 text-gray-500 dark:text-gray-400"
               variants={item}
             >
               <motion.div 
@@ -402,37 +402,21 @@ export default function HeroSection() {
                   src={peteProfile} 
                   alt="Pete Helms - AI Strategy Expert" 
                   className="w-full h-full object-cover object-center"
-                  
                   loading="eager"
                 />
-                
-                {/* Subtle gradient overlay */}
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-midnight/10 mix-blend-multiply" />
-                
-                {/* Accent border */}
-                <div className="absolute inset-0 border-2 border-accent-highlight/30 rounded-2xl" />
               </TiltCard>
               ) : (
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+              <div className="relative rounded-2xl overflow-hidden shadow-lg">
                 <img 
                   src={peteProfile} 
                   alt="Pete Helms - AI Strategy Expert" 
                   className="w-full h-full object-cover object-center"
-                  
                   loading="eager"
                 />
-                
-                {/* Subtle gradient overlay */}
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-midnight/10 mix-blend-multiply" />
-                
-                {/* Accent border */}
-                <div className="absolute inset-0 border-2 border-accent-highlight/30 rounded-2xl" />
               </div>
               )}
               
-              {/* Decorative elements */}
-              <div className="absolute -top-6 -right-6 w-1/2 h-1/3 border-2 border-accent-highlight/30 rounded-xl -z-10" />
-              <div className="absolute -bottom-6 -left-6 w-1/2 h-1/3 border-2 border-accent-highlight/30 rounded-xl -z-10" />
+
             </motion.div>
           </motion.div>
         </div>
