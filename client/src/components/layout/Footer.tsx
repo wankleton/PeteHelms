@@ -27,11 +27,10 @@ export default function Footer() {
     <footer className="bg-secondary-900 text-white py-12">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-          <div>
-            <h3 className="text-lg font-bold mb-4">Pete Helms</h3>
-            <p className="text-secondary-400 mb-6">I'm a purpose-driven technology consultant. I lead a boutique consultancy focused on innovative solutions
-            that have a lasting impact.</p>
-            <div className="flex space-x-4">
+          <div className="space-y-4">
+            <h3 className="text-lg font-bold">Pete Helms</h3>
+            <p className="text-secondary-400">AI Expert, Business Strategist, and Tech Founder helping businesses leverage cutting-edge technology.</p>
+            <div className="flex space-x-4 pt-2">
               <a 
                 href="https://www.linkedin.com/in/petehelmsman/" 
                 target="_blank" 
@@ -62,8 +61,8 @@ export default function Footer() {
             </div>
           </div>
           
-          <div>
-            <h3 className="text-lg font-bold mb-4">Quick Links</h3>
+          <div className="space-y-4">
+            <h3 className="text-lg font-bold">Quick Links</h3>
             <ul className="space-y-3">
               {navigationItems.map(item => (
                 <li key={item.id}>
@@ -79,8 +78,8 @@ export default function Footer() {
             </ul>
           </div>
           
-          <div>
-            <h3 className="text-lg font-bold mb-4">Services</h3>
+          <div className="space-y-4">
+            <h3 className="text-lg font-bold">Services</h3>
             <ul className="space-y-3">
               {services.map(service => (
                 <li key={service.id}>
@@ -96,8 +95,8 @@ export default function Footer() {
             </ul>
           </div>
           
-          <div>
-            <h3 className="text-lg font-bold mb-4">Contact</h3>
+          <div className="space-y-4">
+            <h3 className="text-lg font-bold">Contact</h3>
             <ul className="space-y-3">
               <li className="flex items-start">
                 <Mail className="text-white mr-3 mt-1" size={16} />
