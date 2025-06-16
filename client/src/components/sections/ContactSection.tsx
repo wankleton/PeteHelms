@@ -111,10 +111,10 @@ export default function ContactSection() {
                       asChild
                       size="lg"
                       variant="outline"
-                      className="border-stark border-black dark:border-white text-black dark:text-white hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black px-12 py-6 text-lg font-bold tracking-wide transform hover:scale-105 transition-all duration-200"
+                      className="border-stark border-2 border-black dark:border-white text-black dark:text-white hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black px-14 py-8 text-lg font-bold tracking-wider transform hover:scale-105 transition-smooth shadow-lg"
                     >
                       <a href="mailto:hello@petehelms.com" className="flex items-center justify-center">
-                        <Mail className="h-5 w-5 mr-3" />
+                        <Mail className="h-6 w-6 mr-4" />
                         SEND ME AN EMAIL
                       </a>
                     </Button>

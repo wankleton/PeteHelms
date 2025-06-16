@@ -322,7 +322,7 @@ export default function HeroSection() {
               <Button 
                 asChild 
                 size="lg" 
-                className="bg-black hover:bg-gray-900 text-white px-12 py-6 text-lg font-bold tracking-wider border-stark transition-bounce hover:scale-[1.02] shadow-lg hover:shadow-2xl focus-ring"
+                className="bg-black hover:bg-gray-900 text-white px-14 py-8 text-lg font-bold tracking-wider border-stark transition-bounce hover:scale-[1.02] shadow-xl hover:shadow-2xl focus-ring"
               >
                 <a 
                   href="#purpose" 
@@ -330,7 +330,7 @@ export default function HeroSection() {
                   className="flex items-center justify-center group"
                 >
                   EXPLORE MY STORY
-                  <ArrowRight className="ml-3 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                  <ArrowRight className="ml-4 h-6 w-6 transition-transform group-hover:translate-x-1" />
                 </a>
               </Button>
               
@@ -338,7 +338,7 @@ export default function HeroSection() {
                 asChild 
                 size="lg" 
                 variant="outline"
-                className="border-stark border-black dark:border-white text-black dark:text-white hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black px-12 py-6 text-lg font-bold tracking-wider transition-bounce hover:scale-[1.02] shadow-lg hover:shadow-2xl focus-ring"
+                className="border-stark border-2 border-black dark:border-white text-black dark:text-white hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black px-14 py-8 text-lg font-bold tracking-wider transition-bounce hover:scale-[1.02] shadow-xl hover:shadow-2xl focus-ring"
               >
                 <a 
                   href="#book" 
@@ -346,7 +346,7 @@ export default function HeroSection() {
                   className="flex items-center justify-center group"
                 >
                   START A CONVERSATION
-                  <ArrowRight className="ml-3 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                  <ArrowRight className="ml-4 h-6 w-6 transition-transform group-hover:translate-x-1" />
                 </a>
               </Button>
             </motion.div>
