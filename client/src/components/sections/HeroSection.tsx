@@ -290,21 +290,18 @@ export default function HeroSection() {
             
             {/* Brief Introduction */}
             <motion.h1 
-              className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl mb-16 md:mb-20 relative overflow-hidden"
-              variants={revealUp}
+              className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl mb-16 md:mb-20 relative"
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ 
+                duration: 0.8, 
+                ease: [0.33, 1, 0.68, 1],
+                delay: 0.3
+              }}
             >
-              <motion.span 
-                className="block text-ultra-bold text-black dark:text-white relative geometric-accent"
-                initial={{ y: 100 }}
-                animate={{ y: 0 }}
-                transition={{ 
-                  duration: 1.2, 
-                  ease: [0.33, 1, 0.68, 1],
-                  delay: 0.5
-                }}
-              >
+              <span className="block text-ultra-bold text-black dark:text-white relative geometric-accent">
                 PETE HELMS
-              </motion.span>
+              </span>
               <motion.div 
                 className="absolute -bottom-4 left-0 h-1 bg-black dark:bg-white"
                 initial={{ width: 0 }}
