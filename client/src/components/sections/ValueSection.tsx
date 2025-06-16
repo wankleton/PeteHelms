@@ -7,8 +7,8 @@ export default function ValueSection() {
   const valueItems = [
     {
       icon: <Eye className="h-6 w-6 text-gray-900 dark:text-white" />,
-      title: "Curiosity & Intention",
-      description: "Deep understanding of your challenges drives meaningful solutions."
+      title: "Simplicity",
+      description: "Complex problems simplified into clear, actionable solutions."
     },
     {
       icon: <Lightbulb className="h-6 w-6 text-gray-900 dark:text-white" />,
