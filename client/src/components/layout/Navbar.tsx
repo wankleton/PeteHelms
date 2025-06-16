@@ -85,9 +85,7 @@ export default function Navbar() {
                 className="w-full h-full object-cover object-center"
               />
             </div>
-            <span className="text-xl font-bold text-slate-900 dark:text-white tracking-tight">
-              Pete Helms
-            </span>
+            
           </Link>
           
           {/* Desktop Navigation */}
@@ -113,7 +111,7 @@ export default function Navbar() {
           <div className="hidden md:block">
             <Button 
               asChild
-              className="bg-gradient-to-r from-accent-gradient-start to-accent-gradient-end hover:brightness-110 text-white transition-all duration-300 group shadow-lg"
+              className="bg-black dark:bg-white text-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-200 transition-all duration-300 group shadow-lg"
               size="sm"
             >
               <a href="#book" onClick={scrollToSection('book')} className="flex items-center">
@@ -129,7 +127,7 @@ export default function Navbar() {
             <a 
               href="#book" 
               onClick={scrollToSection('book')}
-              className="px-3 py-1.5 rounded-full bg-gradient-to-r from-accent-gradient-start to-accent-gradient-end text-white text-sm font-medium flex items-center whitespace-nowrap"
+              className="px-3 py-1.5 rounded-full bg-black dark:bg-white text-white dark:text-black text-sm font-medium flex items-center whitespace-nowrap"
             >
               <Calendar className="mr-1.5 h-3.5 w-3.5" />
               Book
@@ -214,7 +212,7 @@ export default function Navbar() {
                       scrollToSection('book')(e);
                       handleMobileItemClick();
                     }}
-                    className="px-6 py-3 rounded-full bg-gradient-to-r from-accent-gradient-start to-accent-gradient-end text-white font-medium flex items-center"
+                    className="px-6 py-3 rounded-full bg-black dark:bg-white text-white dark:text-black font-medium flex items-center"
                   >
                     <Calendar className="mr-2 h-4 w-4" />
                     Book a Strategy Session
