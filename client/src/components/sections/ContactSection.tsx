@@ -16,10 +16,10 @@ export default function ContactSection() {
         >
           <SectionHeading 
             title={
-              <>Book a <span className="text-slate-900 dark:text-white font-bold">Call</span></>
+              <>Book a <span className="text-black dark:text-white font-bold">Call</span></>
             }
             description="Ready to explore how we can work together? Let's start with a conversation."
-            className="text-slate-900 dark:text-white [&>p]:text-slate-600 dark:[&>p]:text-slate-300 max-w-3xl"
+            className="text-black dark:text-white [&>p]:text-gray-700 dark:[&>p]:text-gray-300 max-w-3xl"
           />
         </motion.div>
         
@@ -33,11 +33,11 @@ export default function ContactSection() {
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
             <div>
-              <h3 className="text-3xl md:text-4xl font-light mb-8 text-slate-900 dark:text-white leading-tight">
+              <h3 className="text-3xl md:text-4xl font-light mb-8 text-black dark:text-white leading-tight">
                 Let's Start Simple
               </h3>
               
-              <div className="space-y-6 mb-12 text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
+              <div className="space-y-6 mb-12 text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
                 <p>
                   The best way to explore working together is to start with a conversation. No commitment, no pressure—just an opportunity to share what you're working on and see if there's a fit.
                 </p>
@@ -51,34 +51,34 @@ export default function ContactSection() {
             </div>
             
             <div>
-              <h4 className="text-2xl font-light mb-8 text-slate-900 dark:text-white">
+              <h4 className="text-2xl font-light mb-8 text-black dark:text-white">
                 Schedule Your Call
               </h4>
               
               <div className="space-y-6">
-                <div className="p-6 bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700">
+                <div className="p-6 bg-gray-50 dark:bg-gray-900 border border-black dark:border-white">
                   <div className="space-y-4">
                     <div className="flex items-start">
-                      <Clock className="h-5 w-5 text-gray-900 dark:text-white mt-1 mr-3" />
+                      <Clock className="h-5 w-5 text-black dark:text-white mt-1 mr-3" />
                       <div>
-                        <h5 className="font-medium text-slate-900 dark:text-white mb-1">Duration</h5>
-                        <p className="text-slate-600 dark:text-slate-300">45 minutes - enough time for meaningful conversation</p>
+                        <h5 className="font-medium text-black dark:text-white mb-1">Duration</h5>
+                        <p className="text-gray-700 dark:text-gray-300">45 minutes - enough time for meaningful conversation</p>
                       </div>
                     </div>
                     
                     <div className="flex items-start">
-                      <MessageSquare className="h-5 w-5 text-gray-900 dark:text-white mt-1 mr-3" />
+                      <MessageSquare className="h-5 w-5 text-black dark:text-white mt-1 mr-3" />
                       <div>
-                        <h5 className="font-medium text-slate-900 dark:text-white mb-1">Format</h5>
-                        <p className="text-slate-600 dark:text-slate-300">Video call where we can share screens and collaborate</p>
+                        <h5 className="font-medium text-black dark:text-white mb-1">Format</h5>
+                        <p className="text-gray-700 dark:text-gray-300">Video call where we can share screens and collaborate</p>
                       </div>
                     </div>
                     
                     <div className="flex items-start">
-                      <Mail className="h-5 w-5 text-gray-900 dark:text-white mt-1 mr-3" />
+                      <Mail className="h-5 w-5 text-black dark:text-white mt-1 mr-3" />
                       <div>
-                        <h5 className="font-medium text-slate-900 dark:text-white mb-1">Investment</h5>
-                        <p className="text-slate-600 dark:text-slate-300">Complimentary for first-time conversations</p>
+                        <h5 className="font-medium text-black dark:text-white mb-1">Investment</h5>
+                        <p className="text-gray-700 dark:text-gray-300">Complimentary for first-time conversations</p>
                       </div>
                     </div>
                   </div>
@@ -89,7 +89,7 @@ export default function ContactSection() {
                     <Button 
                       asChild
                       size="lg"
-                      className="bg-gray-900 dark:bg-white text-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-100 px-8 py-3 font-normal w-full"
+                      className="bg-black dark:bg-white text-white dark:text-black hover:bg-gray-900 dark:hover:bg-gray-100 px-8 py-3 font-normal w-full"
                     >
                       <a href="https://calendly.com/petehelms" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center">
                         <Clock className="h-4 w-4 mr-2" />
@@ -99,12 +99,12 @@ export default function ContactSection() {
                   </div>
                   
                   <div className="text-center">
-                    <p className="text-sm text-slate-500 dark:text-slate-400 mb-3">Prefer to email first?</p>
+                    <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">Prefer to email first?</p>
                     <Button 
                       asChild
                       size="lg"
                       variant="ghost"
-                      className="text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white px-8 py-3 font-normal"
+                      className="text-gray-700 hover:text-black dark:text-gray-400 dark:hover:text-white px-8 py-3 font-normal"
                     >
                       <a href="mailto:hello@petehelms.com" className="flex items-center justify-center">
                         <Mail className="h-4 w-4 mr-2" />
