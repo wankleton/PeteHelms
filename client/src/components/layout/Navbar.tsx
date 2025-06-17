@@ -74,7 +74,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-4 z-20 relative">
             <motion.div 
-              className="w-12 h-12 rounded-xl overflow-hidden bg-gradient-to-r from-black to-gray-800 dark:from-white dark:to-gray-200 border-2 border-white dark:border-black flex items-center justify-center shadow-premium"
+              className="w-12 h-12 rounded-full overflow-hidden bg-gradient-to-r from-black to-gray-800 dark:from-white dark:to-gray-200 border-2 border-white dark:border-black flex items-center justify-center shadow-premium"
               whileHover={{ scale: 1.1, rotate: 5 }}
               whileTap={{ scale: 0.95 }}
               transition={{ type: "spring", stiffness: 400, damping: 17 }}
