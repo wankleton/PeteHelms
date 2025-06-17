@@ -421,10 +421,45 @@ export default function HeroSection() {
                   }}
                 >
                   <motion.span
-                    initial={{ width: 0, opacity: 0 }}
-                    animate={{ width: "100%", opacity: 1 }}
-                    transition={{ duration: 1, delay: 2.6 }}
-                    className="absolute bottom-0 left-0 h-1 bg-gradient-to-r from-black to-gray-600 dark:from-white dark:to-gray-300 rounded-full"
+                    initial={{ 
+                      width: 0, 
+                      opacity: 0,
+                      scaleY: 0
+                    }}
+                    animate={{ 
+                      width: "100%", 
+                      opacity: 1,
+                      scaleY: [0, 1.2, 0.8, 1]
+                    }}
+                    transition={{ 
+                      duration: 1.2, 
+                      delay: 2.6,
+                      ease: [0.25, 0.46, 0.45, 0.94],
+                      scaleY: {
+                        duration: 0.8,
+                        delay: 2.8,
+                        ease: "easeOut"
+                      }
+                    }}
+                    className="absolute bottom-0 left-0 h-0.5 bg-black dark:bg-white origin-left"
+                    style={{
+                      background: 'linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,0.8) 100%)',
+                      filter: 'drop-shadow(0 1px 1px rgba(0,0,0,0.2))'
+                    }}
+                  />
+                  <motion.span
+                    initial={{ opacity: 0, x: -10 }}
+                    animate={{ 
+                      opacity: [0, 1, 1, 0],
+                      x: ["0%", "100%"]
+                    }}
+                    transition={{ 
+                      duration: 1.2, 
+                      delay: 2.6,
+                      ease: "easeInOut"
+                    }}
+                    className="absolute bottom-0 left-0 w-1 h-1 bg-black dark:bg-white rounded-full"
+                    style={{ filter: 'blur(0.5px)' }}
                   />
                   <motion.span
                     initial={{ opacity: 0 }}
@@ -461,10 +496,45 @@ export default function HeroSection() {
                   }}
                 >
                   <motion.span
-                    initial={{ scaleX: 0, opacity: 0 }}
-                    animate={{ scaleX: 1, opacity: 1 }}
-                    transition={{ duration: 1.2, delay: 3, ease: "easeOut" }}
-                    className="absolute bottom-0 left-0 h-1 bg-gradient-to-r from-black to-gray-600 dark:from-white dark:to-gray-300 rounded-full origin-left"
+                    initial={{ 
+                      width: 0, 
+                      opacity: 0,
+                      scaleY: 0
+                    }}
+                    animate={{ 
+                      width: "100%", 
+                      opacity: 1,
+                      scaleY: [0, 1.3, 0.7, 1]
+                    }}
+                    transition={{ 
+                      duration: 1.4, 
+                      delay: 3.2,
+                      ease: [0.25, 0.46, 0.45, 0.94],
+                      scaleY: {
+                        duration: 0.9,
+                        delay: 3.4,
+                        ease: "easeOut"
+                      }
+                    }}
+                    className="absolute bottom-0 left-0 h-0.5 bg-black dark:bg-white origin-left"
+                    style={{
+                      background: 'linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,0.8) 100%)',
+                      filter: 'drop-shadow(0 1px 1px rgba(0,0,0,0.2))'
+                    }}
+                  />
+                  <motion.span
+                    initial={{ opacity: 0, x: -10 }}
+                    animate={{ 
+                      opacity: [0, 1, 1, 0],
+                      x: ["0%", "100%"]
+                    }}
+                    transition={{ 
+                      duration: 1.4, 
+                      delay: 3.2,
+                      ease: "easeInOut"
+                    }}
+                    className="absolute bottom-0 left-0 w-1 h-1 bg-black dark:bg-white rounded-full"
+                    style={{ filter: 'blur(0.5px)' }}
                   />
                   <motion.span
                     initial={{ scale: 0, opacity: 0 }}
