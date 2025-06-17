@@ -21,7 +21,7 @@ export const services = [
     id: "workshops",
     icon: NetworkIcon,
     title: "Workshops",
-    description: "Hands-on training for teams looking to implement AI.",
+    description: "For teams looking to implement AI.",
     features: [
       "AI Literacy",
       "Custom Workshops",
@@ -33,7 +33,7 @@ export const services = [
     id: "advisory",
     icon: LightbulbIcon,
     title: "Advisory",
-    description: "For business leaders looking to implement AI.",
+    description: "For business leaders looking for tech support.",
     features: [
       "Tech Stack",
       "Digital Transformation",
@@ -45,7 +45,7 @@ export const services = [
     id: "development",
     icon: PieChartIcon,
     title: "Development",
-    description: "Custom app development and AI implementations.",
+    description: "For founders looking for talented devs.",
     features: [
       "Custom applications",
       "AI system integration",
