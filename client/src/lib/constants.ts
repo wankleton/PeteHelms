@@ -33,7 +33,7 @@ export const services = [
     id: "advisory",
     icon: LightbulbIcon,
     title: "Advisory",
-    description: "Strategic guidance for technology decisions.",
+    description: "For business leaders looking to implement AI.",
     features: [
       "Tech Stack",
       "Digital Transformation",
