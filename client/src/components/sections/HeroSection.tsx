@@ -399,17 +399,53 @@ export default function HeroSection() {
                 transition={{ duration: 0.6, delay: 2.0 }}
               >
                 I'm a <motion.span 
-                  className="font-semibold text-black dark:text-white"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ duration: 0.3, delay: 2.2 }}
-                >purpose-driven</motion.span> technology consultant. 
-                My passion is to serve those who are often overlooked by developing <motion.span 
-                  className="font-semibold text-black dark:text-white"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ duration: 0.3, delay: 2.4 }}
-                >tools and strategies</motion.span> that empower people to live a more abundant life.
+                  className="font-bold text-black dark:text-white relative"
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ 
+                    duration: 0.6, 
+                    delay: 2.2,
+                    type: "spring",
+                    stiffness: 300,
+                    damping: 20
+                  }}
+                  whileHover={{ 
+                    scale: 1.05,
+                    textShadow: "0 0 8px rgba(0,0,0,0.3)"
+                  }}
+                >
+                  <motion.span
+                    initial={{ width: 0 }}
+                    animate={{ width: "100%" }}
+                    transition={{ duration: 0.8, delay: 2.4 }}
+                    className="absolute bottom-0 left-0 h-0.5 bg-black dark:bg-white"
+                  />
+                  purpose-driven
+                </motion.span> technology consultant and AI expert. 
+                My passion is to serve those who are often overlooked by developing tools and <motion.span 
+                  className="font-bold text-black dark:text-white relative"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ 
+                    duration: 0.6, 
+                    delay: 2.6,
+                    type: "spring",
+                    stiffness: 200,
+                    damping: 15
+                  }}
+                  whileHover={{ 
+                    scale: 1.05,
+                    color: "#333"
+                  }}
+                >
+                  <motion.span
+                    initial={{ scaleX: 0 }}
+                    animate={{ scaleX: 1 }}
+                    transition={{ duration: 0.8, delay: 2.8 }}
+                    className="absolute bottom-0 left-0 h-0.5 bg-black dark:bg-white origin-left"
+                  />
+                  strategies that empower
+                </motion.span> people to live a more abundant life.
               </motion.p>
             </motion.div>
             
