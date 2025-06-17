@@ -202,9 +202,7 @@ export default function ServicesSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 1 }}
-            >
-              Here are three ways I can help...
-            </motion.p>
+            >Here are some ways I can help</motion.p>
           </div>
         </motion.div>
         

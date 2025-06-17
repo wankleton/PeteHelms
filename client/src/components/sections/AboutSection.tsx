@@ -72,15 +72,7 @@ export default function AboutSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.8, ease: [0.33, 1, 0.68, 1] }}
             />
-            <motion.p 
-              className="text-xl md:text-2xl text-black dark:text-white font-light leading-relaxed max-w-2xl"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 1 }}
-            >
-              The foundation of my work and approach.
-            </motion.p>
+            
           </motion.div>
         </motion.div>
         
