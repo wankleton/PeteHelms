@@ -63,23 +63,28 @@ export default function Navbar() {
 
   return (
     <header 
-      className={`fixed w-full z-50 transition-all duration-300 ${
+      className={`fixed w-full z-50 transition-all duration-500 ease-out ${
         scrolled 
-          ? 'py-3 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-sm border-b border-slate-200/20 dark:border-slate-800/20' 
-          : 'py-5 bg-white/70 dark:bg-slate-950/70 backdrop-blur-md'
+          ? 'py-3 bg-white/90 dark:bg-slate-950/90 backdrop-blur-2xl shadow-premium border-b border-slate-200/30 dark:border-slate-800/30' 
+          : 'py-5 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl'
       }`}
     >
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center relative">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 z-20 relative">
-            <div className="w-12 h-12 rounded-full overflow-hidden bg-gradient-to-r from-accent-gradient-start to-accent-gradient-end border-2 border-white dark:border-midnight-700 flex items-center justify-center">
+            <motion.div 
+              className="w-12 h-12 rounded-full overflow-hidden bg-gradient-to-r from-black to-gray-800 dark:from-white dark:to-gray-200 border-2 border-white dark:border-black flex items-center justify-center shadow-premium"
+              whileHover={{ scale: 1.1, rotate: 5 }}
+              whileTap={{ scale: 0.95 }}
+              transition={{ type: "spring", stiffness: 400, damping: 17 }}
+            >
               <img 
                 src={peteProfile} 
                 alt="Pete Helms" 
                 className="w-full h-full object-cover object-center"
               />
-            </div>
+            </motion.div>
             
           </Link>
           
@@ -87,30 +92,47 @@ export default function Navbar() {
           
           {/* Desktop CTA Button */}
           <div className="hidden md:block">
-            <Button 
-              asChild
-              className="bg-black dark:bg-white text-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-200 transition-all duration-300 group shadow-lg"
-              size="sm"
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              transition={{ type: "spring", stiffness: 400, damping: 17 }}
             >
-              <a href="https://calendly.com/pete-helms/intro-call" target="_blank" rel="noopener noreferrer" className="flex items-center">
-                <Calendar className="mr-1.5 h-4 w-4" />
-                Let's Connect
-                <ArrowRight className="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform" />
-              </a>
-            </Button>
+              <Button 
+                asChild
+                className="bg-black dark:bg-white text-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-200 transition-all duration-500 group shadow-intense hover:shadow-premium relative overflow-hidden"
+                size="sm"
+              >
+                <a href="https://calendly.com/pete-helms/intro-call" target="_blank" rel="noopener noreferrer" className="flex items-center relative z-10">
+                  <motion.div
+                    className="absolute inset-0 bg-gradient-to-r from-gray-900 to-black dark:from-gray-100 dark:to-white opacity-0 group-hover:opacity-100"
+                    transition={{ duration: 0.3 }}
+                  />
+                  <Calendar className="mr-1.5 h-4 w-4 relative z-10" />
+                  <span className="relative z-10">Let's Connect</span>
+                  <ArrowRight className="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform duration-300 relative z-10" />
+                </a>
+              </Button>
+            </motion.div>
           </div>
           
           {/* Mobile CTA Button */}
           <div className="md:hidden z-20">
-            <a 
+            <motion.a 
               href="https://calendly.com/pete-helms/intro-call" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="px-4 py-2 rounded-full bg-black dark:bg-white text-white dark:text-black text-sm font-medium flex items-center whitespace-nowrap min-h-[44px]"
+              className="px-4 py-2 rounded-full bg-black dark:bg-white text-white dark:text-black text-sm font-medium flex items-center whitespace-nowrap min-h-[44px] shadow-intense relative overflow-hidden"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              transition={{ type: "spring", stiffness: 400, damping: 17 }}
             >
-              <Calendar className="mr-1.5 h-3.5 w-3.5" />
-              Let's Connect
-            </a>
+              <motion.div
+                className="absolute inset-0 bg-gradient-to-r from-gray-900 to-black dark:from-gray-100 dark:to-white opacity-0 hover:opacity-100"
+                transition={{ duration: 0.3 }}
+              />
+              <Calendar className="mr-1.5 h-3.5 w-3.5 relative z-10" />
+              <span className="relative z-10">Let's Connect</span>
+            </motion.a>
           </div>
         </div>
         

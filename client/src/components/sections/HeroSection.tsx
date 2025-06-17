@@ -291,25 +291,35 @@ export default function HeroSection() {
             {/* Brief Introduction */}
             <motion.h1 
               className="text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl mb-8 sm:mb-12 md:mb-16 lg:mb-20 relative leading-[0.9]"
-              initial={{ opacity: 0, y: 40 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, y: 60, rotateX: 15 }}
+              animate={{ opacity: 1, y: 0, rotateX: 0 }}
               transition={{ 
-                duration: 0.8, 
-                ease: [0.33, 1, 0.68, 1],
+                duration: 1.2, 
+                ease: [0.23, 1, 0.32, 1],
                 delay: 0.3
               }}
             >
-              <span className="block text-ultra-bold text-black dark:text-white relative geometric-accent">
-                PETE HELMS
-              </span>
-              <motion.div 
-                className="absolute -bottom-4 left-0 h-1 bg-black dark:bg-white"
-                initial={{ width: 0 }}
-                animate={{ width: 96 }}
+              <motion.span 
+                className="block text-ultra-bold text-black dark:text-white relative geometric-accent"
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
                 transition={{ 
                   duration: 0.8,
+                  delay: 0.6,
+                  type: "spring",
+                  stiffness: 100
+                }}
+              >
+                PETE HELMS
+              </motion.span>
+              <motion.div 
+                className="absolute -bottom-4 left-0 h-1 bg-gradient-to-r from-black via-gray-600 to-black dark:from-white dark:via-gray-400 dark:to-white shadow-premium"
+                initial={{ width: 0, opacity: 0 }}
+                animate={{ width: 96, opacity: 1 }}
+                transition={{ 
+                  duration: 1.2,
                   delay: 1.5,
-                  ease: [0.33, 1, 0.68, 1]
+                  ease: [0.23, 1, 0.32, 1]
                 }}
               />
               
@@ -380,7 +390,7 @@ export default function HeroSection() {
                 <Button 
                   asChild 
                   size="lg" 
-                  className="bg-black hover:bg-gray-900 text-white w-full px-6 sm:px-12 py-6 sm:py-8 text-base sm:text-lg font-bold tracking-wider border-stark shadow-xl hover:shadow-2xl focus-ring relative overflow-hidden"
+                  className="bg-black hover:bg-gray-900 text-white w-full px-6 sm:px-12 py-6 sm:py-8 text-base sm:text-lg font-bold tracking-wider border-stark shadow-intense hover:shadow-premium focus-ring relative overflow-hidden transition-all duration-500"
                 >
                   <a 
                     href="https://calendly.com/pete-helms/intro-call" 
