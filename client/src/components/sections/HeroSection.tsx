@@ -288,109 +288,184 @@ export default function HeroSection() {
           >
             {/* Mobile Profile Photo - First on mobile */}
             <motion.div 
-              className="block lg:hidden mb-8 sm:mb-10"
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8, delay: 0.2, ease: [0.23, 1, 0.32, 1] }}
+              className="block lg:hidden mb-10 sm:mb-12"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1.0, delay: 0.2, ease: [0.23, 1, 0.32, 1] }}
             >
-              <div className="relative w-48 h-60 sm:w-56 sm:h-72 mx-auto">
+              <div className="relative">
+                {/* Decorative background elements */}
                 <motion.div 
-                  className="relative w-full h-full rounded-2xl overflow-hidden border-2 border-black dark:border-white shadow-intense"
-                  whileHover={{ scale: 1.05 }}
-                  transition={{ duration: 0.3 }}
-                >
-                  <img 
-                    src={peteProfile} 
-                    alt="Pete Helms - Technology Consultant" 
-                    className="w-full h-full object-cover object-top"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent" />
-                </motion.div>
+                  className="absolute -top-4 -right-4 w-24 h-24 bg-black/5 dark:bg-white/5 rounded-full blur-xl"
+                  animate={{ 
+                    scale: [1, 1.1, 1],
+                    opacity: [0.5, 0.8, 0.5]
+                  }}
+                  transition={{ 
+                    duration: 4, 
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                  }}
+                />
+                <motion.div 
+                  className="absolute -bottom-6 -left-6 w-32 h-32 bg-black/3 dark:bg-white/3 rounded-full blur-2xl"
+                  animate={{ 
+                    scale: [1, 1.2, 1],
+                    opacity: [0.3, 0.6, 0.3]
+                  }}
+                  transition={{ 
+                    duration: 5, 
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                    delay: 1
+                  }}
+                />
+                
+                <div className="relative w-56 h-72 sm:w-64 sm:h-80 mx-auto">
+                  <motion.div 
+                    className="relative w-full h-full rounded-3xl overflow-hidden border-3 border-black dark:border-white shadow-intense"
+                    whileHover={{ 
+                      scale: 1.02,
+                      rotateY: 2,
+                      rotateX: 1
+                    }}
+                    transition={{ duration: 0.4, ease: [0.23, 1, 0.32, 1] }}
+                  >
+                    <img 
+                      src={peteProfile} 
+                      alt="Pete Helms - Technology Consultant" 
+                      className="w-full h-full object-cover object-top"
+                    />
+                    
+                    {/* Enhanced gradient overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
+                    
+                    {/* Subtle inner border */}
+                    <div className="absolute inset-2 border border-white/20 rounded-2xl pointer-events-none" />
+                  </motion.div>
+                  
+                  {/* Floating badge */}
+                  <motion.div 
+                    className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 bg-black dark:bg-white text-white dark:text-black px-4 py-2 rounded-full text-sm font-bold shadow-premium"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: 1.0 }}
+                  >
+                    Technology Consultant
+                  </motion.div>
+                </div>
               </div>
             </motion.div>
 
             
             {/* Brief Introduction */}
-            <motion.h1 
-              className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl mb-6 sm:mb-8 md:mb-12 lg:mb-16 relative leading-[0.95] tracking-tight"
-              initial={{ opacity: 0, y: 40 }}
+            <motion.div 
+              className="text-center lg:text-left mb-8 sm:mb-10"
+              initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ 
                 duration: 0.8, 
                 ease: [0.23, 1, 0.32, 1],
-                delay: 0.2
+                delay: 1.2
               }}
             >
-              <motion.span 
-                className="block text-ultra-bold text-black dark:text-white relative"
-                initial={{ opacity: 0, scale: 0.9 }}
+              <motion.h1 
+                className="text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl mb-4 relative leading-[0.9] tracking-tight"
+                initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ 
                   duration: 0.6,
-                  delay: 0.4,
+                  delay: 1.4,
                   type: "spring",
-                  stiffness: 120
+                  stiffness: 100
                 }}
               >
-                PETE HELMS
-              </motion.span>
+                <span className="block text-ultra-bold text-black dark:text-white relative">
+                  PETE HELMS
+                </span>
+              </motion.h1>
+              
+              {/* Mobile subtitle */}
               <motion.div 
-                className="absolute -bottom-2 sm:-bottom-3 left-0 lg:left-0 h-0.5 sm:h-1 bg-gradient-to-r from-black via-gray-600 to-black dark:from-white dark:via-gray-400 dark:to-white shadow-premium"
+                className="block lg:hidden"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 1.6 }}
+              >
+                <div className="flex items-center justify-center gap-3 mb-4">
+                  <div className="w-8 h-0.5 bg-black dark:bg-white"></div>
+                  <span className="text-sm font-bold uppercase tracking-[0.3em] text-gray-600 dark:text-gray-400">
+                    Purpose Driven
+                  </span>
+                  <div className="w-8 h-0.5 bg-black dark:bg-white"></div>
+                </div>
+              </motion.div>
+              
+              {/* Desktop underline */}
+              <motion.div 
+                className="hidden lg:block absolute -bottom-2 left-0 h-1 bg-gradient-to-r from-black via-gray-600 to-black dark:from-white dark:via-gray-400 dark:to-white shadow-premium"
                 initial={{ width: 0, opacity: 0 }}
-                animate={{ width: "80px", opacity: 1 }}
+                animate={{ width: "120px", opacity: 1 }}
                 transition={{ 
                   duration: 0.8,
-                  delay: 1.0,
+                  delay: 1.8,
                   ease: [0.23, 1, 0.32, 1]
                 }}
               />
-            </motion.h1>
+            </motion.div>
             
             {/* Brief Description */}
             <motion.div 
-              className="text-base sm:text-lg md:text-xl lg:text-2xl font-light leading-[1.5] max-w-xl mx-auto lg:mx-0 mb-8 sm:mb-12 md:mb-16 lg:mb-20 relative"
+              className="text-center lg:text-left mb-10 sm:mb-12"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.6, ease: [0.33, 1, 0.68, 1] }}
+              transition={{ duration: 0.6, delay: 1.8, ease: [0.33, 1, 0.68, 1] }}
             >
               <motion.p 
-                className="text-gray-700 dark:text-gray-300 leading-[1.6]"
+                className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-light leading-[1.6] text-gray-700 dark:text-gray-300 max-w-2xl mx-auto lg:mx-0"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ duration: 0.5, delay: 0.8 }}
+                transition={{ duration: 0.6, delay: 2.0 }}
               >
-                I'm a <motion.span 
-                  className="font-semibold text-black dark:text-white"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ duration: 0.3, delay: 1.0 }}
-                >purpose-driven</motion.span> technology consultant. 
-                I lead a boutique consultancy focused on <motion.span 
-                  className="font-semibold text-black dark:text-white whitespace-nowrap"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ duration: 0.3, delay: 1.2 }}
-                >innovative&nbsp;solutions</motion.span> that have a lasting impact.
+                I lead a boutique consultancy focused on{" "}
+                <motion.span 
+                  className="font-medium text-black dark:text-white relative inline-block"
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.4, delay: 2.2 }}
+                >
+                  innovative solutions
+                  <motion.div 
+                    className="absolute -bottom-1 left-0 h-0.5 bg-black dark:bg-white"
+                    initial={{ width: 0 }}
+                    animate={{ width: "100%" }}
+                    transition={{ duration: 0.6, delay: 2.4 }}
+                  />
+                </motion.span>{" "}
+                that have a lasting impact.
               </motion.p>
             </motion.div>
             
 
 
-            {/* Bold CTA */}
+            {/* Enhanced CTA */}
             <motion.div 
-              className="flex flex-col gap-4 sm:gap-6"
-              initial={{ opacity: 0, y: 30 }}
+              className="flex flex-col items-center gap-6"
+              initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 1.6, ease: [0.33, 1, 0.68, 1] }}
+              transition={{ duration: 0.8, delay: 2.6, ease: [0.33, 1, 0.68, 1] }}
             >
               <motion.div
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                className="w-full"
+                whileHover={{ 
+                  scale: 1.03,
+                  y: -2
+                }}
+                whileTap={{ scale: 0.97 }}
+                className="w-full max-w-xs mx-auto"
               >
                 <Button 
                   size="lg" 
-                  className="bg-black hover:bg-gray-900 text-white w-full px-6 py-4 sm:py-5 text-base font-bold tracking-wide shadow-intense hover:shadow-premium focus-premium relative overflow-hidden transition-all duration-300"
+                  className="bg-black hover:bg-gray-800 text-white w-full px-8 py-5 text-lg font-bold tracking-wide rounded-2xl shadow-intense hover:shadow-premium focus-premium relative overflow-hidden transition-all duration-500 border-2 border-black hover:border-gray-800"
                   onClick={() => {
                     const element = document.getElementById('about');
                     if (element) {
@@ -398,11 +473,48 @@ export default function HeroSection() {
                     }
                   }}
                 >
+                  <motion.div
+                    className="absolute inset-0 bg-gradient-to-r from-gray-900 via-black to-gray-900 opacity-0 group-hover:opacity-100"
+                    transition={{ duration: 0.3 }}
+                  />
                   <div className="flex items-center justify-center group relative z-10">
                     <span className="relative z-10">Learn More</span>
-                    <ArrowRight className="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform relative z-10" />
+                    <motion.div
+                      className="ml-3 relative z-10"
+                      animate={{ x: [0, 3, 0] }}
+                      transition={{ 
+                        duration: 2, 
+                        repeat: Infinity, 
+                        ease: "easeInOut" 
+                      }}
+                    >
+                      <ArrowRight className="h-5 w-5" />
+                    </motion.div>
                   </div>
                 </Button>
+              </motion.div>
+              
+              {/* Scroll hint for mobile */}
+              <motion.div 
+                className="block lg:hidden text-center"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.6, delay: 3.0 }}
+              >
+                <motion.div
+                  animate={{ y: [0, 5, 0] }}
+                  transition={{ 
+                    duration: 2, 
+                    repeat: Infinity, 
+                    ease: "easeInOut" 
+                  }}
+                  className="text-gray-500 dark:text-gray-400"
+                >
+                  <ChevronDown className="h-5 w-5 mx-auto" />
+                </motion.div>
+                <p className="text-xs text-gray-500 dark:text-gray-400 mt-2 uppercase tracking-wide">
+                  Discover My Purpose
+                </p>
               </motion.div>
             </motion.div>
             
