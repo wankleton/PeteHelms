@@ -29,31 +29,43 @@ export default function InteractiveCursor() {
       cursorY.set(e.clientY - 16);
     };
 
-    const handleMouseEnter = (e: Event) => {
-      const target = e.target as HTMLElement;
-      if (target.matches('button, a, [data-cursor]')) {
+    const isInteractiveElement = (element: Element): element is HTMLElement => {
+      if (!element || typeof element.tagName !== 'string') return false;
+      
+      const tagName = element.tagName.toLowerCase();
+      const hasDataCursor = element.hasAttribute && element.hasAttribute('data-cursor');
+      const isButton = tagName === 'button';
+      const isLink = tagName === 'a';
+      const hasClickable = element.getAttribute && element.getAttribute('role') === 'button';
+      
+      return isButton || isLink || hasDataCursor || hasClickable;
+    };
+
+    const handleMouseOver = (e: MouseEvent) => {
+      const target = e.target as Element;
+      if (target && isInteractiveElement(target)) {
         setIsHovering(true);
         const text = target.getAttribute('data-cursor') || '';
         setCursorText(text);
       }
     };
 
-    const handleMouseLeave = (e: Event) => {
-      const target = e.target as HTMLElement;
-      if (target.matches('button, a, [data-cursor]')) {
+    const handleMouseOut = (e: MouseEvent) => {
+      const target = e.target as Element;
+      if (target && isInteractiveElement(target)) {
         setIsHovering(false);
         setCursorText('');
       }
     };
 
     window.addEventListener('mousemove', moveCursor);
-    document.addEventListener('mouseenter', handleMouseEnter, true);
-    document.addEventListener('mouseleave', handleMouseLeave, true);
+    document.addEventListener('mouseover', handleMouseOver);
+    document.addEventListener('mouseout', handleMouseOut);
 
     return () => {
       window.removeEventListener('mousemove', moveCursor);
-      document.removeEventListener('mouseenter', handleMouseEnter, true);
-      document.removeEventListener('mouseleave', handleMouseLeave, true);
+      document.removeEventListener('mouseover', handleMouseOver);
+      document.removeEventListener('mouseout', handleMouseOut);
     };
   }, [cursorX, cursorY]);
 
@@ -73,10 +85,10 @@ export default function InteractiveCursor() {
         <motion.div
           className="w-full h-full bg-white rounded-full flex items-center justify-center"
           animate={{
-            scale: isHovering ? 1.5 : 1,
-            opacity: isHovering ? 0.9 : 0.7,
+            scale: isHovering ? 1.8 : 1,
+            opacity: isHovering ? 0.9 : 0.6,
           }}
-          transition={{ duration: 0.2 }}
+          transition={{ type: "spring", stiffness: 300, damping: 20 }}
         />
       </motion.div>
       

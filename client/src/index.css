@@ -23,7 +23,7 @@
   
   /* Hide default cursor on interactive elements - desktop only */
   @media (min-width: 768px) {
-    button, a, [data-cursor] {
+    button, a, [data-cursor], [role="button"] {
       cursor: none !important;
     }
   }
@@ -32,6 +32,10 @@
   @media (max-width: 767px) {
     body {
       cursor: auto !important;
+    }
+    
+    button, a, [data-cursor], [role="button"] {
+      cursor: pointer !important;
     }
   }
   
