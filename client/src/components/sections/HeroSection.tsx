@@ -563,14 +563,16 @@ export default function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 2.6, ease: [0.33, 1, 0.68, 1] }}
             >
-              <MagneticButton
+              <motion.div 
+                className="text-center cursor-pointer group"
                 onClick={() => {
                   const element = document.getElementById('purpose');
                   if (element) {
                     element.scrollIntoView({ behavior: 'smooth', block: 'start' });
                   }
                 }}
-                className="text-center cursor-pointer group"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
               >
                 <motion.p 
                   className="text-lg font-bold uppercase tracking-[0.2em] text-black dark:text-white group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors duration-300 mb-4"
@@ -597,7 +599,7 @@ export default function HeroSection() {
                   />
                   <ChevronDown className="h-6 w-6 text-black dark:text-white group-hover:text-white dark:group-hover:text-black relative z-10 transition-colors duration-300" />
                 </motion.div>
-              </MagneticButton>
+              </motion.div>
             </motion.div>
             
 

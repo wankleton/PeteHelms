@@ -18,6 +18,12 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     scroll-behavior: smooth;
+    cursor: none;
+  }
+  
+  /* Hide default cursor on interactive elements */
+  button, a, [data-cursor] {
+    cursor: none !important;
   }
   
   /* Custom typography classes */

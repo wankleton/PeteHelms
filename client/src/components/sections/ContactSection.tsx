@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Mail, MessageSquare, Clock, Calendar } from "lucide-react";
 import { fadeInUp, slideInLeft, slideInRight, scaleInSpring, buttonPulse } from "@/lib/animations";
 import SectionHeading from "@/components/ui/section-heading";
+import MagneticElement from "@/components/ui/magnetic-element";
 
 export default function ContactSection() {
   return (
