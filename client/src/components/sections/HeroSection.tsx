@@ -293,9 +293,9 @@ export default function HeroSection() {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.2, ease: [0.23, 1, 0.32, 1] }}
             >
-              <div className="relative w-32 h-32 sm:w-36 sm:h-36 mx-auto">
+              <div className="relative w-48 h-60 sm:w-56 sm:h-72 mx-auto">
                 <motion.div 
-                  className="relative w-full h-full rounded-full overflow-hidden border-2 border-black dark:border-white shadow-intense"
+                  className="relative w-full h-full rounded-2xl overflow-hidden border-2 border-black dark:border-white shadow-intense"
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.3 }}
                 >
