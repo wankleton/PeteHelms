@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { motion, useAnimate, useMotionValue, useTransform, useScroll } from "framer-motion";
+import { motion, useMotionValue, useTransform, useScroll } from "framer-motion";
 import { ArrowRight, ChevronDown, Star, ExternalLink, MousePointer2, LightbulbIcon, Sparkles, Calendar } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 import peteProfile from "@/assets/pete-profile.jpg";
@@ -131,7 +131,6 @@ const FeatureBadge = ({ icon, text, position, delay }: {
 
 export default function HeroSection() {
   const isMobile = useIsMobile();
-  const [scope, animate] = useAnimate();
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
   
@@ -230,14 +229,7 @@ export default function HeroSection() {
     },
   ];
 
-  useEffect(() => {
-    // Scroll down animation for chevron
-    animate(
-      scope.current, 
-      { y: [0, 15, 0] }, 
-      { duration: 2, repeat: Infinity, ease: "easeInOut" }
-    );
-  }, []);
+
 
   return (
     <section 
@@ -441,6 +433,14 @@ export default function HeroSection() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
+                <motion.p 
+                  className="text-lg font-bold uppercase tracking-[0.2em] text-black dark:text-white group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors duration-300 mb-4"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.6, delay: 3.0 }}
+                >
+                  Discover My Purpose
+                </motion.p>
                 <motion.div
                   animate={{ y: [0, 8, 0] }}
                   transition={{ 
@@ -448,34 +448,14 @@ export default function HeroSection() {
                     repeat: Infinity, 
                     ease: "easeInOut" 
                   }}
-                  className="w-12 h-12 mx-auto mb-4 rounded-full border-2 border-black dark:border-white flex items-center justify-center shadow-premium group-hover:shadow-intense transition-all duration-300"
+                  className="w-12 h-12 mx-auto rounded-full border-2 border-black dark:border-white flex items-center justify-center shadow-premium group-hover:shadow-intense transition-all duration-300"
                 >
                   <ChevronDown className="h-6 w-6 text-black dark:text-white" />
                 </motion.div>
-                <motion.p 
-                  className="text-lg font-bold uppercase tracking-[0.2em] text-black dark:text-white group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors duration-300"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ duration: 0.6, delay: 3.0 }}
-                >
-                  Discover My Purpose
-                </motion.p>
               </motion.div>
             </motion.div>
             
-            {/* Scroll indicator */}
-            <motion.div 
-              className="hidden md:flex items-center gap-4 mt-20 lg:mt-24 text-black dark:text-white"
-              variants={item}
-            >
-              <motion.div 
-                ref={scope}
-                className="flex items-center justify-center w-12 h-12 border-stark bg-white dark:bg-black hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-smooth cursor-pointer"
-              >
-                <ChevronDown size={20} />
-              </motion.div>
-              <span className="text-sm font-semibold uppercase tracking-[0.2em]">Scroll to explore</span>
-            </motion.div>
+
           </motion.div>
           
           {/* Right Column - Image and Badges (Desktop Only) */}
