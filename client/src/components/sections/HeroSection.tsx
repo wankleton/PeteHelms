@@ -393,7 +393,7 @@ export default function HeroSection() {
                       transition={{ duration: 0.3 }}
                     />
                     <Calendar className="mr-3 sm:mr-4 h-5 sm:h-6 w-5 sm:w-6 relative z-10" />
-                    <span className="relative z-10">BOOK A CALL</span>
+                    <span className="relative z-10">LET'S CONNECT</span>
                     <ArrowRight className="ml-3 sm:ml-4 h-5 sm:h-6 w-5 sm:w-6 transition-transform group-hover:translate-x-1 relative z-10" />
                   </a>
                 </Button>

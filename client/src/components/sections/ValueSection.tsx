@@ -58,7 +58,7 @@ export default function ValueSection() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: 0.2 }}
-              >HOW I</motion.span> 
+              >HOW I </motion.span> 
               <motion.span
                 initial={{ opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}

@@ -94,7 +94,7 @@ export default function Navbar() {
             >
               <a href="https://calendly.com/pete-helms/intro-call" target="_blank" rel="noopener noreferrer" className="flex items-center">
                 <Calendar className="mr-1.5 h-4 w-4" />
-                Book a Call
+                Let's Connect
                 <ArrowRight className="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform" />
               </a>
             </Button>
@@ -109,7 +109,7 @@ export default function Navbar() {
               className="px-4 py-2 rounded-full bg-black dark:bg-white text-white dark:text-black text-sm font-medium flex items-center whitespace-nowrap min-h-[44px]"
             >
               <Calendar className="mr-1.5 h-3.5 w-3.5" />
-              Book a Call
+              Let's Connect
             </a>
           </div>
         </div>
