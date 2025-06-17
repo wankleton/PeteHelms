@@ -412,12 +412,12 @@ export default function HeroSection() {
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.3, delay: 2.2 }}
                 >purpose-driven</motion.span> technology consultant. 
-                I lead a boutique consultancy focused on <motion.span 
-                  className="font-semibold text-black dark:text-white whitespace-nowrap"
+                My passion is to serve those who are often overlooked by developing <motion.span 
+                  className="font-semibold text-black dark:text-white"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.3, delay: 2.4 }}
-                >innovative&nbsp;solutions</motion.span> that have a lasting impact.
+                >tools and strategies</motion.span> that empower people to live a more abundant life.
               </motion.p>
             </motion.div>
             
