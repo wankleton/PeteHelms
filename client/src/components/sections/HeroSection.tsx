@@ -405,22 +405,18 @@ export default function HeroSection() {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.6, delay: 2.0 }}
               >
-                I lead a boutique consultancy focused on{" "}
-                <motion.span 
-                  className="font-medium text-black dark:text-white relative inline-block"
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.4, delay: 2.2 }}
-                >
-                  innovative solutions
-                  <motion.div 
-                    className="absolute -bottom-1 left-0 h-0.5 bg-black dark:bg-white"
-                    initial={{ width: 0 }}
-                    animate={{ width: "100%" }}
-                    transition={{ duration: 0.6, delay: 2.4 }}
-                  />
-                </motion.span>{" "}
-                that have a lasting impact.
+                I'm a <motion.span 
+                  className="font-semibold text-black dark:text-white"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.3, delay: 2.2 }}
+                >purpose-driven</motion.span> technology consultant. 
+                I lead a boutique consultancy focused on <motion.span 
+                  className="font-semibold text-black dark:text-white whitespace-nowrap"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.3, delay: 2.4 }}
+                >innovative&nbsp;solutions</motion.span> that have a lasting impact.
               </motion.p>
             </motion.div>
             
