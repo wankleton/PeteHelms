@@ -58,13 +58,13 @@ export default function ValueSection() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: 0.2 }}
-              >HOW I </motion.span> 
+              >MY</motion.span> 
               <motion.span
                 initial={{ opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: 0.4 }}
-              >BRING VALUE</motion.span>
+              >APPROACH</motion.span>
             </h2>
             <motion.div 
               className="w-16 h-1 bg-black dark:bg-white mb-6 ml-auto"

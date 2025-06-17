@@ -175,7 +175,7 @@ export default function ServicesSection() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: 0.4 }}
                 >
-                  WHAT I CAN
+                  MY
                 </motion.span>{" "}
                 <motion.span
                   initial={{ opacity: 0, x: 30 }}
