@@ -37,7 +37,7 @@ export const services = [
     features: [
       "Tech Support",
       "Digital Transformation",
-      "Executive Support",
+      "Technology Consulting",
       "Strategic Planning"
     ]
   },
