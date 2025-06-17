@@ -31,7 +31,7 @@ export default function Footer() {
           <div className="space-y-3 sm:space-y-4 text-center md:text-left">
             <div>
               <h2 className="text-xl sm:text-2xl font-bold mb-2 sm:mb-3 text-white">Pete Helms</h2>
-              <p className="text-secondary-400 text-sm sm:text-base leading-relaxed">I'm a purpose-driven technology consultant. My passion is to serve those who are often overlooked by developing tools and strategies that empower people to live a more abundant life.</p>
+              <p className="text-secondary-400 text-sm sm:text-base leading-relaxed">My passion is to serve those who are often overlooked by developing tools and strategies that empower people to live a more abundant life.</p>
             </div>
             <div className="flex space-x-3 sm:space-x-4 justify-center md:justify-start">
               <a 
