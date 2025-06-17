@@ -37,8 +37,8 @@ export default function ProcessSection() {
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold mb-3 group-hover:text-midnight transition-colors">{step.title}</h3>
-                  <p className="text-secondary-600 leading-relaxed">{step.description}</p>
+                  <h3 className="text-2xl sm:text-3xl font-bold mb-3 group-hover:text-midnight transition-colors">{step.title}</h3>
+                  <p className="text-lg sm:text-xl text-secondary-600 leading-relaxed">{step.description}</p>
                 </div>
               </motion.div>
             ))}
@@ -81,10 +81,10 @@ export default function ProcessSection() {
               </div>
               
               <div className="mt-6 p-4 bg-secondary-50 border border-secondary-200 rounded-lg">
-                <p className="text-sm text-secondary-600 italic">
+                <p className="text-base sm:text-lg text-secondary-600 italic">
                   "Pete's structured approach brought clarity and measurable results in record time."
                 </p>
-                <p className="text-sm font-medium mt-2">— Client Testimonial</p>
+                <p className="text-base sm:text-lg font-medium mt-2">— Client Testimonial</p>
               </div>
             </motion.div>
           </div>

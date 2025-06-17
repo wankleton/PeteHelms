@@ -87,7 +87,7 @@ export default function ValueSection() {
           >
             <div className="bg-white dark:bg-black p-6 sm:p-8 md:p-12 lg:p-16 border-stark relative overflow-hidden shadow-intense premium-hover">
               <div className="absolute top-0 left-0 w-full h-2 sm:h-3 bg-black dark:bg-white"></div>
-              <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-black dark:text-white leading-[1.5] font-light italic">
+              <div className="text-xl md:text-2xl text-black dark:text-white leading-[1.5] font-light italic">
                 <p>
                   "I approach every project with curiosity and intention. I don't just help clients build custom solutions—I help them rethink how they operate."
                 </p>
@@ -116,8 +116,8 @@ export default function ValueSection() {
                   {item.icon}
                 </div>
               </div>
-              <h3 className="text-xl sm:text-2xl font-bold mb-6 sm:mb-8 text-black dark:text-white tracking-wider leading-tight">{item.title.toUpperCase()}</h3>
-              <p className="text-base sm:text-lg text-black dark:text-white leading-[1.7] font-light">{item.description}</p>
+              <h3 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 text-black dark:text-white tracking-wider leading-tight">{item.title.toUpperCase()}</h3>
+              <p className="text-lg sm:text-xl text-black dark:text-white leading-[1.7] font-light">{item.description}</p>
             </motion.div>
           ))}
         </motion.div>

@@ -79,7 +79,7 @@ const ServiceCard = ({
         
         {/* Service title */}
         <motion.h3 
-          className="text-xl sm:text-2xl md:text-3xl font-black mb-3 sm:mb-4 text-black dark:text-white"
+          className="text-2xl sm:text-3xl md:text-4xl font-black mb-3 sm:mb-4 text-black dark:text-white"
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
@@ -93,7 +93,7 @@ const ServiceCard = ({
         
         {/* Service description */}
         <motion.p 
-          className="text-gray-600 dark:text-gray-300 mb-6 sm:mb-8 text-base sm:text-lg leading-relaxed"
+          className="text-gray-600 dark:text-gray-300 mb-6 sm:mb-8 text-lg sm:text-xl leading-relaxed"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}

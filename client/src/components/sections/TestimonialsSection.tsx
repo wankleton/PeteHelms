@@ -132,7 +132,7 @@ const TestimonialCard = ({ testimonial, index, active, total }: {
           
           {/* Quote text with gradient underline */}
           <blockquote className="mb-8 text-secondary-700 dark:text-secondary-200 leading-relaxed translate-z-10 relative">
-            <span className="text-xl font-medium">"{testimonial.quote}"</span>
+            <span className="text-xl md:text-2xl font-medium">"{testimonial.quote}"</span>
             <motion.div 
               className="absolute -bottom-4 left-0 h-0.5 bg-gradient-to-r from-accent-gradient-start to-accent-gradient-end"
               initial={{ width: "0%" }}
