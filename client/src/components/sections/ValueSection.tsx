@@ -85,7 +85,7 @@ export default function ValueSection() {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.7 }}
           >
-            <div className="bg-white dark:bg-black p-6 sm:p-8 md:p-12 lg:p-16 border-stark relative overflow-hidden shadow-lg">
+            <div className="bg-white dark:bg-black p-6 sm:p-8 md:p-12 lg:p-16 border-stark relative overflow-hidden shadow-intense premium-hover">
               <div className="absolute top-0 left-0 w-full h-2 sm:h-3 bg-black dark:bg-white"></div>
               <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-black dark:text-white leading-[1.5] font-light italic">
                 <p>

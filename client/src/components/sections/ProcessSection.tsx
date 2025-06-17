@@ -52,7 +52,7 @@ export default function ProcessSection() {
               whileInView="visible"
               viewport={{ once: true, margin: "-100px" }}
             >
-              <div className="rounded-xl shadow-xl overflow-hidden">
+              <div className="rounded-xl shadow-intense overflow-hidden premium-hover">
                 <div className="aspect-[4/5] bg-gradient-to-br from-midnight to-secondary-700 relative">
                   {/* Visual representation of AI process */}
                   <div className="absolute inset-0 flex items-center justify-center p-8">

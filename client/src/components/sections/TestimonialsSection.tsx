@@ -74,9 +74,10 @@ const TestimonialCard = ({ testimonial, index, active, total }: {
         className="
           relative bg-white dark:bg-midnight-800 p-8 rounded-2xl
           border border-secondary-200 dark:border-secondary-700 
-          shadow-card-hover
+          shadow-intense hover:shadow-premium
           preserve-3d transform-gpu
           overflow-hidden
+          transition-shadow duration-500
         "
         style={{
           rotateX: active ? rotateX : 0,

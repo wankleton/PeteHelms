@@ -114,7 +114,7 @@ export default function AboutSection() {
           {purposeItems.map((item, index) => (
             <motion.div 
               key={index} 
-              className="bg-white dark:bg-black p-6 sm:p-8 md:p-10 lg:p-12 border-stark transition-smooth hover:shadow-2xl relative overflow-hidden group"
+              className="bg-white dark:bg-black p-6 sm:p-8 md:p-10 lg:p-12 border-stark shadow-premium hover:shadow-intense relative overflow-hidden group premium-hover"
               variants={fadeIn}
               whileHover={{ y: -5 }}
             >

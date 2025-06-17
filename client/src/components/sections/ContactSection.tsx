@@ -95,7 +95,7 @@ export default function ContactSection() {
               </h4>
               
               <div className="space-y-6 sm:space-y-8 md:space-y-10">
-                <div className="p-6 sm:p-8 md:p-10 bg-gray-50 dark:bg-gray-900 border-stark relative overflow-hidden group shadow-lg">
+                <div className="p-6 sm:p-8 md:p-10 bg-gray-50 dark:bg-gray-900 border-stark relative overflow-hidden group shadow-intense premium-hover">
                   <div className="space-y-4">
                     <div className="flex items-start">
                       <Clock className="h-5 w-5 text-black dark:text-white mt-1 mr-3" />

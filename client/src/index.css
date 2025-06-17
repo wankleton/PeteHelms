@@ -138,6 +138,46 @@
       0 0 0 1px rgba(0, 0, 0, 0.05);
   }
   
+  /* Sophisticated scroll animations */
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  /* Premium parallax effect */
+  .parallax-element {
+    will-change: transform;
+    transform-style: preserve-3d;
+  }
+  
+  /* Enhanced focus states for accessibility */
+  .focus-premium:focus-visible {
+    outline: 3px solid rgba(0, 0, 0, 0.8);
+    outline-offset: 3px;
+    box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dark .focus-premium:focus-visible {
+    outline-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Sophisticated loading animations */
+  .loading-shimmer {
+    background: linear-gradient(
+      90deg,
+      rgba(255,255,255,0) 0%,
+      rgba(255,255,255,0.2) 20%,
+      rgba(255,255,255,0.5) 60%,
+      rgba(255,255,255,0) 100%
+    );
+    animation: shimmer 2s infinite;
+  }
+  
   /* Geometric accent elements */
   .geometric-accent::before {
     content: '';
