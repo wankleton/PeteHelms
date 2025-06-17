@@ -47,10 +47,10 @@ export const services = [
     title: "Development",
     description: "For founders looking to develop custom solutions.",
     features: [
-      "Custom applications",
-      "AI system integration",
-      "Process automation",
-      "Technical consulting"
+      "Custom Apps",
+      "AI Integrations",
+      "Process Automation",
+      "Staff Augmentation"
     ]
   }
 ];
