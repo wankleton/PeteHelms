@@ -302,7 +302,7 @@ export default function HeroSection() {
                   <img 
                     src={peteProfile} 
                     alt="Pete Helms - Technology Consultant" 
-                    className="w-full h-full object-cover object-center"
+                    className="w-full h-full object-cover object-top"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent" />
                 </motion.div>
@@ -452,7 +452,7 @@ export default function HeroSection() {
                 <img 
                   src={peteProfile} 
                   alt="Pete Helms - Technology Consultant" 
-                  className="w-full h-full object-cover object-center"
+                  className="w-full h-full object-cover object-top"
                   loading="eager"
                 />
               </TiltCard>
