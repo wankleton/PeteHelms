@@ -35,7 +35,7 @@ export const services = [
     title: "Advisory",
     description: "For business leaders looking for tech support.",
     features: [
-      "Tech Stack",
+      "Tech Support",
       "Digital Transformation",
       "Executive Support",
       "Strategic Planning"
