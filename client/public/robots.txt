@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Disallow admin or private areas (if any exist in the future)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /_next/
+Disallow: /api/
+
+# Sitemap location
+Sitemap: https://petehelms.com/sitemap.xml
+
+# Crawl delay (optional - helps prevent overwhelming the server)
+Crawl-delay: 1
