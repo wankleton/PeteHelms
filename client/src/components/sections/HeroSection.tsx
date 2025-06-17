@@ -397,35 +397,7 @@ export default function HeroSection() {
                 </Button>
               </motion.div>
               
-              <motion.div
-                whileHover={{ 
-                  scale: 1.02, 
-                  y: -4,
-                  transition: { duration: 0.3, ease: [0.33, 1, 0.68, 1] }
-                }}
-                whileTap={{ scale: 0.98 }}
-                className="w-full"
-              >
-                <Button 
-                  asChild 
-                  size="lg" 
-                  variant="outline"
-                  className="border-stark border-2 border-black dark:border-white text-black dark:text-white hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black w-full px-6 sm:px-12 py-6 sm:py-8 text-base sm:text-lg font-bold tracking-wider shadow-xl hover:shadow-2xl focus-ring relative overflow-hidden"
-                >
-                  <a 
-                    href="#book" 
-                    onClick={scrollToSection('book')}
-                    className="flex items-center justify-center group relative z-10"
-                  >
-                    <motion.div
-                      className="absolute inset-0 bg-black dark:bg-white opacity-0 group-hover:opacity-100"
-                      transition={{ duration: 0.3 }}
-                    />
-                    <span className="relative z-10">START A CONVERSATION</span>
-                    <ArrowRight className="ml-3 sm:ml-4 h-5 sm:h-6 w-5 sm:w-6 transition-transform group-hover:translate-x-1 relative z-10" />
-                  </a>
-                </Button>
-              </motion.div>
+
             </motion.div>
             
             {/* Scroll indicator */}
