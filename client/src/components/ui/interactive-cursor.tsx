@@ -76,7 +76,7 @@ export default function InteractiveCursor() {
     <>
       {/* Main cursor */}
       <motion.div
-        className="fixed top-0 left-0 w-8 h-8 pointer-events-none z-50 mix-blend-difference"
+        className="fixed top-0 left-0 w-8 h-8 pointer-events-none z-[9999] mix-blend-difference"
         style={{
           x: cursorXSpring,
           y: cursorYSpring,
@@ -95,7 +95,7 @@ export default function InteractiveCursor() {
       {/* Cursor text */}
       {cursorText && (
         <motion.div
-          className="fixed pointer-events-none z-50 px-3 py-1 bg-black text-white text-xs font-bold rounded-full"
+          className="fixed pointer-events-none z-[9999] px-3 py-1 bg-black text-white text-xs font-bold rounded-full"
           style={{
             x: cursorXSpring,
             y: cursorYSpring,
