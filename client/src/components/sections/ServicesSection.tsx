@@ -45,7 +45,7 @@ const ServiceCard = ({
       }}
     >
       {/* Main card container */}
-      <div className="relative bg-white dark:bg-gray-950 border-2 border-gray-200 dark:border-gray-800 p-6 sm:p-8 md:p-10 group-hover:border-black dark:group-hover:border-white transition-all duration-500 shadow-lg group-hover:shadow-2xl">
+      <div className="relative bg-white dark:bg-gray-950 border-2 border-gray-200 dark:border-gray-800 p-6 sm:p-8 md:p-10 group-hover:border-black dark:group-hover:border-white transition-all duration-500 shadow-premium group-hover:shadow-intense">
         
         {/* Top accent line */}
         <motion.div 
@@ -62,15 +62,16 @@ const ServiceCard = ({
         
         {/* Service icon */}
         <motion.div 
-          className="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 bg-black dark:bg-white rounded-full flex items-center justify-center mb-6 sm:mb-8 text-white dark:text-black group-hover:scale-110 transition-transform duration-300"
-          initial={{ scale: 0, rotate: -180 }}
-          whileInView={{ scale: 1, rotate: 0 }}
+          className="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 bg-black dark:bg-white rounded-full flex items-center justify-center mb-6 sm:mb-8 text-white dark:text-black group-hover:scale-125 transition-all duration-500 shadow-premium group-hover:shadow-intense"
+          initial={{ scale: 0, rotate: -270, opacity: 0 }}
+          whileInView={{ scale: 1, rotate: 0, opacity: 1 }}
           viewport={{ once: true }}
           transition={{ 
-            duration: 0.6, 
-            delay: index * 0.2 + 0.3,
+            duration: 0.8, 
+            delay: index * 0.15 + 0.3,
             type: "spring",
-            stiffness: 100
+            stiffness: 80,
+            damping: 15
           }}
         >
           {getServiceIcon(service.id)}

@@ -24,8 +24,9 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-secondary-900 text-white py-12">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <footer className="bg-secondary-900 text-white py-12 relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-br from-secondary-800 to-secondary-900" />
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 mb-8 sm:mb-12">
           <div className="space-y-3 sm:space-y-4 text-center md:text-left">
             <div>
