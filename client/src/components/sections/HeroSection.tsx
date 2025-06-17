@@ -363,7 +363,7 @@ export default function HeroSection() {
             >
               <motion.h1 
                 className="text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl mb-4 relative leading-[0.9]"
-                style={{ letterSpacing: '0.05em' }}
+                style={{ letterSpacing: '0.1em' }}
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ 
