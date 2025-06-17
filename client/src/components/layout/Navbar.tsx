@@ -72,9 +72,9 @@ export default function Navbar() {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center relative">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 z-20 relative">
+          <Link href="/" className="flex items-center gap-4 z-20 relative">
             <motion.div 
-              className="w-12 h-12 rounded-full overflow-hidden bg-gradient-to-r from-black to-gray-800 dark:from-white dark:to-gray-200 border-2 border-white dark:border-black flex items-center justify-center shadow-premium"
+              className="w-12 h-12 rounded-xl overflow-hidden bg-gradient-to-r from-black to-gray-800 dark:from-white dark:to-gray-200 border-2 border-white dark:border-black flex items-center justify-center shadow-premium"
               whileHover={{ scale: 1.1, rotate: 5 }}
               whileTap={{ scale: 0.95 }}
               transition={{ type: "spring", stiffness: 400, damping: 17 }}
@@ -86,6 +86,14 @@ export default function Navbar() {
               />
             </motion.div>
             
+            <motion.span 
+              className="text-xl md:text-2xl font-black tracking-tight text-black dark:text-white leading-none"
+              initial={{ opacity: 0, x: -10 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.3, delay: 0.1 }}
+            >
+              PETE HELMS
+            </motion.span>
           </Link>
           
           
