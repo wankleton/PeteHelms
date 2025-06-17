@@ -21,9 +21,18 @@
     cursor: none;
   }
   
-  /* Hide default cursor on interactive elements */
-  button, a, [data-cursor] {
-    cursor: none !important;
+  /* Hide default cursor on interactive elements - desktop only */
+  @media (min-width: 768px) {
+    button, a, [data-cursor] {
+      cursor: none !important;
+    }
+  }
+  
+  /* Keep normal cursor on mobile */
+  @media (max-width: 767px) {
+    body {
+      cursor: auto !important;
+    }
   }
   
   /* Custom typography classes */

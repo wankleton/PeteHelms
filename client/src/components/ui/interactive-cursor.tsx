@@ -4,6 +4,7 @@ import { motion, useMotionValue, useSpring } from 'framer-motion';
 export default function InteractiveCursor() {
   const [isHovering, setIsHovering] = useState(false);
   const [cursorText, setCursorText] = useState('');
+  const [isMobile, setIsMobile] = useState(false);
   
   const cursorX = useMotionValue(-100);
   const cursorY = useMotionValue(-100);
@@ -11,6 +12,16 @@ export default function InteractiveCursor() {
   const springConfig = { damping: 25, stiffness: 700 };
   const cursorXSpring = useSpring(cursorX, springConfig);
   const cursorYSpring = useSpring(cursorY, springConfig);
+
+  // Check if device is mobile
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
 
   useEffect(() => {
     const moveCursor = (e: MouseEvent) => {
@@ -45,6 +56,9 @@ export default function InteractiveCursor() {
       document.removeEventListener('mouseleave', handleMouseLeave, true);
     };
   }, [cursorX, cursorY]);
+
+  // Don't render on mobile devices
+  if (isMobile) return null;
 
   return (
     <>
