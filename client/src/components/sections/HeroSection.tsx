@@ -284,8 +284,30 @@ export default function HeroSection() {
             variants={container}
             initial="hidden"
             animate="show"
-            className="z-10 text-center lg:text-left"
+            className="z-10 text-center lg:text-left order-2 lg:order-1"
           >
+            {/* Mobile Profile Photo - First on mobile */}
+            <motion.div 
+              className="block lg:hidden mb-8 sm:mb-10"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.2, ease: [0.23, 1, 0.32, 1] }}
+            >
+              <div className="relative w-32 h-32 sm:w-36 sm:h-36 mx-auto">
+                <motion.div 
+                  className="relative w-full h-full rounded-full overflow-hidden border-2 border-black dark:border-white shadow-intense"
+                  whileHover={{ scale: 1.05 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <img 
+                    src={peteProfile} 
+                    alt="Pete Helms - Technology Consultant" 
+                    className="w-full h-full object-cover object-center"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent" />
+                </motion.div>
+              </div>
+            </motion.div>
 
             
             {/* Brief Introduction */}
