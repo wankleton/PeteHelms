@@ -423,73 +423,43 @@ export default function HeroSection() {
             
 
 
-            {/* Enhanced CTA */}
+            {/* Enhanced Scroll Indicator */}
             <motion.div 
-              className="flex flex-col items-center gap-6"
+              className="flex flex-col items-center gap-4 mt-16"
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 2.6, ease: [0.33, 1, 0.68, 1] }}
             >
-              <motion.div
-                whileHover={{ 
-                  scale: 1.03,
-                  y: -2
-                }}
-                whileTap={{ scale: 0.97 }}
-                className="w-full max-w-xs mx-auto"
-              >
-                <Button 
-                  size="lg" 
-                  className="bg-black hover:bg-gray-800 text-white w-full px-8 py-5 text-lg font-bold tracking-wide rounded-2xl shadow-intense hover:shadow-premium focus-premium relative overflow-hidden transition-all duration-500 border-2 border-black hover:border-gray-800"
-                  onClick={() => {
-                    const element = document.getElementById('about');
-                    if (element) {
-                      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    }
-                  }}
-                >
-                  <motion.div
-                    className="absolute inset-0 bg-gradient-to-r from-gray-900 via-black to-gray-900 opacity-0 group-hover:opacity-100"
-                    transition={{ duration: 0.3 }}
-                  />
-                  <div className="flex items-center justify-center group relative z-10">
-                    <span className="relative z-10">Learn More</span>
-                    <motion.div
-                      className="ml-3 relative z-10"
-                      animate={{ x: [0, 3, 0] }}
-                      transition={{ 
-                        duration: 2, 
-                        repeat: Infinity, 
-                        ease: "easeInOut" 
-                      }}
-                    >
-                      <ArrowRight className="h-5 w-5" />
-                    </motion.div>
-                  </div>
-                </Button>
-              </motion.div>
-              
-              {/* Scroll hint for mobile */}
               <motion.div 
-                className="block lg:hidden text-center"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.6, delay: 3.0 }}
+                className="text-center cursor-pointer group"
+                onClick={() => {
+                  const element = document.getElementById('purpose');
+                  if (element) {
+                    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                  }
+                }}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
               >
                 <motion.div
-                  animate={{ y: [0, 5, 0] }}
+                  animate={{ y: [0, 8, 0] }}
                   transition={{ 
-                    duration: 2, 
+                    duration: 2.5, 
                     repeat: Infinity, 
                     ease: "easeInOut" 
                   }}
-                  className="text-gray-500 dark:text-gray-400"
+                  className="w-12 h-12 mx-auto mb-4 rounded-full border-2 border-black dark:border-white flex items-center justify-center shadow-premium group-hover:shadow-intense transition-all duration-300"
                 >
-                  <ChevronDown className="h-5 w-5 mx-auto" />
+                  <ChevronDown className="h-6 w-6 text-black dark:text-white" />
                 </motion.div>
-                <p className="text-xs text-gray-500 dark:text-gray-400 mt-2 uppercase tracking-wide">
+                <motion.p 
+                  className="text-lg font-bold uppercase tracking-[0.2em] text-black dark:text-white group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors duration-300"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.6, delay: 3.0 }}
+                >
                   Discover My Purpose
-                </p>
+                </motion.p>
               </motion.div>
             </motion.div>
             
