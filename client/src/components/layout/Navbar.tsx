@@ -2,16 +2,14 @@ import { useState, useEffect } from 'react';
 import { Link } from 'wouter';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, ChevronRight, Home, Users, Award, Calendar, MessageSquare } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { navigationItems } from '@/lib/constants';
-import { useIsMobile } from '@/hooks/use-mobile';
+
 import peteProfile from '@/assets/pete-profile.jpg';
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
-  const isMobile = useIsMobile();
 
   // Handle scroll events for navbar styling
   useEffect(() => {
@@ -38,10 +36,7 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Handle mobile menu item click
-  const handleMobileItemClick = () => {
-    setIsOpen(false);
-  };
+
 
   // Smooth scroll to section
   const scrollToSection = (sectionId: string) => (e: React.MouseEvent) => {

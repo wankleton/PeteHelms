@@ -27,12 +27,12 @@ export default function Footer() {
     <footer className="bg-secondary-900 text-white py-12">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 mb-8 sm:mb-12">
-          <div className="space-y-3 sm:space-y-4 text-left">
+          <div className="space-y-3 sm:space-y-4 text-center md:text-left">
             <div>
               <h2 className="text-xl sm:text-2xl font-bold mb-2 sm:mb-3 text-white">Pete Helms</h2>
               <p className="text-secondary-400 text-sm sm:text-base leading-relaxed">I'm a purpose-driven technology consultant. I lead a boutique consultancy focused on innovative solutions that have a lasting impact.</p>
             </div>
-            <div className="flex space-x-3 sm:space-x-4">
+            <div className="flex space-x-3 sm:space-x-4 justify-center md:justify-start">
               <a 
                 href="https://www.linkedin.com/in/petehelmsman/" 
                 target="_blank" 
@@ -63,10 +63,10 @@ export default function Footer() {
             </div>
           </div>
           
-          <div className="space-y-3 sm:space-y-4 text-right">
+          <div className="space-y-3 sm:space-y-4 text-center md:text-right">
             <h3 className="text-lg font-bold text-white">Contact Info</h3>
             <ul className="space-y-2 sm:space-y-3">
-              <li className="flex items-start justify-end">
+              <li className="flex items-start justify-center md:justify-end">
                 <a 
                   href={`mailto:${contactInfo.email}`} 
                   className="text-secondary-400 hover:text-white transition-colors text-sm sm:text-base"
@@ -75,7 +75,7 @@ export default function Footer() {
                 </a>
                 <Mail className="text-white ml-2 sm:ml-3 mt-1" size={14} />
               </li>
-              <li className="flex items-start justify-end">
+              <li className="flex items-start justify-center md:justify-end">
                 <a 
                   href={`tel:${contactInfo.phone.replace(/[^0-9+]/g, '')}`} 
                   className="text-secondary-400 hover:text-white transition-colors text-sm sm:text-base"
@@ -84,7 +84,7 @@ export default function Footer() {
                 </a>
                 <Phone className="text-white ml-2 sm:ml-3 mt-1" size={14} />
               </li>
-              <li className="flex items-start justify-end">
+              <li className="flex items-start justify-center md:justify-end">
                 <span className="text-secondary-400 text-sm sm:text-base">{contactInfo.location}</span>
                 <MapPin className="text-white ml-2 sm:ml-3 mt-1" size={14} />
               </li>
