@@ -8,7 +8,7 @@ Disallow: /_next/
 Disallow: /api/
 
 # Sitemap location
-Sitemap: https://petehelms.com/sitemap.xml
+Sitemap: https://peterhelms.com/sitemap.xml
 
 # Crawl delay (optional - helps prevent overwhelming the server)
 Crawl-delay: 1
