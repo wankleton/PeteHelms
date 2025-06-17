@@ -389,20 +389,19 @@ export default function HeroSection() {
                 className="w-full"
               >
                 <Button 
-                  asChild 
                   size="lg" 
                   className="bg-black hover:bg-gray-900 text-white w-full px-6 py-4 sm:py-5 text-base font-bold tracking-wide shadow-intense hover:shadow-premium focus-premium relative overflow-hidden transition-all duration-300"
+                  onClick={() => {
+                    const element = document.getElementById('about');
+                    if (element) {
+                      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                  }}
                 >
-                  <a 
-                    href="https://calendly.com/pete-helms/intro-call" 
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-center group relative z-10"
-                  >
-                    <Calendar className="mr-2 h-4 w-4 relative z-10" />
-                    <span className="relative z-10">Let's Connect</span>
+                  <div className="flex items-center justify-center group relative z-10">
+                    <span className="relative z-10">Learn More</span>
                     <ArrowRight className="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform relative z-10" />
-                  </a>
+                  </div>
                 </Button>
               </motion.div>
             </motion.div>
