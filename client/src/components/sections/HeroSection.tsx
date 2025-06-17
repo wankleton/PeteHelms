@@ -399,49 +399,85 @@ export default function HeroSection() {
                 transition={{ duration: 0.6, delay: 2.0 }}
               >
                 I'm a <motion.span 
-                  className="font-bold text-black dark:text-white relative"
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  animate={{ opacity: 1, scale: 1 }}
+                  className="font-bold text-black dark:text-white relative inline-block"
+                  initial={{ opacity: 0, scale: 0.8, rotateX: -90 }}
+                  animate={{ 
+                    opacity: 1, 
+                    scale: 1, 
+                    rotateX: 0,
+                    y: [0, -4, 0]
+                  }}
                   transition={{ 
-                    duration: 0.6, 
+                    duration: 0.8, 
                     delay: 2.2,
                     type: "spring",
                     stiffness: 300,
                     damping: 20
                   }}
                   whileHover={{ 
-                    scale: 1.05
+                    scale: 1.08,
+                    y: -2,
+                    transition: { duration: 0.2 }
                   }}
-                  style={{ textShadow: "0 0 0px rgba(0,0,0,0)" }}
                 >
                   <motion.span
-                    initial={{ width: 0 }}
-                    animate={{ width: "100%" }}
-                    transition={{ duration: 0.8, delay: 2.4 }}
-                    className="absolute bottom-0 left-0 h-0.5 bg-black dark:bg-white"
+                    initial={{ width: 0, opacity: 0 }}
+                    animate={{ width: "100%", opacity: 1 }}
+                    transition={{ duration: 1, delay: 2.6 }}
+                    className="absolute bottom-0 left-0 h-1 bg-gradient-to-r from-black to-gray-600 dark:from-white dark:to-gray-300 rounded-full"
+                  />
+                  <motion.span
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: [0, 1, 0.8, 1] }}
+                    transition={{ 
+                      duration: 1.5, 
+                      delay: 2.4,
+                      times: [0, 0.3, 0.6, 1]
+                    }}
+                    className="absolute inset-0 bg-gradient-to-r from-transparent via-black/5 to-transparent dark:via-white/5 rounded"
                   />
                   purpose-driven
                 </motion.span> technology consultant and AI expert. 
                 My passion is to serve those who are often overlooked by developing tools and strategies that empower people to <motion.span 
-                  className="font-bold text-black dark:text-white relative"
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
+                  className="font-bold text-black dark:text-white relative inline-block"
+                  initial={{ opacity: 0, x: -30, filter: "blur(4px)" }}
+                  animate={{ 
+                    opacity: 1, 
+                    x: 0,
+                    filter: "blur(0px)",
+                    scale: [1, 1.02, 1]
+                  }}
                   transition={{ 
-                    duration: 0.6, 
-                    delay: 2.6,
+                    duration: 0.8, 
+                    delay: 2.8,
                     type: "spring",
                     stiffness: 200,
                     damping: 15
                   }}
                   whileHover={{ 
-                    scale: 1.05
+                    scale: 1.05,
+                    x: 2,
+                    transition: { duration: 0.2 }
                   }}
                 >
                   <motion.span
-                    initial={{ scaleX: 0 }}
-                    animate={{ scaleX: 1 }}
-                    transition={{ duration: 0.8, delay: 2.8 }}
-                    className="absolute bottom-0 left-0 h-0.5 bg-black dark:bg-white origin-left"
+                    initial={{ scaleX: 0, opacity: 0 }}
+                    animate={{ scaleX: 1, opacity: 1 }}
+                    transition={{ duration: 1.2, delay: 3, ease: "easeOut" }}
+                    className="absolute bottom-0 left-0 h-1 bg-gradient-to-r from-black to-gray-600 dark:from-white dark:to-gray-300 rounded-full origin-left"
+                  />
+                  <motion.span
+                    initial={{ scale: 0, opacity: 0 }}
+                    animate={{ 
+                      scale: [0, 1.2, 1], 
+                      opacity: [0, 0.6, 0.3, 0] 
+                    }}
+                    transition={{ 
+                      duration: 1.5, 
+                      delay: 3.2,
+                      times: [0, 0.4, 0.7, 1]
+                    }}
+                    className="absolute inset-0 bg-black/10 dark:bg-white/10 rounded blur-sm"
                   />
                   live a more abundant life
                 </motion.span>.
