@@ -556,23 +556,21 @@ export default function HeroSection() {
             
 
 
-            {/* Enhanced Scroll Indicator */}
+            {/* Enhanced Scroll Indicator with Magnetic Effect */}
             <motion.div 
               className="flex flex-col items-center gap-4 mt-16"
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 2.6, ease: [0.33, 1, 0.68, 1] }}
             >
-              <motion.div 
-                className="text-center cursor-pointer group"
+              <MagneticButton
                 onClick={() => {
                   const element = document.getElementById('purpose');
                   if (element) {
                     element.scrollIntoView({ behavior: 'smooth', block: 'start' });
                   }
                 }}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
+                className="text-center cursor-pointer group"
               >
                 <motion.p 
                   className="text-lg font-bold uppercase tracking-[0.2em] text-black dark:text-white group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors duration-300 mb-4"
@@ -589,11 +587,17 @@ export default function HeroSection() {
                     repeat: Infinity, 
                     ease: "easeInOut" 
                   }}
-                  className="w-12 h-12 mx-auto rounded-full border-2 border-black dark:border-white flex items-center justify-center shadow-premium group-hover:shadow-intense transition-all duration-300"
+                  className="w-12 h-12 mx-auto rounded-full border-2 border-black dark:border-white flex items-center justify-center shadow-premium group-hover:shadow-intense transition-all duration-300 relative overflow-hidden"
                 >
-                  <ChevronDown className="h-6 w-6 text-black dark:text-white" />
+                  <motion.div
+                    className="absolute inset-0 bg-black dark:bg-white"
+                    initial={{ scale: 0 }}
+                    whileHover={{ scale: 1 }}
+                    transition={{ duration: 0.3 }}
+                  />
+                  <ChevronDown className="h-6 w-6 text-black dark:text-white group-hover:text-white dark:group-hover:text-black relative z-10 transition-colors duration-300" />
                 </motion.div>
-              </motion.div>
+              </MagneticButton>
             </motion.div>
             
 
