@@ -422,9 +422,9 @@ export default function HeroSection() {
             </motion.div>
           </motion.div>
           
-          {/* Right Column - Image and Badges */}
+          {/* Right Column - Image and Badges (Desktop Only) */}
           <motion.div 
-            className="relative flex justify-center lg:justify-end"
+            className="hidden lg:block relative flex justify-center lg:justify-end order-1 lg:order-2"
             variants={fadeInScale}
             initial="hidden"
             animate="show"
@@ -441,34 +441,21 @@ export default function HeroSection() {
               delay={0.9}
             />
             
-            {/* Profile Image with 3D tilt effect on desktop */}
+            {/* Profile Image with 3D tilt effect - Desktop only */}
             <motion.div 
-              className="relative z-10 w-[240px] h-[320px] sm:w-[280px] sm:h-[380px] md:w-[320px] md:h-[420px] lg:w-[380px] lg:h-[500px] mx-auto lg:mx-0"
+              className="relative z-10 w-[380px] h-[500px] mx-auto lg:mx-0"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              {!isMobile ? (
               <TiltCard>
                 <img 
                   src={peteProfile} 
-                  alt="Pete Helms - AI Strategy Expert" 
+                  alt="Pete Helms - Technology Consultant" 
                   className="w-full h-full object-cover object-center"
                   loading="eager"
                 />
               </TiltCard>
-              ) : (
-              <div className="relative rounded-2xl overflow-hidden shadow-lg">
-                <img 
-                  src={peteProfile} 
-                  alt="Pete Helms - AI Strategy Expert" 
-                  className="w-full h-full object-cover object-center"
-                  loading="eager"
-                />
-              </div>
-              )}
-              
-
             </motion.div>
           </motion.div>
         </div>
