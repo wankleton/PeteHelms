@@ -23,10 +23,10 @@ export const services = [
     title: "Workshops",
     description: "Hands-on training for teams looking to implement AI.",
     features: [
-      "AI literacy training",
-      "Custom workshop design",
-      "Implementation guidance",
-      "Team skill development"
+      "AI Literacy",
+      "Custom Workshops",
+      "Implementation Support",
+      "Staff Trainings"
     ]
   },
   {
