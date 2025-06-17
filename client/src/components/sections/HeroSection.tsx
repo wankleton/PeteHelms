@@ -344,15 +344,7 @@ export default function HeroSection() {
                     <div className="absolute inset-2 border border-white/20 rounded-2xl pointer-events-none" />
                   </motion.div>
                   
-                  {/* Floating badge */}
-                  <motion.div 
-                    className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 bg-black dark:bg-white text-white dark:text-black px-4 py-2 rounded-full text-sm font-bold shadow-premium"
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, delay: 1.0 }}
-                  >
-                    Technology Consultant
-                  </motion.div>
+
                 </div>
               </div>
             </motion.div>
@@ -385,21 +377,7 @@ export default function HeroSection() {
                 </span>
               </motion.h1>
               
-              {/* Mobile subtitle */}
-              <motion.div 
-                className="block lg:hidden"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 1.6 }}
-              >
-                <div className="flex items-center justify-center gap-3 mb-4">
-                  <div className="w-8 h-0.5 bg-black dark:bg-white"></div>
-                  <span className="text-sm font-bold uppercase tracking-[0.3em] text-gray-600 dark:text-gray-400">
-                    Purpose Driven
-                  </span>
-                  <div className="w-8 h-0.5 bg-black dark:bg-white"></div>
-                </div>
-              </motion.div>
+
               
               {/* Desktop underline */}
               <motion.div 
