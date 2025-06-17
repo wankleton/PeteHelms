@@ -25,7 +25,7 @@ export const services = [
     features: [
       "AI Literacy",
       "Custom Workshops",
-      "Implementation Support",
+      "1 on 1 Coaching",
       "Staff Trainings"
     ]
   },
