@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { motion, useAnimate, useMotionValue, useTransform, useScroll } from "framer-motion";
-import { ArrowRight, ChevronDown, Star, ExternalLink, MousePointer2, LightbulbIcon, Sparkles } from "lucide-react";
+import { ArrowRight, ChevronDown, Star, ExternalLink, MousePointer2, LightbulbIcon, Sparkles, Calendar } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 import peteProfile from "@/assets/pete-profile.jpg";
 import { useIsMobile } from "@/hooks/use-mobile";
@@ -383,15 +383,17 @@ export default function HeroSection() {
                   className="bg-black hover:bg-gray-900 text-white w-full px-6 sm:px-12 py-6 sm:py-8 text-base sm:text-lg font-bold tracking-wider border-stark shadow-xl hover:shadow-2xl focus-ring relative overflow-hidden"
                 >
                   <a 
-                    href="#purpose" 
-                    onClick={scrollToSection('purpose')} 
+                    href="https://calendly.com/pete-helms/intro-call" 
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center justify-center group relative z-10"
                   >
                     <motion.div
                       className="absolute inset-0 bg-gradient-to-r from-gray-800 to-black opacity-0 group-hover:opacity-100"
                       transition={{ duration: 0.3 }}
                     />
-                    <span className="relative z-10">EXPLORE MY STORY</span>
+                    <Calendar className="mr-3 sm:mr-4 h-5 sm:h-6 w-5 sm:w-6 relative z-10" />
+                    <span className="relative z-10">BOOK A CALL</span>
                     <ArrowRight className="ml-3 sm:ml-4 h-5 sm:h-6 w-5 sm:w-6 transition-transform group-hover:translate-x-1 relative z-10" />
                   </a>
                 </Button>
