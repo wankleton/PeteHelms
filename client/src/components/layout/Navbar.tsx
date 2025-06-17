@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'wouter';
 import { Button } from '@/components/ui/button';
-import { Menu, X, ArrowRight, ChevronRight, Home, Users, Award, Calendar, MessageSquare } from 'lucide-react';
+import { ArrowRight, ChevronRight, Home, Users, Award, Calendar, MessageSquare } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { navigationItems } from '@/lib/constants';
 import { useIsMobile } from '@/hooks/use-mobile';
@@ -105,113 +105,21 @@ export default function Navbar() {
             </Button>
           </div>
           
-          {/* Mobile Menu Toggle */}
-          <div className="md:hidden z-20 flex gap-3 items-center">
+          {/* Mobile CTA Button */}
+          <div className="md:hidden z-20">
             <a 
               href="https://calendly.com/pete-helms/intro-call" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="px-3 py-1.5 rounded-full bg-black dark:bg-white text-white dark:text-black text-sm font-medium flex items-center whitespace-nowrap"
+              className="px-4 py-2 rounded-full bg-black dark:bg-white text-white dark:text-black text-sm font-medium flex items-center whitespace-nowrap min-h-[44px]"
             >
               <Calendar className="mr-1.5 h-3.5 w-3.5" />
-              Book
+              Book a Call
             </a>
-            
-            <button 
-              type="button" 
-              className="flex items-center justify-center w-11 h-11 rounded-full bg-secondary-50 dark:bg-secondary-800 text-secondary-600 dark:text-secondary-300 hover:text-midnight dark:hover:text-white focus:outline-none transition-colors min-h-[44px] min-w-[44px]"
-              onClick={() => setIsOpen(!isOpen)}
-              aria-label="Toggle mobile menu"
-            >
-              {isOpen ? <X size={22} /> : <Menu size={22} />}
-            </button>
           </div>
         </div>
         
-        {/* Mobile menu - fullscreen overlay */}
-        <AnimatePresence>
-          {isOpen && (
-            <>
-              {/* Backdrop */}
-              <motion.div 
-                className="fixed inset-0 bg-midnight/90 backdrop-blur-lg z-10"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 0.3 }}
-              />
-              
-              {/* Menu Content */}
-              <motion.div 
-                className="fixed inset-0 z-10 flex flex-col justify-center items-center"
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: 20 }}
-                transition={{ duration: 0.3, delay: 0.1 }}
-              >
-                <nav className="flex flex-col items-center space-y-6 p-8">
-                  {navigationItems.map((item, index) => (
-                    <motion.div
-                      key={item.id}
-                      initial={{ opacity: 0, y: -10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.2, delay: 0.1 + index * 0.05 }}
-                    >
-                      <a 
-                        href={`#${item.id}`}
-                        onClick={(e) => {
-                          scrollToSection(item.id)(e);
-                          handleMobileItemClick();
-                        }}
-                        className={`text-xl sm:text-2xl font-bold flex items-center py-4 px-6 rounded-xl transition-colors min-h-[60px] min-w-[200px] justify-center ${
-                          activeSection === item.id 
-                            ? 'text-white bg-white/10' 
-                            : 'text-secondary-300 hover:text-white hover:bg-white/5'
-                        }`}
-                      >
-                        <span className="mr-3 opacity-70">{getNavIcon(item.id)}</span>
-                        {item.name}
-                        {activeSection === item.id && (
-                          <motion.div
-                            className="w-2 h-2 rounded-full bg-accent-gradient-start ml-3"
-                            initial={{ scale: 0 }}
-                            animate={{ scale: 1 }}
-                            layoutId="activeIndicator"
-                          />
-                        )}
-                      </a>
-                    </motion.div>
-                  ))}
-                </nav>
-                
-                <motion.div
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.3, delay: 0.4 }}
-                  className="absolute bottom-16 flex flex-col items-center"
-                >
-                  <a 
-                    href="https://calendly.com/pete-helms/intro-call" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    onClick={handleMobileItemClick}
-                    className="px-6 py-3 rounded-full bg-black dark:bg-white text-white dark:text-black font-medium flex items-center"
-                  >
-                    <Calendar className="mr-2 h-4 w-4" />
-                    Book a Call
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </a>
-                  <button
-                    onClick={handleMobileItemClick}
-                    className="mt-8 text-secondary-400 hover:text-white transition-colors"
-                  >
-                    Close Menu
-                  </button>
-                </motion.div>
-              </motion.div>
-            </>
-          )}
-        </AnimatePresence>
+
       </div>
     </header>
   );
