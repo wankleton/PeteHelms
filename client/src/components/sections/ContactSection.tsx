@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Mail, MessageSquare, Clock } from "lucide-react";
+import { Mail, MessageSquare, Clock, Calendar } from "lucide-react";
 import { fadeInUp, slideInLeft, slideInRight, scaleInSpring, buttonPulse } from "@/lib/animations";
 import SectionHeading from "@/components/ui/section-heading";
 
@@ -42,7 +42,7 @@ export default function ContactSection() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.8, delay: 0.2 }}
                 >
-                  BOOK A CALL
+                  LET'S CONNECT
                 </motion.span>
               </h2>
               <motion.div 
@@ -52,95 +52,41 @@ export default function ContactSection() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.8, ease: [0.33, 1, 0.68, 1] }}
               />
-              <motion.p 
-                className="text-xl md:text-2xl text-black dark:text-white font-light leading-relaxed max-w-2xl"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 1 }}
-              >
-                Would you like to explore this further?
-              </motion.p>
+              
             </motion.div>
           </motion.div>
         </motion.div>
         
         <motion.div 
-          className="max-w-4xl mx-auto mt-16 sm:mt-20 md:mt-24"
+          className="max-w-3xl mx-auto mt-16 sm:mt-20 md:mt-24 text-center"
           variants={fadeInUp}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.7 }}
         >
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 md:gap-16">
-            <div>
-              <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 sm:mb-12 md:mb-16 text-black dark:text-white leading-[0.9] tracking-tight relative">
-                LET'S START SIMPLE
-                <div className="absolute -bottom-4 left-0 w-16 sm:w-20 h-1 bg-black dark:bg-white"></div>
-              </h3>
-              
-              <div className="space-y-6 sm:space-y-8 md:space-y-10 mb-12 sm:mb-16 md:mb-20 text-xl md:text-2xl text-black dark:text-white leading-[1.6] font-light">
-                <p>The best way to explore working together is to start with a conversation. No commitment, no pressure—just an opportunity to see if there's a fit.</p>
-                <p>
-                  During our call, I'll listen to your challenges, ask clarifying questions, and share my perspective on potential approaches. You'll walk away with at least one new way of thinking about your situation.
-                </p>
-              </div>
-            </div>
+          <div className="mb-12 sm:mb-16 text-xl md:text-2xl text-black dark:text-white leading-[1.6] font-light">
+            <p>The best way to explore working together is to start with a conversation. No commitment, no pressure—just an opportunity to see if there's a fit.</p>
+            <p className="mt-6">
+              During our call, I'll listen to your challenges, ask clarifying questions, and share my perspective on potential approaches. You'll walk away with at least one new way of thinking about your situation.
+            </p>
+          </div>
+          
+          <div className="space-y-8">
+            <Button 
+              asChild
+              size="lg"
+              className="bg-black dark:bg-white text-white dark:text-black hover:bg-gray-900 dark:hover:bg-gray-100 px-12 py-6 text-lg font-bold tracking-wider transform hover:scale-105 transition-smooth shadow-xl"
+            >
+              <a href="https://calendly.com/pete-helms/intro-call" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center">
+                <Clock className="h-6 w-6 mr-3" />
+                BOOK A CALL
+              </a>
+            </Button>
             
-            <div>
-              <h4 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-8 sm:mb-12 md:mb-16 text-black dark:text-white tracking-tight relative">
-                SCHEDULE YOUR CALL
-                <div className="absolute -bottom-4 left-0 w-12 sm:w-16 h-1 bg-black dark:bg-white"></div>
-              </h4>
-              
-              <div className="space-y-6 sm:space-y-8 md:space-y-10">
-                <div className="p-6 sm:p-8 md:p-10 bg-gray-50 dark:bg-gray-900 border-stark relative overflow-hidden group shadow-intense premium-hover">
-                  <div className="space-y-4">
-                    <div className="flex items-start">
-                      <Clock className="h-5 w-5 text-black dark:text-white mt-1 mr-3" />
-                      <div>
-                        <h5 className="font-medium text-black dark:text-white mb-1">Duration</h5>
-                        <p className="text-gray-700 dark:text-gray-300">45 minutes - enough time for meaningful conversation</p>
-                      </div>
-                    </div>
-                    
-                    <div className="flex items-start">
-                      <MessageSquare className="h-5 w-5 text-black dark:text-white mt-1 mr-3" />
-                      <div>
-                        <h5 className="font-medium text-black dark:text-white mb-1">Format</h5>
-                        <p className="text-gray-700 dark:text-gray-300">Video call where we can share screens and collaborate</p>
-                      </div>
-                    </div>
-                    
-                    <div className="flex items-start">
-                      <Mail className="h-5 w-5 text-black dark:text-white mt-1 mr-3" />
-                      <div>
-                        <h5 className="font-medium text-black dark:text-white mb-1">Investment</h5>
-                        <p className="text-gray-700 dark:text-gray-300">Complimentary for first-time conversations</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                
-                <div className="space-y-8">
-                  <div className="text-center">
-                    <Button 
-                      asChild
-                      size="lg"
-                      className="bg-black dark:bg-white text-white dark:text-black hover:bg-gray-900 dark:hover:bg-gray-100 px-14 py-8 text-lg font-bold tracking-wider w-full border-stark transform hover:scale-105 transition-smooth shadow-xl"
-                    >
-                      <a href="https://calendly.com/pete-helms/intro-call" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center">
-                        <Clock className="h-6 w-6 mr-4" />
-                        BOOK A CALL
-                      </a>
-                    </Button>
-                  </div>
-                  
-                  
-                </div>
-              </div>
-            </div>
+            <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400">
+              45 minutes • Video call • Complimentary
+            </p>
           </div>
         </motion.div>
       </div>
