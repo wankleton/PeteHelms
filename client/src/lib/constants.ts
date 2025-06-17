@@ -35,10 +35,10 @@ export const services = [
     title: "Advisory",
     description: "Strategic guidance for technology decisions.",
     features: [
-      "Technology strategy",
-      "Digital transformation",
-      "Executive support",
-      "Innovation planning"
+      "Tech Stack",
+      "Digital Transformation",
+      "Executive Support",
+      "Strategic Planning"
     ]
   },
   {
