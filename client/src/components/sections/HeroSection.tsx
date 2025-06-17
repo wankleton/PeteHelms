@@ -360,11 +360,11 @@ export default function HeroSection() {
                   transition={{ duration: 0.4, delay: 1.8 }}
                 >purpose-driven</motion.span> technology consultant. 
                 I lead a boutique consultancy focused on <motion.span 
-                  className="font-semibold bg-black dark:bg-white text-white dark:text-black px-1 sm:px-2 py-1"
+                  className="font-semibold bg-black dark:bg-white text-white dark:text-black px-1 sm:px-2 py-1 whitespace-nowrap"
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.4, delay: 2.1 }}
-                >innovative solutions</motion.span> 
+                >innovative&nbsp;solutions</motion.span> 
                 <br className="hidden sm:block" />
                 that have a lasting impact.
               </motion.p>
