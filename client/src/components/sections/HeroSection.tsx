@@ -242,7 +242,7 @@ export default function HeroSection() {
   return (
     <section 
       id="home" 
-      className="relative pt-24 sm:pt-28 md:pt-32 lg:pt-36 pb-12 sm:pb-16 overflow-hidden"
+      className="relative pt-32 sm:pt-28 md:pt-32 lg:pt-36 pb-12 sm:pb-16 overflow-hidden"
       onMouseMove={handleMouseMove}
     >
       <div className="container mx-auto px-4">
