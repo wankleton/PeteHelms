@@ -290,107 +290,107 @@ export default function HeroSection() {
             
             {/* Brief Introduction */}
             <motion.h1 
-              className="text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl mb-8 sm:mb-12 md:mb-16 lg:mb-20 relative leading-[0.9]"
-              initial={{ opacity: 0, y: 60, rotateX: 15 }}
-              animate={{ opacity: 1, y: 0, rotateX: 0 }}
+              className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl mb-6 sm:mb-8 md:mb-12 lg:mb-16 relative leading-[0.95] tracking-tight"
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ 
-                duration: 1.2, 
+                duration: 0.8, 
                 ease: [0.23, 1, 0.32, 1],
-                delay: 0.3
+                delay: 0.2
               }}
             >
               <motion.span 
-                className="block text-ultra-bold text-black dark:text-white relative geometric-accent"
-                initial={{ opacity: 0, scale: 0.8 }}
+                className="block text-ultra-bold text-black dark:text-white relative"
+                initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ 
-                  duration: 0.8,
-                  delay: 0.6,
+                  duration: 0.6,
+                  delay: 0.4,
                   type: "spring",
-                  stiffness: 100
+                  stiffness: 120
                 }}
               >
                 PETE HELMS
               </motion.span>
               <motion.div 
-                className="absolute -bottom-4 left-0 h-1 bg-gradient-to-r from-black via-gray-600 to-black dark:from-white dark:via-gray-400 dark:to-white shadow-premium"
+                className="absolute -bottom-2 sm:-bottom-3 left-0 lg:left-0 h-0.5 sm:h-1 bg-gradient-to-r from-black via-gray-600 to-black dark:from-white dark:via-gray-400 dark:to-white shadow-premium"
                 initial={{ width: 0, opacity: 0 }}
-                animate={{ width: 96, opacity: 1 }}
+                animate={{ width: "80px", opacity: 1 }}
                 transition={{ 
-                  duration: 1.2,
-                  delay: 1.5,
+                  duration: 0.8,
+                  delay: 1.0,
                   ease: [0.23, 1, 0.32, 1]
                 }}
               />
-              
-              {/* Sparkle effects */}
-              <motion.div
-                className="absolute top-4 right-12 text-black dark:text-white"
-                initial={{ opacity: 0, scale: 0 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 2, duration: 0.5 }}
-              >
-                <Sparkles className="h-8 w-8" />
-              </motion.div>
             </motion.h1>
             
             {/* Brief Description */}
             <motion.div 
-              className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-light leading-[1.4] max-w-2xl mx-auto lg:mx-0 mb-12 sm:mb-16 md:mb-20 lg:mb-24 relative"
-              initial={{ opacity: 0, y: 40 }}
+              className="text-base sm:text-lg md:text-xl lg:text-2xl font-light leading-[1.5] max-w-xl mx-auto lg:mx-0 mb-8 sm:mb-12 md:mb-16 lg:mb-20 relative"
+              initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.8, ease: [0.33, 1, 0.68, 1] }}
+              transition={{ duration: 0.6, delay: 0.6, ease: [0.33, 1, 0.68, 1] }}
             >
-              <motion.div 
-                className="absolute -left-3 sm:-left-6 top-0 w-1 sm:w-2 bg-black dark:bg-white rounded-full"
-                initial={{ height: 0 }}
-                animate={{ height: "100%" }}
-                transition={{ duration: 1, delay: 1.2, ease: [0.33, 1, 0.68, 1] }}
-              />
               <motion.p 
-                className="text-black dark:text-white pl-6 sm:pl-12 leading-[1.5]"
+                className="text-gray-700 dark:text-gray-300 leading-[1.6]"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ duration: 0.6, delay: 1.5 }}
+                transition={{ duration: 0.5, delay: 0.8 }}
               >
                 I'm a <motion.span 
-                  className="font-semibold bg-black dark:bg-white text-white dark:text-black px-1 sm:px-2 py-1"
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.4, delay: 1.8 }}
+                  className="font-semibold text-black dark:text-white"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.3, delay: 1.0 }}
                 >purpose-driven</motion.span> technology consultant. 
                 I lead a boutique consultancy focused on <motion.span 
-                  className="font-semibold bg-black dark:bg-white text-white dark:text-black px-1 sm:px-2 py-1 whitespace-nowrap"
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.4, delay: 2.1 }}
-                >innovative&nbsp;solutions</motion.span> 
-                <br className="hidden sm:block" />
-                that have a lasting impact.
+                  className="font-semibold text-black dark:text-white whitespace-nowrap"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.3, delay: 1.2 }}
+                >innovative&nbsp;solutions</motion.span> that have a lasting impact.
               </motion.p>
             </motion.div>
             
+            {/* Mobile Profile Photo */}
+            <motion.div 
+              className="block lg:hidden mb-8 sm:mb-10"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 1.4, ease: [0.23, 1, 0.32, 1] }}
+            >
+              <div className="relative w-28 h-28 sm:w-32 sm:h-32 mx-auto">
+                <motion.div 
+                  className="relative w-full h-full rounded-full overflow-hidden border-2 border-black dark:border-white shadow-intense"
+                  whileHover={{ scale: 1.05 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <img 
+                    src={peteProfile} 
+                    alt="Pete Helms - Technology Consultant" 
+                    className="w-full h-full object-cover object-center"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent" />
+                </motion.div>
+              </div>
+            </motion.div>
+
             {/* Bold CTA */}
             <motion.div 
-              className="flex flex-col gap-4 sm:gap-6 md:gap-8"
-              initial={{ opacity: 0, y: 40 }}
+              className="flex flex-col gap-4 sm:gap-6"
+              initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 2.4, ease: [0.33, 1, 0.68, 1] }}
+              transition={{ duration: 0.6, delay: 1.6, ease: [0.33, 1, 0.68, 1] }}
             >
               <motion.div
-                whileHover={{ 
-                  scale: 1.02, 
-                  y: -4,
-                  boxShadow: "0 25px 50px rgba(0,0,0,0.2)",
-                  transition: { duration: 0.3, ease: [0.33, 1, 0.68, 1] }
-                }}
+                whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 className="w-full"
               >
                 <Button 
                   asChild 
                   size="lg" 
-                  className="bg-black hover:bg-gray-900 text-white w-full px-6 sm:px-12 py-6 sm:py-8 text-base sm:text-lg font-bold tracking-wider border-stark shadow-intense hover:shadow-premium focus-ring relative overflow-hidden transition-all duration-500"
+                  className="bg-black hover:bg-gray-900 text-white w-full px-6 py-4 sm:py-5 text-base font-bold tracking-wide shadow-intense hover:shadow-premium focus-premium relative overflow-hidden transition-all duration-300"
                 >
                   <a 
                     href="https://calendly.com/pete-helms/intro-call" 
@@ -398,18 +398,12 @@ export default function HeroSection() {
                     rel="noopener noreferrer"
                     className="flex items-center justify-center group relative z-10"
                   >
-                    <motion.div
-                      className="absolute inset-0 bg-gradient-to-r from-gray-800 to-black opacity-0 group-hover:opacity-100"
-                      transition={{ duration: 0.3 }}
-                    />
-                    <Calendar className="mr-3 sm:mr-4 h-5 sm:h-6 w-5 sm:w-6 relative z-10" />
-                    <span className="relative z-10">LET'S CONNECT</span>
-                    <ArrowRight className="ml-3 sm:ml-4 h-5 sm:h-6 w-5 sm:w-6 transition-transform group-hover:translate-x-1 relative z-10" />
+                    <Calendar className="mr-2 h-4 w-4 relative z-10" />
+                    <span className="relative z-10">Let's Connect</span>
+                    <ArrowRight className="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform relative z-10" />
                   </a>
                 </Button>
               </motion.div>
-              
-
             </motion.div>
             
             {/* Scroll indicator */}
