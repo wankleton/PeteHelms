@@ -48,16 +48,38 @@ export default function InteractiveCursor() {
 
     const handleMouseOver = (e: MouseEvent) => {
       const target = e.target as Element;
-      if (target && isInteractiveElement(target)) {
+      
+      // Find the closest interactive element (handles nested elements)
+      let closestInteractive = target;
+      while (closestInteractive && !isInteractiveElement(closestInteractive)) {
+        closestInteractive = closestInteractive.parentElement;
+      }
+      
+      if (closestInteractive && isInteractiveElement(closestInteractive)) {
         setIsHovering(true);
-        const text = target.getAttribute('data-cursor') || '';
+        const text = closestInteractive.getAttribute('data-cursor') || '';
         setCursorText(text);
       }
     };
 
     const handleMouseOut = (e: MouseEvent) => {
       const target = e.target as Element;
-      if (target && isInteractiveElement(target)) {
+      const relatedTarget = e.relatedTarget as Element;
+      
+      // Find the closest interactive element for both target and relatedTarget
+      let closestInteractive = target;
+      while (closestInteractive && !isInteractiveElement(closestInteractive)) {
+        closestInteractive = closestInteractive.parentElement;
+      }
+      
+      let relatedInteractive = relatedTarget;
+      while (relatedInteractive && !isInteractiveElement(relatedInteractive)) {
+        relatedInteractive = relatedInteractive.parentElement;
+      }
+      
+      // Only reset if we're actually leaving the interactive element
+      if (closestInteractive && isInteractiveElement(closestInteractive) && 
+          closestInteractive !== relatedInteractive) {
         setIsHovering(false);
         setCursorText('');
       }
