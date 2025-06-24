@@ -88,7 +88,7 @@ export default function InteractiveCursor() {
         }}
       >
         <motion.div
-          className="w-40 h-40 rounded-full"
+          className="w-48 h-48 rounded-full"
           style={{
             background: `radial-gradient(circle, 
               rgba(255, 248, 200, 0.08) 0%,
@@ -99,7 +99,7 @@ export default function InteractiveCursor() {
             transform: 'translate(-50%, -50%)',
           }}
           animate={{
-            scale: isHovering ? 2.2 : isMoving ? 1.6 : 1.3,
+            scale: isHovering ? 2.4 : isMoving ? 1.8 : 1.5,
             opacity: isHovering ? 0.9 : isMoving ? 0.7 : 0.5,
           }}
           transition={{ type: "spring", stiffness: 200, damping: 25 }}
@@ -115,7 +115,7 @@ export default function InteractiveCursor() {
         }}
       >
         <motion.div
-          className="w-20 h-20 rounded-full"
+          className="w-28 h-28 rounded-full"
           style={{
             background: `radial-gradient(circle, 
               rgba(255, 255, 255, 0.15) 0%,
@@ -127,7 +127,7 @@ export default function InteractiveCursor() {
             transform: 'translate(-50%, -50%)',
           }}
           animate={{
-            scale: isHovering ? 1.8 : isMoving ? 1.4 : 1.1,
+            scale: isHovering ? 2.0 : isMoving ? 1.6 : 1.3,
             opacity: isHovering ? 0.9 : isMoving ? 0.7 : 0.6,
           }}
           transition={{ type: "spring", stiffness: 250, damping: 25 }}
@@ -136,7 +136,7 @@ export default function InteractiveCursor() {
 
       {/* Main flashlight cursor */}
       <motion.div
-        className="fixed top-0 left-0 w-3 h-3 pointer-events-none z-[9999]"
+        className="fixed top-0 left-0 w-4 h-4 pointer-events-none z-[9999]"
         style={{
           x: cursorXSpring,
           y: cursorYSpring,
@@ -161,7 +161,7 @@ export default function InteractiveCursor() {
             transform: 'translate(-50%, -50%)',
           }}
           animate={{
-            scale: isHovering ? 2.5 : isMoving ? 1.8 : 1.2,
+            scale: isHovering ? 3.0 : isMoving ? 2.2 : 1.5,
             opacity: isHovering ? 1 : isMoving ? 0.9 : 0.8,
           }}
           transition={{ type: "spring", stiffness: 400, damping: 25 }}
