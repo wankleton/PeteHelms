@@ -573,8 +573,6 @@ export default function HeroSection() {
                 }}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                data-cursor="Scroll Down"
-                role="button"
               >
                 <motion.p 
                   className="text-lg font-bold uppercase tracking-[0.2em] text-black dark:text-white group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors duration-300 mb-4"
