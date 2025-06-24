@@ -46,8 +46,16 @@ export default function InteractiveCursor() {
       return isButton || isLink || hasDataCursor || hasClickable;
     };
 
+    let hoverTimeout: NodeJS.Timeout | null = null;
+
     const handleMouseOver = (e: MouseEvent) => {
       const target = e.target as Element;
+      
+      // Clear any pending reset
+      if (hoverTimeout) {
+        clearTimeout(hoverTimeout);
+        hoverTimeout = null;
+      }
       
       // Find the closest interactive element (handles nested elements)
       let closestInteractive = target;
@@ -63,26 +71,26 @@ export default function InteractiveCursor() {
     };
 
     const handleMouseOut = (e: MouseEvent) => {
-      const target = e.target as Element;
-      const relatedTarget = e.relatedTarget as Element;
-      
-      // Find the closest interactive element for both target and relatedTarget
-      let closestInteractive = target;
-      while (closestInteractive && !isInteractiveElement(closestInteractive)) {
-        closestInteractive = closestInteractive.parentElement;
+      // Use a small delay before resetting to prevent flickering on nested elements
+      if (hoverTimeout) {
+        clearTimeout(hoverTimeout);
       }
       
-      let relatedInteractive = relatedTarget;
-      while (relatedInteractive && !isInteractiveElement(relatedInteractive)) {
-        relatedInteractive = relatedInteractive.parentElement;
-      }
-      
-      // Only reset if we're actually leaving the interactive element
-      if (closestInteractive && isInteractiveElement(closestInteractive) && 
-          closestInteractive !== relatedInteractive) {
-        setIsHovering(false);
-        setCursorText('');
-      }
+      hoverTimeout = setTimeout(() => {
+        const target = e.relatedTarget as Element;
+        
+        // Check if we're moving to another interactive element
+        let closestInteractive = target;
+        while (closestInteractive && !isInteractiveElement(closestInteractive)) {
+          closestInteractive = closestInteractive.parentElement;
+        }
+        
+        // Only reset if we're not moving to another interactive element
+        if (!closestInteractive || !isInteractiveElement(closestInteractive)) {
+          setIsHovering(false);
+          setCursorText('');
+        }
+      }, 50);
     };
 
     window.addEventListener('mousemove', moveCursor);
@@ -93,6 +101,9 @@ export default function InteractiveCursor() {
       window.removeEventListener('mousemove', moveCursor);
       document.removeEventListener('mouseover', handleMouseOver);
       document.removeEventListener('mouseout', handleMouseOut);
+      if (hoverTimeout) {
+        clearTimeout(hoverTimeout);
+      }
     };
   }, [cursorX, cursorY]);
 
